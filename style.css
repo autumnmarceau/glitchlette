@@ -1,0 +1,934 @@
+/* =========================
+   COLOR VARIABLES
+========================= */
+:root {
+  --red-primary: #ee2222;
+  --red-dark: #7a0d0d;
+  --red-shadow: #550808;
+  --red-gradient-start: #cc0000;
+  --red-gradient-end: #770000;
+  --text-light: #f6f0e7;
+  --background-dark: #111111;
+}
+
+/* Background image full viewport fixed behind everything */
+#bg-image {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://glitchlette.com/PHOTOS/EveryRatAlbumCoverPhoto_7_filteredno_noise.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* covers viewport responsively */
+  z-index: -2;
+  pointer-events: none;
+  opacity: 1;
+  transition: background-size 0.3s ease;
+}
+
+/* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
+@media (max-width: 540px) {
+  #bg-image {
+    background-image: url('https://glitchlette.com/PHOTOS/EVERYRAT%20OG.jpg');
+    background-position: calc(50% - 30px) calc(50% + 20px);
+  }
+}
+
+/* Reset margin, padding, box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Halloween';
+  src: url('https://glitchlette.com/fonts/SerifGothicITCProbyBT-Heavy.woff2') format('woff2'),
+       url('https://glitchlette.com/fonts/SerifGothicITCProbyBT-Heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base styles */
+html, body {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  font-family: 'Spectral', serif;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Page wrapper: flex container for sidebar and main content */
+.page-wrapper {
+  display: flex;
+  max-width: 960px;
+  width: 90vw;
+  margin: 0 auto;
+  gap: 20px;
+  align-items: flex-start;
+  min-height: calc(100vh - 4rem);
+  position: relative;
+  z-index: 1;
+}
+
+/* Sidebar (navbar) styles */
+#navbar {
+  flex: 0 0 auto;       /* shrink to fit content */
+  width: max-content;   /* width fits content */
+  min-width: 120px;
+  background: transparent;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: none;
+  border-radius: 8px;
+  margin-left: 0;
+  position: sticky;
+  top: 2rem;            /* sticks below body padding */
+  max-height: none;     /* no height limit */
+  overflow-y: visible;  /* no scrolling */
+}
+
+/* Nav list styles */
+#navbar ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links */
+#navbar li a {
+  color: var(--red-primary);
+  font-family: 'Halloween', serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-decoration: none !important;
+  padding: 6px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: transparent;
+  font-variant: small-caps;
+  text-transform: none;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow);
+  animation: slowGlow 4s ease-in-out infinite;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover and focus effect on nav links */
+#navbar li a:hover,
+#navbar li a:focus {
+  animation:
+    pulseGlow 2.5s ease-in-out infinite,
+    glowColorShift 3s ease-in-out infinite,
+    flickerGlow 0.15s linear infinite,
+    rippleText 1.2s ease forwards;
+  transform-origin: left center;
+  transform: scale(1.05);
+  background-color: rgba(238, 34, 34, 0.1);
+  filter: url(#ripple) !important;
+  outline: none;
+}
+
+#navbar li a:focus {
+  outline: 2px solid var(--red-primary);
+  outline-offset: 2px;
+  outline-radius: 4px;
+  outline-style: solid;
+}
+
+/* Social icons container */
+.social-nav {
+  display: flex;
+  gap: 12px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Social icons */
+.social-icon {
+  display: inline-flex;
+  cursor: pointer;
+  animation: slowGlow 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px #e03b3b);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  position: relative;
+  padding: 4px;
+  border-radius: 6px;
+  background-color: transparent;
+  text-decoration: none !important;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  animation:
+    pulseGlow 2.5s ease-in-out infinite,
+    glowColorShift 3s ease-in-out infinite,
+    flickerGlow 0.15s linear infinite,
+    rippleText 1.2s ease forwards;
+  filter: drop-shadow(0 0 14px var(--red-primary)) url(#ripple) !important;
+  transform: scale(1.2);
+}
+
+.social-icon:focus {
+  outline: 2px solid var(--red-primary);
+  outline-offset: 2px;
+}
+
+.social-icon i {
+  font-size: 32px;
+  color: var(--text-light);
+  pointer-events: none;
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover i,
+.social-icon:focus i {
+  color: var(--red-primary);
+  filter: drop-shadow(0 0 14px var(--red-primary)) drop-shadow(0 0 24px #ff4c4c);
+}
+
+/* Social nav icon sizing */
+.social-nav .social-icon i {
+  font-size: 28px;
+}
+
+/* Main content */
+.main-content {
+  background: rgba(14, 6, 10, 0.85);
+  border-left: 5px solid #aa0000;
+  padding: 2rem 3rem;
+  margin-left: 0;
+  margin-top: 2rem;
+  border-radius: 12px;
+  max-width: 960px;
+  box-shadow: 0 0 60px rgba(170, 0, 0, 0.3);
+  color: #eae3da;
+  font-family: 'Spectral', serif;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+/* Lists inside main content */
+.main-content ol,
+.main-content ol li {
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 600px;
+  margin-left: 1.2rem;
+  color: var(--text-light);
+}
+
+/* Strong/bold text */
+strong, b {
+  color: var(--red-primary);
+}
+
+/* Clickable images */
+.clickable-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.clickable-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.clickable-image img:hover,
+.clickable-image img:focus {
+  filter:
+    drop-shadow(0 0 8px var(--red-primary))
+    drop-shadow(0 0 15px var(--red-gradient-start));
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 150px;
+  max-width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* Lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255,0,0,0.8);
+}
+
+/* About page */
+.about-section {
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  color: var(--text-light);
+  font-family: 'Spectral', serif;
+  line-height: 1.6;
+  filter: drop-shadow(0 0 6px #aa0000);
+}
+
+.about-subtitle {
+  font-family: 'Halloween', serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--red-primary);
+  margin-bottom: 1rem;
+  user-select: none;
+  text-shadow: none;
+}
+
+.about-bio p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  color: var(--text-light);
+}
+
+.about-bio a {
+  color: var(--red-primary);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.about-bio a:hover,
+.about-bio a:focus {
+  color: var(--red-gradient-end);
+  text-shadow:
+    0 0 8px var(--red-gradient-start),
+    0 0 20px var(--red-primary);
+  outline: none;
+}
+
+.about-label {
+  font-family: 'Halloween', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--red-primary);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  user-select: none;
+}
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.caption {
+  font-family: Spectral, serif;
+  font-size: 0.85rem;
+  color: #ffffff;
+  padding: 4px 8px;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* subtle background for readability */
+  text-align: center;
+  white-space: normal;          /* Allow line breaks */
+  overflow-wrap: anywhere;     /* Break long words */
+  word-break: break-word;      /* Ensure no overflow */
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* Lists for fun facts and movies */
+.fun-facts-list,
+.movies-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.8rem;
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.movies-list li::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.4rem;
+  background-color: var(--red-primary);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+
+
+.movies-list li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+}
+
+.movies-list li em {
+  font-style: italic;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+
+
+
+.fun-facts-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* About page links */
+.about-page a {
+  font-family: 'Halloween', serif;
+  color: var(--red-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-shadow: none;
+}
+
+.about-page a:hover,
+.about-page a:focus {
+  color: var(--red-primary);
+  transform: scale(1.05);
+  outline: none;
+}
+
+.about-page a:focus {
+  outline: 2px solid var(--red-primary);
+  outline-offset: 2px;
+  outline-radius: 4px;
+  outline-style: solid;
+}
+
+/*Blog*/
+./* Blog post preview container */
+.blog-post-preview {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(238, 34, 34, 0.3);
+  padding-bottom: 1rem;
+}
+
+/* Thumbnail image */
+.blog-post-thumbnail {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 6px var(--red-primary),
+    0 0 12px var(--red-gradient-start);
+}
+
+/* Blog post text container */
+.blog-post-text {
+  flex: 1;
+}
+
+/* Date above the title */
+.blog-post-date {
+  display: block;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  color: rgba(230, 80, 80, 0.85);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* Blog post title (no glow) */
+.blog-post-title {
+  margin: 0; /* remove default h2 margin */
+  line-height: 1.2;
+}
+
+.blog-post-title a {
+  color: var(--red-primary);
+  font-family: 'Halloween', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-shadow: none;
+  transition: color 0.3s ease;
+  margin-bottom: 0.25rem; /* reduces space below title */
+}
+
+.blog-post-title a:hover,
+.blog-post-title a:focus {
+  color: var(--red-gradient-end);
+  outline: none;
+  text-shadow: none;
+}
+
+/* Excerpt */
+.blog-post-excerpt {
+  margin: 0.4rem 0 0 0;
+  color: var(--text-light);
+  max-width: 600px;
+  line-height: 1.5;
+  margin-top: 0; /* removes extra space above the excerpt */
+}
+
+/* Blog post inline image */
+.blog-post-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow:
+    0 0 12px var(--red-primary),
+    0 0 24px var(--red-gradient-start);
+  display: block;
+}
+
+
+.blog-post-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem; /* space between image and text */
+}
+
+.blog-thumbnail {
+  width: 120px; /* or whatever size you want */
+  height: auto;
+  flex-shrink: 0; /* prevents it from shrinking */
+  border-radius: 4px; /* optional: rounded corners */
+}
+
+.blog-post-text {
+  flex: 1;
+}
+
+.blog-post-title {
+  margin: 0 0 0.25rem 0;
+}
+
+.blog-post-excerpt {
+  margin: 0;
+}
+
+
+/* Melting effect */
+.melting-text-container,
+.melting-text {
+  margin: 0;
+  padding: 0;
+}
+
+.melting-text {
+  font-family: 'Halloween', serif;
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  animation: melt 3s ease-in-out 3 forwards;
+  background: linear-gradient(90deg, #ee2222, #cc0000, #ee2222);
+  -webkit-background-clip: text;
+  color: transparent;
+  user-select: none;
+}
+
+.melting-text::before,
+.melting-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ee2222, #cc0000, #ee2222);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: -1;
+  transform-origin: top center;
+  opacity: 0.5;
+  animation: drip 3s ease-in-out 1 forwards;
+  user-select: none;
+}
+
+.melting-text::after {
+  filter: blur(6px);
+  opacity: 0.3;
+}
+
+/* Keyframes for melting effect */
+@keyframes melt {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes drip {
+  0%, 100% {
+    transform: scaleY(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleY(1.4);
+    opacity: 0.7;
+  }
+}
+
+/* Glowing animations */
+@keyframes slowGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 4px var(--red-dark),
+      0 0 8px var(--red-gradient-start),
+      0 0 15px var(--red-primary),
+      0 0 25px var(--red-shadow);
+  }
+  50% {
+    text-shadow:
+      0 0 8px var(--red-gradient-start),
+      0 0 15px var(--red-primary),
+      0 0 20px #ff3333,
+      0 0 30px #b22222;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 4px rgba(238, 34, 34, 0.6),
+      0 0 10px rgba(238, 34, 34, 0.4);
+  }
+  50% {
+    text-shadow:
+      0 0 12px rgba(238, 34, 34, 0.9),
+      0 0 25px rgba(238, 34, 34, 0.7);
+  }
+}
+
+@keyframes glowColorShift {
+  0% {
+    text-shadow:
+      0 0 6px #e03b3b,
+      0 0 12px #e03b3b;
+  }
+  50% {
+    text-shadow:
+      0 0 20px #ff6666,
+      0 0 30px #ff6666;
+  }
+  100% {
+    text-shadow:
+      0 0 6px #b22222,
+      0 0 12px #b22222;
+  }
+}
+
+@keyframes flickerGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 10px #ff0000,
+      0 0 20px #ff3b3b;
+  }
+  20%, 60% {
+    text-shadow:
+      0 0 15px #ff4c4c,
+      0 0 25px #ff5c5c;
+  }
+  40%, 80% {
+    text-shadow:
+      0 0 5px #b22222,
+      0 0 10px #b22222;
+  }
+}
+
+@keyframes rippleText {
+  0%, 100% {
+    filter: none;
+    transform: none;
+  }
+  20%, 40%, 60%, 80% {
+    filter: url(#ripple);
+    transform: none;
+  }
+}
+
+/* Responsive fixes */
+
+/* Up to 640px: stack page wrapper vertically, nav full width and centered */
+@media (max-width: 640px) {
+  .page-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #navbar {
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    top: auto;
+    padding: 1rem 0;
+    align-items: center;
+    text-align: center;
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  #navbar ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #navbar li a {
+    font-size: 1.4rem;
+    padding: 6px 10px;
+  }
+
+  .social-nav {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .main-content {
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    border-left: none;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 640px) {
+  #navbar ul.main-nav {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* <-- allow wrapping */
+    gap: 0.75rem; /* reduce gap a bit */
+  }
+
+  #navbar ul.social-nav {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  /* Allow nav items to shrink */
+  #navbar ul.main-nav li {
+    flex-shrink: 1;
+  }
+
+  /* Make nav links wrap text if needed */
+  #navbar ul.main-nav li a {
+    white-space: normal; /* allow wrapping */
+    font-size: 1.4rem;
+    padding: 6px 10px;
+  }
+
+  /* Remove the <br> spacing and replace with margin */
+  #navbar ul.social-nav {
+    margin-top: 1rem;
+  }
+
+  /* Prevent horizontal overflow on nav */
+  #navbar {
+    overflow-x: auto;
+  }
+}
+
+
+#nav {
+  display: flex;
+  flex-direction: column; /* vertical by default */
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Base styles — small screens (default) */
+nav ul {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Optional: style the links */
+nav ul li {
+  margin: 0 0.5rem;
+}
+
+/* Larger screens: switch to vertical nav */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Vertical layout */
+    align-items: flex-start; /* Align to left — change to center if you want centered vertical stack */
+  }
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: var(--red-primary, #ee2222);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: none; /* hidden until scroll */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: var(--red-dark, #7a0d0d);
+}
+
+#backToTopBtn.show {
+  display: block;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: var(--red-primary, #ee2222);
+  color: var(--text-light, #fff);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: none; /* Hidden by default */
+}
+
+/* Hidden header for SEO purposes */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
