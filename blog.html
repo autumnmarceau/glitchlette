@@ -1,52 +1,25 @@
 ---
 layout: default
-title: "{{ page.title }} | GLITCHLETTE"
-body_class: post-page
-description: "{{ page.excerpt | strip_html | truncate: 160 }}"
+title: "GLITCHLETTE Blog"
+permalink: /blog/
+description: "All posts on the GLITCHLETTE blog"
 ---
-
 <div class="melting-text-container">
-  <h1 class="melting-text" data-text="GLITCHLETTE BLOG">GLITCHLETTE BLOG</h1>
+  <h1 class="melting-text" data-text="BLOGLETTE">BLOGLETTE</h1>
 </div>
 
-<br />
-
-<article>
-  <header>
-    <h1>{{ page.title }}</h1>
-    <p style="font-variant: small-caps; font-weight: 600; color: rgba(230, 80, 80, 0.85); user-select:none;">
-      {{ page.date | date: "%B %-d, %Y" }}
-    </p>
-    {% if page.thumbnail %}
-      <img src="{{ page.thumbnail | relative_url }}" alt="Thumbnail image for {{ page.title }}" class="blog-post-image" style="max-width: 100%; margin: 1rem 0;" />
-    {% endif %}
-  </header>
-
-  <section>
-    {{ content }}
-  </section>
-
-  <footer style="margin-top: 3rem;">
-    <p><a href="{{ '/blog' | absolute_url }}" style="color: var(--red-primary); text-decoration: underline;">← Back to Blog</a></p>
-  </footer>
-</article>
-
-<section class="about-section" style="margin-top: 4rem;">
-  <h2 class="about-subtitle">Recent Transmissions</h2>
-
-  <ul class="fun-facts-list">
-    {% for post in site.posts limit:5 %}
-      {% if post.url != page.url %}
-        <li>
-          <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br />
-          <small>{{ post.date | date: "%B %d, %Y" }}</small>
-          <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <p style="text-align: center; margin-top: 2rem;">
-    <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
-  </p>
-</section>
+<ul class="blog-post-list" style="list-style: none; padding-left: 0;">
+  {% for post in site.posts %}
+    <li style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+      <a href="{{ post.url | relative_url }}" style="font-size: 1.3rem; font-weight: 700; color: var(--red-primary); text-decoration: none;">
+        {{ post.title }}
+      </a><br />
+      <small style="font-variant: small-caps; color: #999;">
+        {{ post.date | date: "%B %-d, %Y" }}
+      </small>
+      <p style="margin-top: 0.5rem; color: var(--text-light);">
+        {{ post.excerpt | strip_html | truncate: 140 }}
+      </p>
+    </li>
+  {% endfor %}
+</ul>
