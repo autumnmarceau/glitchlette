@@ -40,7 +40,9 @@ I yelled “GO GO GO GO GO” and Jaz pulled off some secret-agent J-turn maneuv
 
 Back at the hotel, we were hysterical—adrenaline surging, manically laughing at our close call. I opened the weather app again to re-check the gale warning… and saw something I had missed before:
 
-> **SLEEPER WAVE WARNING**
+ **SLEEPER WAVE WARNING**
+
+ If you aren't aware, 
 > 
 > A sleeper wave (aka a sneaker wave) is an unexpectedly large and powerful ocean wave that can appear without warning, even on an otherwise calm beach. Unlike regular waves that follow a predictable pattern, sleeper waves can surge much farther up the shore, catching beachgoers off guard.
 > 
