@@ -13,15 +13,21 @@ description: "{{ page.excerpt | strip_html | truncate: 160 }}"
 
 <article>
   <header>
-    <h1>{{ page.title }}</h1>
-    <p style="font-variant: small-caps; font-weight: 600; color: rgba(230, 80, 80, 0.85); user-select:none;">
-      {{ page.date | date: "%B %-d, %Y" }}
-    </p>
-    {% if page.thumbnail %}
+  <h1>{{ page.title }}</h1>
+  <p style="font-variant: small-caps; font-weight: 600; color: rgba(230, 80, 80, 0.85); user-select:none;">
+    {{ page.date | date: "%B %-d, %Y" }}
+  </p>
+  {% if page.thumbnail %}
+    <figure>
       <img src="{{ page.thumbnail | relative_url }}" alt="Thumbnail image for {{ page.title }}" class="blog-post-image" style="max-width: 100%; margin: 1rem 0;" />
-    {% endif %}
-  </header>
-
+      {% if page.thumbnail_caption %}
+        <figcaption style="color: var(--text-light); font-style: italic; font-size: 0.9rem; margin-top: 0.3rem; text-align: center;">
+          {{ page.thumbnail_caption }}
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+</header>
   <section>
     {{ content }}
   </section>
@@ -30,23 +36,3 @@ description: "{{ page.excerpt | strip_html | truncate: 160 }}"
     <p><a href="{{ '/blog' | absolute_url }}" style="color: var(--red-primary); text-decoration: underline;">← Back to Blog</a></p>
   </footer>
 </article>
-
-<section class="about-section" style="margin-top: 4rem;">
-  <h2 class="about-subtitle">Recent Transmissions</h2>
-
-  <ul class="fun-facts-list">
-    {% for post in site.posts limit:5 %}
-      {% if post.url != page.url %}
-        <li>
-          <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br />
-          <small>{{ post.date | date: "%B %d, %Y" }}</small>
-          <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <p style="text-align: center; margin-top: 2rem;">
-    <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
-  </p>
-</section>
