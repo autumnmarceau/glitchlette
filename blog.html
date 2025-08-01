@@ -1,14 +1,160 @@
----
-layout: post
-title: Blog
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+       BASIC META & TITLE
+  ========================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:image" content="https://glitchlette.com/photos/EveryRatAlbumCoverPhoto_7_filteredno_noise.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="https://www.emojiall.com/images/240/skype/1fa93.png" type="image/png" />
+  <meta name="description" content="Read blog posts by GLITCHLETTE — Autumn Marceau, Seattle electronic music artist." />
+  <meta name="keywords" content="GLITCHLETTE, Autumn Marceau, Seattle music, electronic music, blog" />
+  <meta name="author" content="Autumn Marceau" />
+  <meta property="og:title" content="GLITCHLETTE — Blog" />
+  <meta property="og:description" content="Read blog posts by GLITCHLETTE — Autumn Marceau, Seattle electronic music artist." />
+  <meta property="og:url" content="https://glitchlette.com/blog" />
+  <link rel="canonical" href="https://glitchlette.com/blog" />
+  <title>BLOG | GLITCHLETTE</title>
 
-<h2 class="about-subtitle">Blog</h2>
-<ul class="blog-list">
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="blog-date"> — {{ post.date | date: "%B %d, %Y" }}</span>
-    </li>
-  {% endfor %}
-</ul>
+  <!-- =========================
+       FONTS & ICONS
+  ========================== -->
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="blog-page">
+  <a id="top"></a>
+  <div id="bg-image"></div>
+
+  <!-- =========================
+       SVG FILTER: VHS RIPPLE EFFECT
+  ========================== -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
+    <filter id="ripple" x="0" y="0">
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="turbulence" seed="2" />
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <!-- =========================
+       PAGE WRAPPER (SIDEBAR + MAIN)
+  ========================== -->
+  <div class="page-wrapper">
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+    <nav id="navbar">
+      <ul class="main-nav">
+        <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
+        <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
+        <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
+        <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
+        <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
+        <li><a href="https://glitchlette.com/blog" data-text="BLOG">Blog</a></li>
+        <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
+      </ul>
+      <br />
+      <ul class="social-nav">
+        <li>
+          <a
+            href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w"
+            class="social-icon"
+            aria-label="Spotify"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-spotify"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/glitchlette"
+            class="social-icon"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://soundcloud.com/glitchlette"
+            class="social-icon"
+            aria-label="SoundCloud"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-cloud"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- =========================
+         MAIN CONTENT AREA
+    ========================== -->
+    <main class="main-content">
+      <div class="melting-text-container">
+        <h1 class="melting-text" data-text="GLITCHLETTE BLOG">GLITCHLETTE BLOG</h1>
+      </div>
+      <br />
+
+      <!-- Example blog post previews -->
+      <article class="blog-post-preview">
+        <img
+          src="https://glitchlette.com/photos/sample_blog_thumbnail_1.jpg"
+          alt="Thumbnail for post titled 'Sample Post 1'"
+          class="blog-post-thumbnail"
+        />
+        <div class="blog-post-text">
+          <span class="blog-post-date">August 1, 2025</span>
+          <h2 class="blog-post-title">
+            <a href="https://glitchlette.com/blog/sample-post-1">Sample Post 1</a>
+          </h2>
+          <p class="blog-post-excerpt">
+            This is a short excerpt from the first sample post to give visitors a preview of its content.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-post-preview">
+        <img
+          src="https://glitchlette.com/photos/sample_blog_thumbnail_2.jpg"
+          alt="Thumbnail for post titled 'Sample Post 2'"
+          class="blog-post-thumbnail"
+        />
+        <div class="blog-post-text">
+          <span class="blog-post-date">July 25, 2025</span>
+          <h2 class="blog-post-title">
+            <a href="https://glitchlette.com/blog/sample-post-2">Sample Post 2</a>
+          </h2>
+          <p class="blog-post-excerpt">
+            Another preview excerpt from a second sample post to keep readers intrigued and clicking.
+          </p>
+        </div>
+      </article>
+
+      <!-- Add more blog post previews as needed -->
+
+      <p style="text-align: center; margin-top: 2rem;">
+        <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
+      </p>
+    </main>
+  </div>
+
+  <div id="overlay"></div>
+</body>
+</html>
