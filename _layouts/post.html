@@ -11,66 +11,42 @@ description: "{{ page.excerpt | strip_html | truncate: 160 }}"
 
 <br />
 
-<div class="page-wrapper">
-  <!-- Sidebar Nav -->
-  <nav id="navbar">
-    <ul class="main-nav">
-      <li><a href="{{ '/' | absolute_url }}" data-text="HOME">Home</a></li>
-      <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
-      <li><a href="{{ '/shows' | absolute_url }}" data-text="SHOWS">Shows</a></li>
-      <li><a href="{{ '/about' | absolute_url }}" data-text="ABOUT">About</a></li>
-      <li><a href="{{ '/gallery' | absolute_url }}" data-text="GALLERY">Gallery</a></li>
-      <li><a href="{{ '/blog' | absolute_url }}" data-text="BLOG">Blog</a></li>
-      <li><a href="{{ '/contact' | absolute_url }}" data-text="HATE MAIL">Contact</a></li>
-    </ul>
-    <br />
-    <ul class="social-nav">
-      <li><a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i class="bi bi-spotify"></i></a></li>
-      <li><a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
-      <li><a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer"><i class="bi bi-cloud"></i></a></li>
-    </ul>
-  </nav>
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p style="font-variant: small-caps; font-weight: 600; color: rgba(230, 80, 80, 0.85); user-select:none;">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </p>
+    {% if page.thumbnail %}
+      <img src="{{ page.thumbnail | relative_url }}" alt="Thumbnail image for {{ page.title }}" class="blog-post-image" style="max-width: 100%; margin: 1rem 0;" />
+    {% endif %}
+  </header>
 
-  <!-- Main Content -->
-  <main class="main-content">
-    <article>
-      <header>
-        <h1>{{ page.title }}</h1>
-        <p style="font-variant: small-caps; font-weight: 600; color: rgba(230, 80, 80, 0.85); user-select:none;">
-          {{ page.date | date: "%B %-d, %Y" }}
-        </p>
-        {% if page.thumbnail %}
-          <img src="{{ page.thumbnail | relative_url }}" alt="Thumbnail image for {{ page.title }}" class="blog-post-image" style="max-width: 100%; margin: 1rem 0;" />
-        {% endif %}
-      </header>
+  <section>
+    {{ content }}
+  </section>
 
-      <section>
-        {{ content }}
-      </section>
+  <footer style="margin-top: 3rem;">
+    <p><a href="{{ '/blog' | absolute_url }}" style="color: var(--red-primary); text-decoration: underline;">← Back to Blog</a></p>
+  </footer>
+</article>
 
-      <footer style="margin-top: 3rem;">
-        <p><a href="{{ '/blog' | absolute_url }}" style="color: var(--red-primary); text-decoration: underline;">← Back to Blog</a></p>
-      </footer>
-    </article>
+<section class="about-section" style="margin-top: 4rem;">
+  <h2 class="about-subtitle">Recent Transmissions</h2>
 
-    <section class="about-section" style="margin-top: 4rem;">
-      <h2 class="about-subtitle">Recent Transmissions</h2>
+  <ul class="fun-facts-list">
+    {% for post in site.posts limit:5 %}
+      {% if post.url != page.url %}
+        <li>
+          <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br />
+          <small>{{ post.date | date: "%B %d, %Y" }}</small>
+          <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-      <ul class="fun-facts-list">
-        {% for post in site.posts limit:5 %}
-          {% if post.url != page.url %}
-            <li>
-              <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br />
-              <small>{{ post.date | date: "%B %d, %Y" }}</small>
-              <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-
-      <p style="text-align: center; margin-top: 2rem;">
-        <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
-      </p>
-    </section>
-  </main>
-</div>
+  <p style="text-align: center; margin-top: 2rem;">
+    <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
+  </p>
+</section>
