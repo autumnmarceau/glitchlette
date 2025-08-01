@@ -10,8 +10,12 @@
   <meta name="author" content="Autumn Marceau" />
   <meta property="og:title" content="{{ page.title | default: site.title }}" />
   <meta property="og:description" content="{{ page.description | default: site.description }}" />
-  <meta property="og:url" content="{{ page.url | relative_url }}" />
-  <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  {% if page.thumbnail %}
+    <meta property="og:image" content="{{ page.thumbnail | absolute_url }}" />
+  {% else %}
+    <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" />
+  {% endif %}
 
   <link rel="icon" href="https://www.emojiall.com/images/240/skype/1fa93.png" type="image/png" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
@@ -21,10 +25,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
 </head>
 
-<body class="{{ page.body_class }}">
+<body class="{{ page.body_class | default: 'default-page' }}">
   <a id="top"></a>
   <div id="bg-image"></div>
 
@@ -38,12 +42,12 @@
   <div class="page-wrapper">
     <nav id="navbar">
       <ul class="main-nav">
-        <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
+        <li><a href="{{ '/' | absolute_url }}" data-text="HOME">Home</a></li>
         <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
-        <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
-        <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
-        <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
-        <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
+        <li><a href="{{ '/shows' | absolute_url }}" data-text="SHOWS">Shows</a></li>
+        <li><a href="{{ '/about' | absolute_url }}" data-text="ABOUT">About</a></li>
+        <li><a href="{{ '/gallery' | absolute_url }}" data-text="GALLERY">Gallery</a></li>
+        <li><a href="{{ '/contact' | absolute_url }}" data-text="HATE MAIL">Contact</a></li>
       </ul>
       <br />
       <ul class="social-nav">
