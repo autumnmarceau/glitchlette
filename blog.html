@@ -10,16 +10,23 @@ description: "All posts on the GLITCHLETTE blog"
 
 <ul class="blog-post-list" style="list-style: none; padding-left: 0;">
   {% for post in site.posts %}
-    <li style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
-      <a href="{{ post.url | relative_url }}" style="font-size: 1.3rem; font-weight: 700; color: var(--red-primary); text-decoration: none;">
-        {{ post.title }}
-      </a><br />
-      <small style="font-variant: small-caps; color: #999;">
-        {{ post.date | date: "%B %-d, %Y" }}
-      </small>
-      <p style="margin-top: 0.5rem; color: var(--text-light);">
-        {{ post.excerpt | strip_html | truncate: 140 }}
-      </p>
+    <li style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; display: flex; gap: 1rem; align-items: flex-start;">
+      
+      {% if post.thumbnail %}
+        <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" class="blog-post-thumbnail" />
+      {% endif %}
+      
+      <div>
+        <a href="{{ post.url | relative_url }}" style="font-size: 1.3rem; font-weight: 700; color: var(--red-primary); text-decoration: none;">
+          {{ post.title }}
+        </a><br />
+        <small style="font-variant: small-caps; color: #999;">
+          {{ post.date | date: "%B %-d, %Y" }}
+        </small>
+        <p style="margin-top: 0.5rem; color: var(--text-light);">
+          {{ post.excerpt | strip_html | truncate: 140 }}
+        </p>
+      </div>
     </li>
   {% endfor %}
 </ul>
