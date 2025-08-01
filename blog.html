@@ -4,28 +4,23 @@ title: BLOG | GLITCHLETTE
 body_class: blog-page
 description: "GLITCHLETTE blog entries"
 ---
+
 <div class="melting-text-container">
   <h1 class="melting-text" data-text="GLITCHLETTE BLOG">GLITCHLETTE BLOG</h1>
 </div>
 <br />
 
 {% for post in site.posts %}
-  <article class="blog-post-preview">
-    {% if post.thumbnail %}
-      <img
-        src="{{ post.thumbnail | relative_url }}"
-        alt="Thumbnail for post titled '{{ post.title }}'"
-        class="blog-post-thumbnail"
-      />
-    {% endif %}
-    <div class="blog-post-text">
-      <span class="blog-post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-      <h2 class="blog-post-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
-      <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
-    </div>
-  </article>
+<article class="blog-post-preview">
+  {% if post.thumbnail %}
+  <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" class="blog-post-thumbnail" />
+  {% endif %}
+  <div class="blog-post-text">
+    <span class="blog-post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    <h2 class="blog-post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+  </div>
+</article>
 {% endfor %}
 
 <p style="text-align: center; margin-top: 2rem;">
