@@ -15,7 +15,7 @@
 #bg-image {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('https://glitchlette.com/PHOTOS/EveryRatAlbumCoverPhoto_7_filteredno_noise.png');
+  background-image: url('https://glitchlette.com/photos/EveryRatAlbumCoverPhoto_7_filteredno_noise.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* covers viewport responsively */
@@ -28,7 +28,7 @@
 /* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
 @media (max-width: 540px) {
   #bg-image {
-    background-image: url('https://glitchlette.com/PHOTOS/EVERYRAT%20OG.jpg');
+    background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
     background-position: calc(50% - 30px) calc(50% + 20px);
   }
 }
