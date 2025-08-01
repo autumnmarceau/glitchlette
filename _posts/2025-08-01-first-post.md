@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Test Post: Behind the scenes'
+title: "Test Post: Behind the scenes"
 date: 2025-08-01
 ---
 
