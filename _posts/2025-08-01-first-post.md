@@ -9,5 +9,4 @@ thumbnail: https://glitchlette.com/bts.jpg
 Your post content goes here in Markdown.
 
 You can write paragraphs, lists, images, links, etc.
-
-<img src="/bts.jpg" alt="GLITCHLETTE Warms up between takes on the freezing beach in February" />
+<img src="/bts.jpg" alt="GLITCHLETTE Freezes on the February beach" style="max-width: 100%; margin: 1rem 0;" />
