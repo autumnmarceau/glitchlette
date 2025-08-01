@@ -945,23 +945,57 @@ nav ul li {
   border: 0;
 }
    
-figure {
-  margin: 2em 0;
-  text-align: center;
-  border: 1px solid black;
-  padding: 0.5em;
-  background: #fff;
-  box-shadow: 3px 3px 0 black;
+/* Polaroid-style figure */
+.main-content figure {
+  position: relative;
   display: inline-block;
+  background: #fafafa; /* off-white paper color */
+  padding: 1rem 1rem 2.5rem 1rem; /* extra bottom padding for polaroid border */
+  border: 4px solid #ddd; /* light gray frame */
+  box-shadow:
+    4px 4px 8px rgba(0,0,0,0.15),
+    inset 0 0 8px rgba(255,255,255,0.8); /* soft highlight for depth */
+  transform: rotate(-3deg);
+  max-width: 90%;
+  margin: 2em auto;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: default;
+  user-select: none;
+  filter: contrast(1.1) saturate(1.1);
+  transition: transform 0.3s ease;
 }
 
-figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border: 2px dashed black;
+/* Slight hover tilt */
+.main-content figure:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow:
+    6px 6px 12px rgba(0,0,0,0.25),
+    inset 0 0 12px rgba(255,255,255,0.9);
 }
+
+/* Polaroid image */
+.main-content figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+  filter: grayscale(10%) contrast(1.05);
+  border-radius: 3px;
+}
+
+/* Caption styling */
+.main-content figcaption {
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  user-select: text;
+  max-width: 90%;
+}
+
 
 figcaption {
   margin-top: 0.6em;
@@ -977,6 +1011,7 @@ figcaption {
   line-height: 1.4;
 }
 
+/* General blockquote style */
 blockquote {
   border-left: 4px solid black;
   margin: 2em 0;
@@ -987,53 +1022,10 @@ blockquote {
   position: relative;
   box-shadow: 2px 2px 0 black;
   transform: rotate(-0.5deg);
-}
-
-blockquote::before {
-  content: "❝";
-  font-size: 2em;
-  position: absolute;
-  top: 0.2em;
-  left: 0.2em;
-  color: black;
-  opacity: 0.8;
-}
-
-blockquote::after {
-  content: "❞";
-  font-size: 2em;
-  position: absolute;
-  bottom: -0.3em;
-  right: 0.5em;
-  color: black;
-  opacity: 0.8;
-}
-
-blockquote p {
-  margin: 0;
-  line-height: 1.5;
-}
-   
-blockquote {
   background-image: url('/images/noise-texture.png'); /* transparent grain overlay */
   background-blend-mode: multiply;
 }
 
-   /* General blockquotes (leave as is) */
-blockquote {
-  border-left: 4px solid black;
-  margin: 2em 0;
-  padding: 1em 1.2em;
-  background: #fdfdfd;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1em;
-  position: relative;
-  box-shadow: 2px 2px 0 black;
-  transform: rotate(-0.5deg);
-  background-image: url('/images/noise-texture.png');
-  background-blend-mode: multiply;
-}
-
 blockquote::before {
   content: "❝";
   font-size: 2em;
@@ -1057,15 +1049,15 @@ blockquote::after {
 blockquote p {
   margin: 0;
   line-height: 1.5;
+  color: black; /* add explicit black text here if needed */
 }
 
-/* Scoped blockquotes inside blog posts get taped frames */
+/* Scoped blockquotes inside .main-content get taped frames */
 .main-content blockquote {
-  /* Override or add these styles */
   border-left: none;
-  box-shadow: none;
-  background-image: none;
+  box-shadow: 2px 2px 0 black;
   background: #fdfdfd;
+  background-image: none;
   padding: 1.2em 1.5em;
   max-width: 700px;
   margin: 2em auto;
@@ -1074,7 +1066,11 @@ blockquote p {
   line-height: 1.4;
   position: relative;
   transform: rotate(-0.3deg);
-  box-shadow: 2px 2px 0 black;
+  color: black !important; /* force black text */
+}
+
+.main-content blockquote p {
+  color: black !important;
 }
 
 /* Tape frames as decorative pseudo-elements */
@@ -1088,13 +1084,10 @@ blockquote p {
   background-size: contain;
   z-index: 10;
   pointer-events: none;
+  color: transparent; /* hide quotes from general blockquote */
+  font-size: 0;
 }
 
-main-content blockquote,
-.main-content blockquote p {
-  color: black !important;
-}
-   
 .main-content blockquote::before {
   top: -10px;
   left: -10px;
@@ -1107,10 +1100,3 @@ main-content blockquote,
   transform: rotate(8deg);
 }
 
-/* Optional: remove the quotation marks inside .main-content */
-.main-content blockquote::before,
-.main-content blockquote::after {
-  /* remove quotes added by general blockquote */
-  color: transparent;
-  font-size: 0;
-}
