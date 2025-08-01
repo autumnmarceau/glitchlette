@@ -1,0 +1,92 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta name="description" content="GLITCHLETTE blog entries" />
+  <meta name="keywords" content="GLITCHLETTE, Autumn Marceau, Seattle music, Seattle electronic music" />
+  <meta name="author" content="Autumn Marceau" />
+  <meta property="og:title" content="BLOG | GLITCHLETTE" />
+  <meta property="og:description" content="GLITCHLETTE blog entries" />
+  <meta property="og:url" content="http://localhost:4000/blog/" />
+  
+    <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" />
+  
+
+  <link rel="icon" href="https://www.emojiall.com/images/240/skype/1fa93.png" type="image/png" />
+  <link rel="canonical" href="http://localhost:4000/blog/" />
+  <title>BLOG | GLITCHLETTE</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body class="blog-page">
+  <a id="top"></a>
+  <div id="bg-image"></div>
+
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
+    <filter id="ripple" x="0" y="0">
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="turbulence" seed="2" />
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <div class="page-wrapper">
+    <nav id="navbar">
+      <ul class="main-nav">
+        <li><a href="http://localhost:4000/" data-text="HOME">Home</a></li>
+        <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
+        <li><a href="http://localhost:4000/shows" data-text="SHOWS">Shows</a></li>
+        <li><a href="http://localhost:4000/about" data-text="ABOUT">About</a></li>
+        <li><a href="http://localhost:4000/gallery" data-text="GALLERY">Gallery</a></li>
+        <li><a href="http://localhost:4000/contact" data-text="HATE MAIL">Contact</a></li>
+      </ul>
+      <br />
+      <ul class="social-nav">
+        <li><a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i class="bi bi-spotify"></i></a></li>
+        <li><a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer"><i class="bi bi-cloud"></i></a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="melting-text-container">
+  <h1 class="melting-text" data-text="BLOGLETTE">BLOGLETTE</h1>
+</div>
+<br />
+
+
+<article class="blog-post-preview">
+  
+  <img
+    src="https://glitchlette.com/bts.jpg"
+    alt="Thumbnail for Your Post Title Here"
+    class="blog-post-thumbnail"
+  />
+  
+  <div class="blog-post-text">
+    <span class="blog-post-date">August 1, 2025</span>
+    <h2 class="blog-post-title">
+      <a href="/2025/08/01/first-post.html">Your Post Title Here</a>
+    </h2>
+    <p class="blog-post-excerpt">A short summary or teaser for your post.</p>
+  </div>
+</article>
+
+
+<p style="text-align: center; margin-top: 2rem;">
+  <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
+</p>
+
+    </main>
+  </div>
+
+  <div id="overlay"></div>
+</body>
+</html>

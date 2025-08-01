@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+       BASIC META & TITLE
+  ========================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" /> <!--- Thumbnail ---> 
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="https://www.emojiall.com/images/240/skype/1fa93.png" type="image/png"> <!--- favicon --->
+  <title>SHOWS | GLITCHLETTE</title>
+
+  <!-- =========================
+       FONTS
+  ========================== -->
+  <!-- Body font -->
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- =========================
+       BOOTSTRAP ICONS
+  ========================== -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+
+  <!-- =========================
+      CUSTOM CSS
+  ========================== -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+     <div id="bg-image"></div>
+  <!-- =========================
+       SVG FILTER: VHS RIPPLE EFFECT
+  ========================== -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
+    <filter id="ripple" x="0" y="0">
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="turbulence" seed="2" />
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <!-- =========================
+       PAGE WRAPPER (SIDEBAR + MAIN)
+  ========================== -->
+  <div class="page-wrapper">
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+    <nav id="navbar">
+      <ul class="main-nav">
+        <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
+        <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
+        <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
+        <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
+        <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
+        <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
+      </ul>
+    <br>
+      <ul class="social-nav">
+        <li>
+          <a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-spotify"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-cloud"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- =========================
+         MAIN CONTENT AREA
+    ========================== -->
+    <main class="main-content" tabindex="0">
+      <center>
+        <h1 class="melting-text" data-text="UPCOMING SHOWS">UPCOMING SHOWS</h1>
+        <br><br>
+        <strong> Sept 21st </strong> | The Kraken Bar & Lounge | <em> Seattle, WA </em> | With: Gravure, Iffin 
+      </center>
+    </main>
+
+  </div> <!-- End of page-wrapper -->
+  <div id="overlay"></div>
+</body>
+</html>
