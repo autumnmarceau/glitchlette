@@ -7,6 +7,7 @@ thumbnail: https://glitchlette.com/bts.jpg
 thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in February."
 ---
 
+---
 
-<p> testing content idk how markdown works</p>
+Testing content idk how markdown works
 
