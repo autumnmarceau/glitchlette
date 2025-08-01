@@ -10,4 +10,4 @@ Your post content goes here in Markdown.
 
 You can write paragraphs, lists, images, links, etc.
 
-<img src="/photos/bts.jpg" alt="GLITCHLETTE Warms up between takes on the freezing beach in February" />
+<img src="/bts.jpg" alt="GLITCHLETTE Warms up between takes on the freezing beach in February" />
