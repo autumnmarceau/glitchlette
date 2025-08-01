@@ -919,6 +919,18 @@ nav ul li {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   display: none; /* Hidden by default */
 }
+   
+.thumbnail-caption-figure figcaption {
+  font-family: 'Spectral', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  user-select: none;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 6px var(--red-gradient-start);
+}
 
 /* Hidden header for SEO purposes */
 
