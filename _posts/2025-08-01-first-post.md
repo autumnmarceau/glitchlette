@@ -11,7 +11,11 @@ So, back in February my creative director Jaz convinced me to go to Long Beach, 
 
 On our way there, we stopped at a random consignment shop with no name or signage. Inside, we found the axe you see in the photo. The guy who sold it to us told us it had just been brought in and was super old. We named it Shelley (after Shelley Duvall, of course. RIP <3).
 
-![Still not sure how she'd feel about us naming the axe after her, but at least it wasn't a baseball bat. That's a reference for the nerds out there.](https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg)
+<figure>
+  <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining">
+  <figcaption>Still not sure how she'd feel about us naming the axe after her, but at least it wasn't a baseball bat. That's a reference for the nerds out there.</figcaption>
+</figure>
+
 
 Once we got to Long Beach, we checked into our hotel and prepped for the shoot while we waited for it to get dark. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). Then it was time for the *real* shoot—on the beach.
 
@@ -45,4 +49,8 @@ Back at the hotel, we were hysterical—adrenaline surging, manically laughing a
 
 Neither of us slept that night. Since then, we’ve developed a fear *and* fascination with the ocean. She’s our God now. She let us live. Honestly, I should probably dedicate the album to her.
 
-![Totally worth it. That photo is unsettling as fuck, which was the goal.](/photos/EVERYRAT_OG.jpg)
+<figure>
+  <img src="/photos/EVERYRAT_OG.jpg" alt="Original Every Rat album cover">
+  <figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
+</figure>
+
