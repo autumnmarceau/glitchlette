@@ -16,6 +16,7 @@ On our way there, we stopped at a random consignment shop with no name or signag
   <figcaption>Still not sure how she'd feel about us naming the axe after her, but at least it wasn't a baseball bat. That's a reference for the nerds out there.</figcaption>
 </figure>
 
+--
 
 Once we got to Long Beach, we checked into our hotel and prepped for the shoot while we waited for it to get dark. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). Then it was time for the *real* shoot—on the beach.
 
