@@ -945,17 +945,16 @@ nav ul li {
   border: 0;
 }
    
-/* Polaroid-style figure */
+/* Polaroid-style figure - simplified */
 .main-content figure {
   position: relative;
   display: inline-block;
   background: #fafafa; /* off-white paper color */
-  padding: 1rem 1rem 2.5rem 1rem; /* extra bottom padding for polaroid border */
-  border: 4px solid #ddd; /* light gray frame */
+  padding: 1rem;       /* consistent padding all around */
+  border: 2px solid #ddd; /* thinner light gray frame */
   box-shadow:
-    4px 4px 8px rgba(0,0,0,0.15),
-    inset 0 0 8px rgba(255,255,255,0.8); /* soft highlight for depth */
-  transform: rotate(-3deg);
+    2px 2px 5px rgba(0,0,0,0.1),
+    inset 0 0 5px rgba(255,255,255,0.8); /* softer shadow */
   max-width: 90%;
   margin: 2em auto;
   font-family: 'Courier New', Courier, monospace;
@@ -963,14 +962,15 @@ nav ul li {
   user-select: none;
   filter: contrast(1.1) saturate(1.1);
   transition: transform 0.3s ease;
+  transform: none; /* no rotation */
 }
 
-/* Slight hover tilt */
+/* Remove rotation and scale on hover, keep subtle effect */
 .main-content figure:hover {
-  transform: rotate(0deg) scale(1.05);
+  transform: scale(1.03); /* subtle scale only */
   box-shadow:
-    6px 6px 12px rgba(0,0,0,0.25),
-    inset 0 0 12px rgba(255,255,255,0.9);
+    4px 4px 10px rgba(0,0,0,0.15),
+    inset 0 0 8px rgba(255,255,255,0.9);
 }
 
 /* Polaroid image */
@@ -979,7 +979,7 @@ nav ul li {
   width: 100%;
   height: auto;
   border: 1px solid #ccc;
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.03);
   filter: grayscale(10%) contrast(1.05);
   border-radius: 3px;
 }
@@ -995,7 +995,6 @@ nav ul li {
   user-select: text;
   max-width: 90%;
 }
-
 
 figcaption {
   margin-top: 0.6em;
