@@ -848,7 +848,7 @@ strong, b {
     flex-direction: column;
     align-items: flex-start;
   }
-
+}
   #navbar ul {
     flex-direction: column;
     align-items: flex-start;
