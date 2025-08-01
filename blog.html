@@ -1,0 +1,14 @@
+---
+layout: post
+title: Blog
+---
+
+<h2 class="about-subtitle">Blog</h2>
+<ul class="blog-list">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="blog-date"> — {{ post.date | date: "%B %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
