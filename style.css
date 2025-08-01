@@ -1053,26 +1053,22 @@ blockquote p {
 }
 
 /* Scoped blockquotes inside .main-content get taped frames */
+/* Blockquotes: white background, so text black for readability */
 .main-content blockquote {
-  border-left: none;
-  box-shadow: 2px 2px 0 black;
-  background: #fdfdfd;
-  background-image: none;
+  background: #fdfdfd; /* white */
+  color: black;        /* default text black */
+  position: relative;
   padding: 1.2em 1.5em;
   max-width: 700px;
   margin: 2em auto;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
   line-height: 1.4;
-  position: relative;
+  border-left: none;
+  box-shadow: 2px 2px 0 black;
   transform: rotate(-0.3deg);
-  color: black !important; /* force black text */
 }
-
-.main-content blockquote p {
-  color: black !important;
-}
-
+   
 /* Tape frames as decorative pseudo-elements */
 .main-content blockquote::before,
 .main-content blockquote::after {
