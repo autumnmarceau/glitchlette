@@ -15,7 +15,7 @@ On our way there, we stopped at a random consignment shop with no name or signag
 
 <figure>
   <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining" class="blog-post-image">
-  <figcaption>Not sure how Shelley Duvall would feel about us naming the axe after her, but at least it wasn’t a baseball bat. That’s a deep-cut reference for the nerds out there.</figcaption>
+  <br><figcaption>Not sure how Shelley Duvall would feel about us naming the axe after her, but at least it wasn’t a baseball bat. That’s a deep-cut reference for the nerds out there.</figcaption>
 </figure>
 
 --
@@ -63,9 +63,9 @@ Neither of us slept that night. Since then, we’ve developed a fear *and* fasci
 
 <figure>
   <img src="/photos/EVERYRAT_OG.jpg" alt="Original Every Rat album cover" class="blog-post-image">
-  <figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
+  <br><figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
 
-**Do you have a near death experience? I'd love to hear about it! Tell me about it in the [guestbook](glitchlette.com/guestbook)**
+*Do you have a near death experience? I'd love to hear about it! Tell me about it in the [guestbook](glitchlette.com/guestbook)*
 --
 Sleeper Wave definition from [sendy.io](sendy.io)
