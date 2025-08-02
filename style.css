@@ -924,7 +924,7 @@ nav ul li {
   font-family: 'Spectral', serif;
   font-size: 1rem;
   font-style: italic;
-  color: var(--text-light);
+  color: #666;
   margin-top: 0.5rem;
   user-select: none;
   text-shadow:
