@@ -1022,26 +1022,20 @@ nav ul li {
 
 
 /* Base blockquote styles */
-.main-content section blockquote {
-  border-left: 4px solid black;     /* classic left border */
-  margin: 2em 1.5em;                /* vertical and horizontal spacing */
-  padding: 1em 1.2em;               /* comfy padding inside */
-  background: #fdfdfd;              /* subtle off-white background */
+.main-content blockquote {
+  border-left: 4px solid #ef2222;      /* red border */
+  background: #f5f5f5;                 /* light grey background */
+  padding: 1.2em 1.5em;
+  margin: 2em 1.5em;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
-  box-shadow: 2px 2px 0 black;     /* slight shadow for depth */
-  transform: rotate(-0.5deg);      /* a little tilt for style */
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.1);  /* subtle shadow */
+  transform: rotate(-0.5deg);
   position: relative;
-  color: #000;                     /* text color */
+  color: black;
 }
 
-/* Remove tape decorations completely */
-.main-content blockquote::before,
-.main-content blockquote::after {
-  display: none !important;
-}
-
-/* Responsive styles for smaller screens */
+/* Responsive tweaks for small screens */
 @media (max-width: 640px) {
   .main-content blockquote {
     max-width: 100%;
@@ -1049,8 +1043,8 @@ nav ul li {
     padding: 1em;
     box-shadow: none;               /* remove shadow */
     transform: none;                /* remove tilt */
-    background: #fdfdfd;            /* KEEP background */
-    border-left: 4px solid black;   /* KEEP left border */
+    background: #f5f5f5;            /* keep light grey */
+    border-left: 4px solid #ef2222; /* keep red border */
   }
 }
 
