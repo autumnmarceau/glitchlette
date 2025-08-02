@@ -66,6 +66,6 @@ Neither of us slept that night. Since then, we’ve developed a fear *and* fasci
   <br><figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
 
-*Do you have a near death experience? I'd love to hear about it! Tell me about it in the [guestbook](glitchlette.com/guestbook)*
+*Do you have a near death experience? I'd love to hear about it! Tell me about it in the* [guestbook](glitchlette.com/guestbook)
 --
 Sleeper Wave definition from [sendy.io](sendy.io)
