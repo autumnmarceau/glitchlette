@@ -637,6 +637,13 @@ strong, b {
     height: 53px;
   }
 }
+@media (max-width: 600px) {
+  /* Make all images inside main content and blog posts scale responsively */
+  .blog-post-image, {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 /* Melting effect */
 .melting-text-container,
