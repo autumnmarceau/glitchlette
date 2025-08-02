@@ -1022,7 +1022,7 @@ nav ul li {
 
 
 /* Base blockquote styles */
-.main-content blockquote {
+.main-content section blockquote {
   border-left: 4px solid black;     /* classic left border */
   margin: 2em 1.5em;                /* vertical and horizontal spacing */
   padding: 1em 1.2em;               /* comfy padding inside */
