@@ -607,6 +607,25 @@ strong, b {
   margin: 0;
 }
 
+.blog-post-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow:
+    0 0 12px var(--red-primary),
+    0 0 24px var(--red-gradient-start);
+  display: block;
+}
+
+/* On small screens, make images full width */
+@media (max-width: 600px) {
+  .blog-post-image {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
 
 /* Melting effect */
 .melting-text-container,
