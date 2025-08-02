@@ -152,12 +152,14 @@ html, body {
   outline: none;
 }
 
+/*
 #navbar li a:focus {
   outline: 2px solid var(--red-primary);
   outline-offset: 2px;
   outline-radius: 4px;
   outline-style: solid;
-}
+} 
+*/
 
 /* Social icons container */
 .social-nav {
@@ -402,7 +404,7 @@ strong, b {
 .gallery-item:hover img {
   transform: scale(1.05);
 }
-.caption {
+.gallery-caption {
   font-family: Spectral, serif;
   font-size: 0.85rem;
   color: #ffffff;
@@ -419,7 +421,7 @@ strong, b {
   word-break: break-word;      /* Ensure no overflow */
 }
 
-.gallery-item:hover .caption {
+.gallery-item:hover .gallery-caption {
   opacity: 1;
   pointer-events: auto;
 }
