@@ -25,6 +25,13 @@
   transition: background-size 0.3s ease;
 }
 
+/* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
+@media (max-width: 540px) {
+  #bg-image {
+    background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
+    background-position: calc(50% - 30px) calc(50% + 20px);
+  }
+}
 
 /* Reset margin, padding, box-sizing */
 * {
@@ -606,6 +613,13 @@ strong, b {
   display: block;
 }
 
+/* On small screens, make images full width */
+@media (max-width: 600px) {
+  .blog-post-image {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
 
 .blog-thumbnail {
   width: 120px;
@@ -616,6 +630,21 @@ strong, b {
   box-shadow:
     0 0 6px var(--red-primary),
     0 0 12px var(--red-gradient-start);
+}
+
+/* smaller thumbnail on small screens */
+@media (max-width: 400px) {
+  .blog-post-thumbnail {
+    width: 80px;
+    height: 53px;
+  }
+}
+@media (max-width: 600px) {
+  /* Make all images inside main content and blog posts scale responsively */
+  .blog-post-image, {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Melting effect */
@@ -760,6 +789,18 @@ strong, b {
   }
 }
 
+/* Responsive fixes */
+
+/* Up to 640px: stack page wrapper vertically, nav full width and centered */
+@media (max-width: 640px) {
+  .page-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
   #navbar {
     width: 100%;
     flex: 0 0 auto;
@@ -796,11 +837,61 @@ strong, b {
   }
 }
 
+
+@media (max-width: 640px) {
+  #navbar ul.main-nav {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* <-- allow wrapping */
+    gap: 0.75rem; /* reduce gap a bit */
+  }
+
+  #navbar ul.social-nav {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  /* Allow nav items to shrink */
+  #navbar ul.main-nav li {
+    flex-shrink: 1;
+  }
+
+  /* Make nav links wrap text if needed */
+  #navbar ul.main-nav li a {
+    white-space: normal; /* allow wrapping */
+    font-size: 1.4rem;
+    padding: 6px 10px;
+  }
+
+  /* Remove the <br> spacing and replace with margin */
+  #navbar ul.social-nav {
+    margin-top: 1rem;
+  }
+
+  /* Prevent horizontal overflow on nav */
+  #navbar {
+    overflow-x: auto;
+  }
+}
+
+
 #nav {
   display: flex;
   flex-direction: column; /* vertical by default */
   align-items: flex-start;
   gap: 1rem;
+}
+
+/@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* Base styles — small screens (default) */
@@ -818,6 +909,13 @@ nav ul {
 nav ul li {
   margin: 0 0.5rem;
 }
+
+/* Larger screens: switch to vertical nav */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Vertical layout */
+    align-items: flex-start; /* Align to left — change to center if you want centered vertical stack */
+  }
 
 #backToTopBtn {
   position: fixed;
@@ -915,7 +1013,7 @@ nav ul li {
 
 .main-content figure figcaption {
   font-size: 0.85rem;
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
   padding-top: 0.5rem;
   position: relative;
@@ -925,17 +1023,35 @@ nav ul li {
 
 /* Base blockquote styles */
 .main-content blockquote {
-  border-left: 4px solid #ef2222;      /* red border */
-  background: #f5f5f5;                 /* light grey background */
-  padding: 1.2em 1.5em;
-  margin: 2em 1.5em;
+  border-left: 4px solid black;     /* classic left border */
+  margin: 2em 1.5em;                /* vertical and horizontal spacing */
+  padding: 1em 1.2em;               /* comfy padding inside */
+  background: #fdfdfd;              /* subtle off-white background */
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
-  box-shadow: 2px 2px 0 rgba(0,0,0,0.1);  /* subtle shadow */
-  transform: rotate(-0.5deg);
+  box-shadow: 2px 2px 0 black;     /* slight shadow for depth */
+  transform: rotate(-0.5deg);      /* a little tilt for style */
   position: relative;
-  color: black;
+  color: #000;                     /* text color */
 }
+
+/* Remove tape decorations completely */
+.main-content blockquote::before,
+.main-content blockquote::after {
+  display: none !important;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 640px) {
+  .main-content blockquote {
+    max-width: 100%;               /* full width on small screens */
+    margin: 1.5em 0;              /* reduce horizontal margins */
+    padding: 1em;                 /* slightly less padding */
+    box-shadow: none;             /* remove shadow to reduce clutter */
+    transform: none;              /* remove tilt for easier reading */
+  }
+}
+
 
 
 /* Force nav links glow inside about-page or anywhere */
@@ -988,131 +1104,7 @@ a:hover {
 }
 
 a {
-  color: #ee2222 !important;
+  color: #e22222;
   text-decoration: none;
-  font-family: 'Halloween'!important;
-}
-
-
- /*Media Queries*/
-
- /* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
-@media (max-width: 540px) {
-  #bg-image {
-    background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
-    background-position: calc(50% - 30px) calc(50% + 20px);
-  }
-}
-/* On small screens, make images full width */
-@media (max-width: 600px) {
-  .blog-post-image {
-    max-width: 100%;
-    margin: 1rem 0;
-  }
-}
-
- /* smaller thumbnail on small screens */
-@media (max-width: 400px) {
-  .blog-post-thumbnail {
-    width: 80px;
-    height: 53px;
-  }
-}
-@media (max-width: 600px) {
-  /* Make all images inside main content and blog posts scale responsively */
-  .blog-post-image, {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* Responsive fixes */
-
-/* Up to 640px: stack page wrapper vertically, nav full width and centered */
-@media (max-width: 640px) {
-  .page-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
-    width: 100%;
-    padding: 0 1rem;
-  }
- 
-@media (max-width: 640px) {
-  #navbar ul.main-nav {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; /* <-- allow wrapping */
-    gap: 0.75rem; /* reduce gap a bit */
-  }
-
-  #navbar ul.social-nav {
-    justify-content: center;
-    gap: 0.75rem;
-  }
-
-  /* Allow nav items to shrink */
-  #navbar ul.main-nav li {
-    flex-shrink: 1;
-  }
-
-  /* Make nav links wrap text if needed */
-  #navbar ul.main-nav li a {
-    white-space: normal; /* allow wrapping */
-    font-size: 1.4rem;
-    padding: 6px 10px;
-  }
-
-  /* Remove the <br> spacing and replace with margin */
-  #navbar ul.social-nav {
-    margin-top: 1rem;
-  }
-
-  /* Prevent horizontal overflow on nav */
-  #navbar {
-    overflow-x: auto;
-  }
-}
- 
- @media screen and (max-width: 768px) {
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #navbar ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-/* Larger screens: switch to vertical nav */
-@media (min-width: 768px) {
-  nav ul {
-    flex-direction: column; /* Vertical layout */
-    align-items: flex-start; /* Align to left — change to center if you want centered vertical stack */
-  }
-
- /* Responsive tweaks for small screens */
-@media (max-width: 640px) {
-  .main-content blockquote {
-    max-width: 100%;
-    margin: 1.5em 0;
-    padding: 1em;
-    box-shadow: none;               /* remove shadow */
-    transform: none;                /* remove tilt */
-    background: #f5f5f5;            /* keep light grey */
-    border-left: 4px solid #ef2222; /* keep red border */
-  }
-}
-
- @media (max-width: 640px) {
-  a, a:visited {
-    color: var(--red-primary);  /* Or your chosen color */
-    text-decoration: none;      /* Or your desired decoration */
-  }
-  
-  a:hover, a:focus {
-    color: var(--red-dark);     /* Or your hover color */
-    text-decoration: underline;
-  }
+  font-family: 'Halloween';
 }
