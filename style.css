@@ -1021,109 +1021,34 @@ nav ul li {
 }
 
 
-/* General blockquote style */
-blockquote {
-  border-left: 4px solid black;
-  margin: 2em 0;
-  padding: 1em 1.2em;
-  background: #fdfdfd;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1em;
-  position: relative;
-  box-shadow: 2px 2px 0 black;
-  transform: rotate(-0.5deg);
-  background-image: url('/images/noise-texture.png'); /* transparent grain overlay */
-  background-blend-mode: multiply;
-}
-
-blockquote::before {
-  content: "❝";
-  font-size: 2em;
-  position: absolute;
-  top: 0.2em;
-  left: 0.2em;
-  color: black;
-  opacity: 0.8;
-}
-
-blockquote::after {
-  content: "❞";
-  font-size: 2em;
-  position: absolute;
-  bottom: -0.3em;
-  right: 0.5em;
-  color: black;
-  opacity: 0.8;
-}
-
-blockquote p {
-  margin: 0;
-  line-height: 1.5;
-  color: black; /* add explicit black text here if needed */
-}
-
-/* Scoped blockquotes inside .main-content get taped frames */
-/* Blockquotes: white background, so text black for readability */
+/* Base blockquote styles */
 .main-content blockquote {
-  background: #fdfdfd; /* white */
-  color: black;        /* default text black */
-  position: relative;
-  padding: 1.2em 1.5em;
-  max-width: 700px;
-  margin: 2em auto;
+  border-left: 4px solid black;     /* classic left border */
+  margin: 2em 1.5em;                /* vertical and horizontal spacing */
+  padding: 1em 1.2em;               /* comfy padding inside */
+  background: #fdfdfd;              /* subtle off-white background */
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
-  line-height: 1.4;
-  border-left: none;
-  box-shadow: 2px 2px 0 black;
-  transform: rotate(-0.3deg);
+  box-shadow: 2px 2px 0 black;     /* slight shadow for depth */
+  transform: rotate(-0.5deg);      /* a little tilt for style */
+  position: relative;
+  color: #000;                     /* text color */
 }
-   
-/* Tape frames as decorative pseudo-elements */
+
+/* Remove tape decorations completely */
 .main-content blockquote::before,
 .main-content blockquote::after {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 25px;
-  background: url('/images/tape-strip.png') no-repeat center center;
-  background-size: contain;
-  z-index: 10;
-  pointer-events: none;
-  color: transparent; /* hide quotes from general blockquote */
-  font-size: 0;
+  display: none !important;
 }
 
-.main-content blockquote::before {
-  top: -10px;
-  left: -10px;
-  transform: rotate(-10deg);
-}
-
-.main-content blockquote::after {
-  bottom: -10px;
-  right: -10px;
-  transform: rotate(8deg);
-}
- 
+/* Responsive styles for smaller screens */
 @media (max-width: 640px) {
   .main-content blockquote {
-    max-width: 100%;        /* Use full width but keep padding */
-    margin: 1.5em 0;        /* Smaller vertical margin, no auto horizontal */
-    padding: 1em;           /* Slightly less padding for narrow screens */
-    transform: none;        /* Remove rotation for easier reading */
-    box-shadow: none;       /* Optional: remove shadow to reduce clutter */
-  }
-
-  .main-content blockquote::before,
-  .main-content blockquote::after {
-    width: 40px;            /* Smaller tape decorations */
-    height: 12px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: none;        /* Remove rotation */
+    max-width: 100%;               /* full width on small screens */
+    margin: 1.5em 0;              /* reduce horizontal margins */
+    padding: 1em;                 /* slightly less padding */
+    box-shadow: none;             /* remove shadow to reduce clutter */
+    transform: none;              /* remove tilt for easier reading */
   }
 }
 
