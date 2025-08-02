@@ -996,6 +996,41 @@ a {
 
 /*Media Queries*/
 
+Okay here are all of my media queries together: /*Media Queries*/
+
+ /* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
+@media (max-width: 540px) {
+  #bg-image {
+    background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
+    background-position: calc(50% - 30px) calc(50% + 20px);
+  }
+}
+/* On small screens, make images full width */
+@media (max-width: 600px) {
+  .blog-post-image {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+ /* smaller thumbnail on small screens */
+@media (max-width: 400px) {
+  .blog-post-thumbnail {
+    width: 80px;
+    height: 53px;
+  }
+}
+@media (max-width: 600px) {
+  /* Make all images inside main content and blog posts scale responsively */
+  .blog-post-image, {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive fixes */
+
+/* Up to 640px: stack page wrapper vertically, nav full width and centered */
 @media (max-width: 640px) {
   .page-wrapper {
     flex-direction: column;
@@ -1004,61 +1039,82 @@ a {
     width: 100%;
     padding: 0 1rem;
   }
-
+ 
+@media (max-width: 640px) {
   #navbar ul.main-nav {
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    flex-wrap: wrap; /* <-- allow wrapping */
+    gap: 0.75rem; /* reduce gap a bit */
   }
 
   #navbar ul.social-nav {
     justify-content: center;
     gap: 0.75rem;
-    margin-top: 1rem;
   }
 
+  /* Allow nav items to shrink */
   #navbar ul.main-nav li {
     flex-shrink: 1;
   }
 
+  /* Make nav links wrap text if needed */
   #navbar ul.main-nav li a {
-    white-space: normal;
+    white-space: normal; /* allow wrapping */
     font-size: 1.4rem;
     padding: 6px 10px;
   }
 
+  /* Remove the <br> spacing and replace with margin */
+  #navbar ul.social-nav {
+    margin-top: 1rem;
+  }
+
+  /* Prevent horizontal overflow on nav */
   #navbar {
     overflow-x: auto;
   }
+}
+ 
+ @media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  #navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Larger screens: switch to vertical nav */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Vertical layout */
+    align-items: flex-start; /* Align to left — change to center if you want centered vertical stack */
+  }
+
+ /* Responsive tweaks for small screens */
+@media (max-width: 640px) {
   .main-content blockquote {
     max-width: 100%;
     margin: 1.5em 0;
     padding: 1em;
-    box-shadow: none;
-    transform: none;
-    background: #f5f5f5;
-    border-left: 4px solid #ef2222;
-    color: black;
+    box-shadow: none;               /* remove shadow */
+    transform: none;                /* remove tilt */
+    background: #f5f5f5;            /* keep light grey */
+    border-left: 4px solid #ef2222; /* keep red border */
   }
+}
 
+ @media (max-width: 640px) {
   a, a:visited {
-    color: var(--red-primary);
-    text-decoration: none;
+    color: var(--red-primary);  /* Or your chosen color */
+    text-decoration: none;      /* Or your desired decoration */
   }
-
+  
   a:hover, a:focus {
-    color: var(--red-dark);
+    color: var(--red-dark);     /* Or your hover color */
     text-decoration: underline;
-  }
-
-  .main-content figure figcaption {
-    display: block;
-    font-style: italic;
-    font-size: 0.85rem;
-    color: var(--text-light);
-    margin-top: 0.3rem;
-    text-align: center;
   }
 }
