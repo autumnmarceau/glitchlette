@@ -6,6 +6,7 @@ excerpt: "Behind the scenes of the Every Rat album photo. Jaz and I almost died.
 thumbnail: https://glitchlette.com/bts.jpg
 thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in February."
 ---
+What started as a hot girl photo shoot almost ended with DEATH AND DISASTER! 
 
 So, back in February my creative director Jaz convinced me to go to Long Beach, WA for a photoshoot. All we had in advance was the outfit and some fake blood.
 
@@ -13,7 +14,7 @@ On our way there, we stopped at a random consignment shop with no name or signag
 
 <figure>
   <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining">
-  <figcaption>Still not sure how she'd feel about us naming the axe after her, but at least it wasn't a baseball bat. That's a reference for the nerds out there.</figcaption>
+  <figcaption>Not sure how Shelley Duvall would feel about us naming the axe after her, but at least it wasn’t a baseball bat. That’s a deep-cut reference for the nerds out there.</figcaption>
 </figure>
 
 --
