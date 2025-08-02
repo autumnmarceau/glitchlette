@@ -1107,8 +1107,8 @@ blockquote p {
 
 /* === Force red color and glowing text for all headers and links === */
 
-h1, h2, h3, h4, h5, h6,
-a {
+h1
+  {
   color: var(--red-primary) !important;
   text-shadow:
     0 0 4px var(--red-dark),
