@@ -988,8 +988,7 @@ nav ul li {
 .main-content figure {
   position: relative;
   display: inline-block;
-  background: #fafafa;
-  border: 2px solid #ddd;
+  border:0;
   box-shadow:
     2px 2px 5px rgba(0,0,0,0.1),
     inset 0 0 5px rgba(255,255,255,0.8);
@@ -1005,19 +1004,7 @@ nav ul li {
   text-align: center;
 }
 
-/* Add a slight white margin inside for border effect */
-.main-content figure::before {
-  content: "";
-  display: block;
-  padding-top: 0.5rem; /* top border */
-}
 
-/* Space for bottom "Polaroid" border */
-.main-content figure::after {
-  content: "";
-  display: block;
-  padding-bottom: 2rem; /* extra bottom border like a Polaroid */
-}
 
 .main-content figure img {
   display: block;
@@ -1028,7 +1015,8 @@ nav ul li {
 
 .main-content figure figcaption {
   font-size: 0.85rem;
-  color: #444;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
   padding-top: 0.5rem;
   position: relative;
   bottom: 1.5rem;
