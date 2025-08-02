@@ -1105,6 +1105,27 @@ blockquote p {
   right: -10px;
   transform: rotate(8deg);
 }
+ 
+@media (max-width: 640px) {
+  .main-content blockquote {
+    max-width: 100%;        /* Use full width but keep padding */
+    margin: 1.5em 0;        /* Smaller vertical margin, no auto horizontal */
+    padding: 1em;           /* Slightly less padding for narrow screens */
+    transform: none;        /* Remove rotation for easier reading */
+    box-shadow: none;       /* Optional: remove shadow to reduce clutter */
+  }
+
+  .main-content blockquote::before,
+  .main-content blockquote::after {
+    width: 40px;            /* Smaller tape decorations */
+    height: 12px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: none;        /* Remove rotation */
+  }
+}
 
 /* Force nav links glow inside about-page or anywhere */
 #navbar li a {
