@@ -571,7 +571,7 @@ strong, b {
 
 /* Blog post inline image */
 .blog-post-image {
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
   border-radius: 12px;
   margin: 1.5rem 0;
