@@ -1131,3 +1131,15 @@ a:focus {
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
+
+a {
+  display: inline-block; /* Needed for transform to work */
+  color: var(--red-primary); /* Or whatever your default link color is */
+  text-decoration: none; /* Optional, if you want to remove underlines */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  transform: scale(1.03);
+  color: inherit; /* This stops it from darkening */
+}
