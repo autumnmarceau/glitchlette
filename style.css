@@ -588,13 +588,6 @@ strong, b {
   gap: 1rem; /* space between image and text */
 }
 
-.blog-thumbnail {
-  width: 120px; /* or whatever size you want */
-  height: auto;
-  flex-shrink: 0; /* prevents it from shrinking */
-  border-radius: 4px; /* optional: rounded corners */
-}
-
 .blog-post-text {
   flex: 1;
 }
@@ -626,6 +619,24 @@ strong, b {
   }
 }
 
+.blog-thumbnail {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 6px var(--red-primary),
+    0 0 12px var(--red-gradient-start);
+}
+
+/* smaller thumbnail on small screens */
+@media (max-width: 400px) {
+  .blog-post-thumbnail {
+    width: 80px;
+    height: 53px;
+  }
+}
 
 /* Melting effect */
 .melting-text-container,
