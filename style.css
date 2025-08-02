@@ -1103,3 +1103,15 @@ a {
   text-decoration: none;
   font-family: 'Halloween'!important;
 }
+
+@media (max-width: 640px) {
+  a, a:visited {
+    color: var(--red-primary);  /* Or your chosen color */
+    text-decoration: none;      /* Or your desired decoration */
+  }
+  
+  a:hover, a:focus {
+    color: var(--red-dark);     /* Or your hover color */
+    text-decoration: underline;
+  }
+}
