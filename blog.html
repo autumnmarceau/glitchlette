@@ -13,7 +13,9 @@ description: "All posts on the GLITCHLETTE blog"
     <li style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; display: flex; gap: 1rem; align-items: flex-start;">
       
       {% if post.thumbnail %}
-        <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" class="blog-post-thumbnail" />
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" class="blog-post-thumbnail" />
+        </a>
       {% endif %}
       
       <div>
@@ -30,3 +32,5 @@ description: "All posts on the GLITCHLETTE blog"
     </li>
   {% endfor %}
 </ul>
+
+
