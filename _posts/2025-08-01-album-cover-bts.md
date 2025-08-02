@@ -8,7 +8,7 @@ thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in 
 ---
 What started as a hot girl photo shoot almost ended with DEATH AND DISASTER! 
 
-So, back in February my creative director Jaz convinced me to go to Long Beach, WA for a photoshoot. All we had in advance was the outfit and some fake blood.
+So, back in February my creative director Jaz convinced me to go to Long Beach, WA for a photoshoot. All we had prepared was the outfit and some fake blood. I'm sure Jaz had a vision, but I was pretty much just along for the ride. 
 
 On our way there, we stopped at a random consignment shop with no name or signage. Inside, we found the axe you see in the photo. The guy who sold it to us told us it had just been brought in and was super old. We named it Shelley (after Shelley Duvall, of course. RIP <3).
 
