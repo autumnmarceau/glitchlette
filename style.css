@@ -1013,7 +1013,7 @@ nav ul li {
 
 .main-content figure figcaption {
   font-size: 0.85rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace !important;
   color: #ffffff;
   padding-top: 0.5rem;
   position: relative;
