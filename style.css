@@ -1,4 +1,4 @@
-Inspect the CSS then...: /* =========================
+ /* =========================
    COLOR VARIABLES
 ========================= */
 :root {
@@ -1105,11 +1105,11 @@ blockquote p {
   animation: slowGlow 4s ease-in-out infinite !important;
 }
 
-/* === Global red and glow for all headers and links === */
+/* === Force red color and glowing text for all headers and links === */
 
 h1, h2, h3, h4, h5, h6,
 a {
-  color: var(--red-primary);
+  color: var(--red-primary) !important;
   text-shadow:
     0 0 4px var(--red-dark),
     0 0 8px var(--red-gradient-start),
@@ -1119,10 +1119,10 @@ a {
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* On link hover/focus, brighten the glow and scale slightly */
+/* On link hover/focus, brighten glow and scale */
 a:hover,
 a:focus {
-  color: var(--red-gradient-end);
+  color: var(--red-gradient-end) !important;
   text-shadow:
     0 0 8px var(--red-gradient-start),
     0 0 20px var(--red-primary),
