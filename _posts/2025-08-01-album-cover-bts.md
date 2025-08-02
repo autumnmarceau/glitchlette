@@ -66,6 +66,6 @@ Neither of us slept that night. Since then, we’ve developed a fear *and* fasci
   <img src="/photos/EVERYRAT_OG.jpg" alt="Original Every Rat album cover" class="blog-post-image">
   <br><figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
-
+Have you had a near death experience? I'd love to hear about it, [let's commiserate!](https://glitchlette.com/guestbook)
 --
 Sleeper Wave definition from [sendy.io](sendy.io)
