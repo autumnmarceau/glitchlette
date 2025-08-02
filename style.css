@@ -1002,7 +1002,6 @@ nav ul li {
   transform: none;
   max-width: 90%;
   width: fit-content;
-  padding: 0; /* Remove uniform padding */
   text-align: center;
 }
 
@@ -1022,7 +1021,7 @@ nav ul li {
 
 .main-content figure img {
   display: block;
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   margin: 0 auto;
 }
