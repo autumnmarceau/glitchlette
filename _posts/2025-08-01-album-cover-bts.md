@@ -45,15 +45,16 @@ Back at the hotel, we were hysterical—adrenaline surging, manically laughing a
 
  If you aren't aware, 
 > 
-> A sleeper wave (aka a sneaker wave) is an unexpectedly large and powerful ocean wave that can appear without warning, even on an otherwise calm beach. Unlike regular waves that follow a predictable pattern, sleeper waves can surge much farther up the shore, catching beachgoers off guard.
+> **A sleeper wave** (aka a sneaker wave) is an unexpectedly large and powerful ocean wave that can appear without warning, even on an otherwise calm beach. Unlike regular waves that follow a predictable pattern, sleeper waves can surge much farther up the shore, catching beachgoers off guard.
+>
 > 
 > **The Danger of Sleeper Waves**
 > 
-> - **Surprise Factor:** these waves can come out of nowhere, making them particularly dangerous. People relaxing on the beach or wading in shallow water might not see them coming. **NEVER TURN YOUR BACK TO THE OCEAN.**
+> - *Surprise Factor:* these waves can come out of nowhere, making them particularly dangerous. People relaxing on the beach or wading in shallow water might not see them coming. **NEVER TURN YOUR BACK TO THE OCEAN.**
 > 
-> - **Powerful Force:** sleeper waves have a strong force that can knock you over and pull you into the ocean, leading to potentially dangerous situations like being injured by rocks and debris or drowning.
+> - *Powerful Force:* sleeper waves have a strong force that can knock you over and pull you into the ocean, leading to potentially dangerous situations like being injured by rocks and debris or drowning.
 > 
-> - **Unpredictability:** it’s impossible to predict when or where a sleeper wave might hit, which adds to the risk.
+> - *Unpredictability:* it’s impossible to predict when or where a sleeper wave might hit, which adds to the risk.
 
 
 Quick research showed it only takes a few inches of water to make a car float. So when I say it was a near-death experience, I MEAN IT, y’all. 
@@ -65,4 +66,6 @@ Neither of us slept that night. Since then, we’ve developed a fear *and* fasci
   <figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
 
+**Do you have a near death experience? I'd love to hear about it! Tell me about it in the [guestbook](glitchlette.com/guestbook)
+--
 Sleeper Wave definition from [sendy.io](sendy.io)
