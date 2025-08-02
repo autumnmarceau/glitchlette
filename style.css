@@ -920,7 +920,7 @@ nav ul li {
   display: none; /* Hidden by default */
 }
    
-.thumbnail-caption-figure figcaption {
+.thumbnail-caption-figure, figcaption {
   font-family: 'Spectral', serif;
   font-size: 1rem;
   font-style: italic;
