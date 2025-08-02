@@ -45,17 +45,16 @@ Back at the hotel, we were hysterical—adrenaline surging, manically laughing a
  **SLEEPER WAVE WARNING**
 
  If you aren't aware, 
-> 
+
+ 
 > **A sleeper wave** (aka a sneaker wave) is an unexpectedly large and powerful ocean wave that can appear without warning, even on an otherwise calm beach. Unlike regular waves that follow a predictable pattern, sleeper waves can surge much farther up the shore, catching beachgoers off guard.
 >
-> 
 > **The Danger of Sleeper Waves**
-> 
-> - *Surprise Factor:* these waves can come out of nowhere, making them particularly dangerous. People relaxing on the beach or wading in shallow water might not see them coming. **NEVER TURN YOUR BACK TO THE OCEAN.**
-> 
-> - *Powerful Force:* sleeper waves have a strong force that can knock you over and pull you into the ocean, leading to potentially dangerous situations like being injured by rocks and debris or drowning.
-> 
-> - *Unpredictability:* it’s impossible to predict when or where a sleeper wave might hit, which adds to the risk.
+>
+> - *Surprise Factor:* These waves can come out of nowhere, making them particularly dangerous. People relaxing on the beach or wading in shallow water might not see them coming. **NEVER TURN YOUR BACK TO THE OCEAN.**
+> - *Powerful Force:* Sleeper waves have a strong force that can knock you over and pull you into the ocean, leading to potentially dangerous situations like being injured by rocks and debris or drowning.
+> - *Unpredictability:* It’s impossible to predict when or where a sleeper wave might hit, which adds to the risk.
+
 
 
 Quick research showed it only takes a few inches of water to make a car float. So when I say it was a near-death experience, I MEAN IT, y’all. 
