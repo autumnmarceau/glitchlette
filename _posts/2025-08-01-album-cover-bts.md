@@ -6,6 +6,8 @@ excerpt: "Behind the scenes of the Every Rat album photo. Jaz and I almost died.
 thumbnail: https://glitchlette.com/bts.jpg
 thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in February."
 ---
+
+
 What started as a hot girl photo shoot almost ended with DEATH AND DISASTER! 
 
 So, back in February my creative director Jaz convinced me to go to Long Beach, WA for a photoshoot. All we had prepared was the outfit and some fake blood. I'm sure Jaz had a vision, but I was pretty much just along for the ride. 
@@ -18,7 +20,6 @@ On our way there, we stopped at a random consignment shop with no name or signag
   <br><figcaption>Not sure how Shelley Duvall would feel about us naming the axe after her, but at least it wasn’t a baseball bat. That’s a deep-cut reference for the nerds out there.</figcaption>
 </figure>
 
---
 
 Once we got to Long Beach, we checked into our hotel and prepped for the shoot while we waited for it to get dark. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). Then it was time for the *real* shoot—on the beach.
 
@@ -66,6 +67,5 @@ Neither of us slept that night. Since then, we’ve developed a fear *and* fasci
   <br><figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
 
-*Do you have a near death experience? I'd love to hear about it! Tell me about it in the* [guestbook](glitchlette.com/guestbook)
 --
 Sleeper Wave definition from [sendy.io](sendy.io)
