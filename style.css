@@ -988,66 +988,53 @@ nav ul li {
 .main-content figure {
   position: relative;
   display: inline-block;
-  background: #fafafa; /* off-white paper color */
-  padding: 1rem;       /* consistent padding all around */
-  border: 2px solid #ddd; /* thinner light gray frame */
+  background: #fafafa;
+  border: 2px solid #ddd;
   box-shadow:
     2px 2px 5px rgba(0,0,0,0.1),
-    inset 0 0 5px rgba(255,255,255,0.8); /* softer shadow */
-  max-width: 90%;
+    inset 0 0 5px rgba(255,255,255,0.8);
   margin: 2em auto;
   font-family: 'Courier New', Courier, monospace;
   cursor: default;
   user-select: none;
   filter: contrast(1.1) saturate(1.1);
   transition: transform 0.3s ease;
-  transform: none; /* no rotation */
+  transform: none;
+  max-width: 90%;
+  width: fit-content;
+  padding: 0; /* Remove uniform padding */
+  text-align: center;
 }
 
-/* Remove rotation and scale on hover, keep subtle effect */
-.main-content figure:hover {
-  transform: scale(1.03); /* subtle scale only */
-  box-shadow:
-    4px 4px 10px rgba(0,0,0,0.15),
-    inset 0 0 8px rgba(255,255,255,0.9);
+/* Add a slight white margin inside for border effect */
+.main-content figure::before {
+  content: "";
+  display: block;
+  padding-top: 0.5rem; /* top border */
 }
 
-/* Polaroid image */
+/* Space for bottom "Polaroid" border */
+.main-content figure::after {
+  content: "";
+  display: block;
+  padding-bottom: 2rem; /* extra bottom border like a Polaroid */
+}
+
 .main-content figure img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.03);
-  filter: grayscale(10%) contrast(1.05);
-  border-radius: 3px;
+  margin: 0 auto;
 }
 
-/* Caption styling */
-.main-content figcaption {
-  text-align: center;
-  color: #333;
-  font-size: 0.9rem;
-  margin-top: 0.8rem;
-  letter-spacing: 0.05em;
-  font-style: italic;
-  user-select: text;
-  max-width: 90%;
+.main-content figure figcaption {
+  font-size: 0.85rem;
+  color: #444;
+  padding-top: 0.5rem;
+  position: relative;
+  bottom: 1.5rem;
 }
 
-figcaption {
-  margin-top: 0.6em;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.85em;
-  text-align: left;
-  color: black;
-  background: #fff;
-  padding: 0.3em 0.5em;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: inline-block;
-  line-height: 1.4;
-}
 
 /* General blockquote style */
 blockquote {
