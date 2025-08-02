@@ -25,7 +25,7 @@
   transition: background-size 0.3s ease;
 }
 
-/* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
+/* RESPONSIVE BACKGROUND */
 @media (max-width: 540px) {
   #bg-image {
     background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
@@ -152,12 +152,13 @@ html, body {
   outline: none;
 }
 
+/*
 #navbar li a:focus {
   outline: 2px solid var(--red-primary);
   outline-offset: 2px;
-  outline-radius: 4px;
   outline-style: solid;
-}
+} 
+*/
 
 /* Social icons container */
 .social-nav {
@@ -285,7 +286,6 @@ strong, b {
   justify-content: center;
 }
 
-/* 
 .gallery-item {
   flex: 1 1 150px;
   max-width: 150px;
@@ -304,8 +304,6 @@ strong, b {
   transition: transform 0.3s ease;
   display: block;
 }
-*/
-
 
 .gallery-item:hover img {
   transform: scale(1.05);
@@ -405,7 +403,7 @@ strong, b {
 .gallery-item:hover img {
   transform: scale(1.05);
 }
-.caption {
+.gallery-caption {
   font-family: Spectral, serif;
   font-size: 0.85rem;
   color: #ffffff;
@@ -422,7 +420,7 @@ strong, b {
   word-break: break-word;      /* Ensure no overflow */
 }
 
-.gallery-item:hover .caption {
+.gallery-item:hover .gallery-caption {
   opacity: 1;
   pointer-events: auto;
 }
@@ -495,107 +493,16 @@ strong, b {
 .about-page a:focus {
   outline: 2px solid var(--red-primary);
   outline-offset: 2px;
-  outline-radius: 4px;
   outline-style: solid;
 }
 
 /*Blog*/
-./* Blog post preview container */
-.blog-post-preview {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(238, 34, 34, 0.3);
-  padding-bottom: 1rem;
-}
-
-/* Thumbnail image */
-.blog-post-thumbnail {
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-  box-shadow:
-    0 0 6px var(--red-primary),
-    0 0 12px var(--red-gradient-start);
-}
-
-/* Blog post text container */
-.blog-post-text {
-  flex: 1;
-}
-
-/* Date above the title */
-.blog-post-date {
-  display: block;
-  font-variant: small-caps;
-  font-size: 1.2rem;
-  color: rgba(230, 80, 80, 0.85);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
-  user-select: none;
-}
-
-/* Blog post title (no glow) */
-.blog-post-title {
-  margin: 0; /* remove default h2 margin */
-  line-height: 1.2;
-}
-
-.blog-post-title a {
-  color: var(--red-primary);
-  font-family: 'Halloween', serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  text-decoration: none;
-  text-shadow: none;
-  transition: color 0.3s ease;
-  margin-bottom: 0.25rem; /* reduces space below title */
-}
-
-.blog-post-title a:hover,
-.blog-post-title a:focus {
-  color: var(--red-gradient-end);
-  outline: none;
-  text-shadow: none;
-}
-
-/* Excerpt */
-.blog-post-excerpt {
-  margin: 0.4rem 0 0 0;
-  color: var(--text-light);
-  max-width: 600px;
-  line-height: 1.5;
-  margin-top: 0; /* removes extra space above the excerpt */
-}
-
-/* Blog post inline image */
-.blog-post-image {
-  max-width: 80%;
-  height: auto;
-  border-radius: 12px;
-  margin: 1.5rem 0;
-  box-shadow:
-    0 0 12px var(--red-primary),
-    0 0 24px var(--red-gradient-start);
-  display: block;
-}
 
 
 .blog-post-row {
   display: flex;
   align-items: flex-start;
   gap: 1rem; /* space between image and text */
-}
-
-.blog-thumbnail {
-  width: 120px; /* or whatever size you want */
-  height: auto;
-  flex-shrink: 0; /* prevents it from shrinking */
-  border-radius: 4px; /* optional: rounded corners */
 }
 
 .blog-post-text {
@@ -610,6 +517,50 @@ strong, b {
   margin: 0;
 }
 
+.blog-post-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow:
+    0 0 12px var(--red-primary),
+    0 0 24px var(--red-gradient-start);
+  display: block;
+}
+
+/* On small screens, make images full width */
+@media (max-width: 600px) {
+  .blog-post-image {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+.blog-thumbnail {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 6px var(--red-primary),
+    0 0 12px var(--red-gradient-start);
+}
+
+/* smaller thumbnail on small screens */
+@media (max-width: 400px) {
+  .blog-post-thumbnail {
+    width: 80px;
+    height: 53px;
+  }
+}
+@media (max-width: 600px) {
+  /* Make all images inside main content and blog posts scale responsively */
+  .blog-post-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 /* Melting effect */
 .melting-text-container,
@@ -627,6 +578,9 @@ strong, b {
   animation: melt 3s ease-in-out 3 forwards;
   background: linear-gradient(90deg, #ee2222, #cc0000, #ee2222);
   -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  background-clip: text;
   color: transparent;
   user-select: none;
 }
@@ -641,6 +595,7 @@ strong, b {
   height: 100%;
   background: linear-gradient(90deg, #ee2222, #cc0000, #ee2222);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   z-index: -1;
   transform-origin: top center;
@@ -846,12 +801,12 @@ strong, b {
   gap: 1rem;
 }
 
-/@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-}
+
   #navbar ul {
     flex-direction: column;
     align-items: flex-start;
@@ -880,7 +835,7 @@ nav ul li {
     flex-direction: column; /* Vertical layout */
     align-items: flex-start; /* Align to left — change to center if you want centered vertical stack */
   }
-
+}
 #backToTopBtn {
   position: fixed;
   bottom: 20px;
@@ -922,7 +877,19 @@ nav ul li {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   display: none; /* Hidden by default */
 }
-
+   
+.thumbnail-caption-figure {
+  font-family: 'Spectral', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color:#000000;
+  margin-top: 0.5rem;
+  user-select: none;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 6px var(--red-gradient-start);
+}
+/*Force commit*/
 /* Hidden header for SEO purposes */
 
 .visually-hidden {
@@ -935,3 +902,178 @@ nav ul li {
   white-space: nowrap;
   border: 0;
 }
+ 
+.main-content figure {
+  position: relative;
+  display: inline-block;
+  border:none;
+  box-shadow:
+    2px 2px 5px rgba(0,0,0,0.1),;
+  margin: 2em auto;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: default;
+  user-select: none;
+  filter: contrast(1.1) saturate(1.1);
+  transition: transform 0.3s ease;
+  transform: none;
+  max-width: 90%;
+  width: fit-content;
+  text-align: center;
+}
+
+
+
+.main-content figure img {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main-content figure figcaption {
+  font-size: 0.85rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  padding-top: 0.5rem;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+
+/* Base blockquote styles */
+.main-content blockquote {
+  border-left: 4px solid black;     /* classic left border */
+  margin: 2em 1.5em;                /* vertical and horizontal spacing */
+  padding: 1em 1.2em;               /* comfy padding inside */
+  background: #fdfdfd;              /* subtle off-white background */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  box-shadow: 2px 2px 0 black;     /* slight shadow for depth */
+  transform: rotate(-0.5deg);      /* a little tilt for style */
+  position: relative;
+  color: #000;                     /* text color */
+}
+
+/* Remove tape decorations completely */
+.main-content blockquote::before,
+.main-content blockquote::after {
+  display: none !important;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 640px) {
+  .main-content blockquote {
+    max-width: 100%;               /* full width on small screens */
+    margin: 1.5em 0;              /* reduce horizontal margins */
+    padding: 1em;                 /* slightly less padding */
+    box-shadow: none;             /* remove shadow to reduce clutter */
+    transform: none;              /* remove tilt for easier reading */
+  }
+}
+
+
+
+/* Force nav links glow inside about-page or anywhere */
+#navbar li a {
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow) !important;
+  animation: slowGlow 4s ease-in-out infinite !important;
+}
+
+/* === Force red color and glowing text for all headers and links === */
+
+h1
+  {
+  color: var(--red-primary) !important;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow);
+  animation: slowGlow 4s ease-in-out infinite;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+/* Blog post preview container */
+.blog-post-preview {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(238, 34, 34, 0.3);
+  padding-bottom: 1rem;
+}
+
+
+/* Responsive: stack preview vertically on small screens */
+@media screen and (max-width: 768px) {
+  .blog-post-preview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+}
+
+/* Thumbnail image */
+.blog-post-thumbnail {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 6px var(--red-primary),
+    0 0 12px var(--red-gradient-start);
+}
+
+/* Responsive: stack preview vertically on small screens */
+@media screen and (max-width: 768px) {
+  .blog-post-preview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+}
+
+a {
+  display: inline-block;
+  color: #e2ffff;
+  text-decoration: none;
+  font-family: 'Halloween', serif;
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.3s ease;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow);
+  animation: slowGlow 4s ease-in-out infinite;
+}
+
+a:hover,
+a:focus {
+  color: var(--red-gradient-end) !important;
+  text-shadow:
+    0 0 8px var(--red-gradient-start),
+    0 0 20px var(--red-primary),
+    0 0 30px var(--red-shadow);
+  outline: none;
+  transform: scale(1.05);
+}
+
+.main-content a,
+.blog-post-content a,
+article a {
+  font-family: 'Halloween', serif !important;
+  color: #e2ffff !important;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow) !important;
+  animation: slowGlow 4s ease-in-out infinite !important;
+}
+

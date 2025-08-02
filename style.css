@@ -1,4 +1,4 @@
- /* =========================
+/* =========================
    COLOR VARIABLES
 ========================= */
 :root {
@@ -25,7 +25,7 @@
   transition: background-size 0.3s ease;
 }
 
-/* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
+/* RESPONSIVE BACKGROUND */
 @media (max-width: 540px) {
   #bg-image {
     background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
@@ -156,7 +156,6 @@ html, body {
 #navbar li a:focus {
   outline: 2px solid var(--red-primary);
   outline-offset: 2px;
-  outline-radius: 4px;
   outline-style: solid;
 } 
 */
@@ -494,94 +493,10 @@ strong, b {
 .about-page a:focus {
   outline: 2px solid var(--red-primary);
   outline-offset: 2px;
-  outline-radius: 4px;
   outline-style: solid;
 }
 
 /*Blog*/
-./* Blog post preview container */
-.blog-post-preview {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(238, 34, 34, 0.3);
-  padding-bottom: 1rem;
-}
-
-/* Thumbnail image */
-.blog-post-thumbnail {
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-  box-shadow:
-    0 0 6px var(--red-primary),
-    0 0 12px var(--red-gradient-start);
-}
-
-/* Blog post text container */
-.blog-post-text {
-  flex: 1;
-}
-
-/* Date above the title */
-.blog-post-date {
-  display: block;
-  font-variant: small-caps;
-  font-size: 1.2rem;
-  color: rgba(230, 80, 80, 0.85);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
-  user-select: none;
-}
-
-/* Blog post title (no glow) */
-.blog-post-title {
-  margin: 0; /* remove default h2 margin */
-  line-height: 1.2;
-}
-
-.blog-post-title a {
-  color: var(--red-primary);
-  font-family: 'Halloween', serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  text-decoration: none;
-  text-shadow: none;
-  transition: color 0.3s ease;
-  margin-bottom: 0.25rem; /* reduces space below title */
-}
-
-.blog-post-title a:hover,
-.blog-post-title a:focus {
-  color: var(--red-gradient-end);
-  outline: none;
-  text-shadow: none;
-}
-
-/* Excerpt */
-.blog-post-excerpt {
-  margin: 0.4rem 0 0 0;
-  color: var(--text-light);
-  max-width: 600px;
-  line-height: 1.5;
-  margin-top: 0; /* removes extra space above the excerpt */
-}
-
-/* Blog post inline image */
-.blog-post-image {
-  max-width: 60%;
-  height: auto;
-  border-radius: 4px;
-  margin: 1.5rem 0;
-  box-shadow:
-    0 0 12px var(--red-primary),
-    0 0 24px var(--red-gradient-start);
-  display: block;
-}
 
 
 .blog-post-row {
@@ -641,7 +556,7 @@ strong, b {
 }
 @media (max-width: 600px) {
   /* Make all images inside main content and blog posts scale responsively */
-  .blog-post-image, {
+  .blog-post-image {
     max-width: 100%;
     height: auto;
   }
@@ -663,6 +578,9 @@ strong, b {
   animation: melt 3s ease-in-out 3 forwards;
   background: linear-gradient(90deg, #ee2222, #cc0000, #ee2222);
   -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  background-clip: text;
   color: transparent;
   user-select: none;
 }
@@ -677,6 +595,7 @@ strong, b {
   height: 100%;
   background: linear-gradient(90deg, #ee2222, #cc0000, #ee2222);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   z-index: -1;
   transform-origin: top center;
@@ -882,7 +801,7 @@ strong, b {
   gap: 1rem;
 }
 
-/@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -916,7 +835,7 @@ nav ul li {
     flex-direction: column; /* Vertical layout */
     align-items: flex-start; /* Align to left — change to center if you want centered vertical stack */
   }
-
+}
 #backToTopBtn {
   position: fixed;
   bottom: 20px;
@@ -1078,7 +997,62 @@ h1
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* On link hover/focus, brighten glow and scale */
+
+/* Blog post preview container */
+.blog-post-preview {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(238, 34, 34, 0.3);
+  padding-bottom: 1rem;
+}
+
+
+/* Responsive: stack preview vertically on small screens */
+@media screen and (max-width: 768px) {
+  .blog-post-preview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+}
+
+/* Thumbnail image */
+.blog-post-thumbnail {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 6px var(--red-primary),
+    0 0 12px var(--red-gradient-start);
+}
+
+/* Responsive: stack preview vertically on small screens */
+@media screen and (max-width: 768px) {
+  .blog-post-preview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+}
+
+a {
+  display: inline-block;
+  color: #e2ffff;
+  text-decoration: none;
+  font-family: 'Halloween', serif;
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.3s ease;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow);
+  animation: slowGlow 4s ease-in-out infinite;
+}
+
 a:hover,
 a:focus {
   color: var(--red-gradient-end) !important;
@@ -1088,23 +1062,18 @@ a:focus {
     0 0 30px var(--red-shadow);
   outline: none;
   transform: scale(1.05);
-  transition: all 0.3s ease;
 }
 
-a {
-  display: inline-block; /* Needed for transform to work */
-  color: var(--red-primary); /* Or whatever your default link color is */
-  text-decoration: none; /* Optional, if you want to remove underlines */
-  transition: transform 0.2s ease, color 0.2s ease;
+.main-content a,
+.blog-post-content a,
+article a {
+  font-family: 'Halloween', serif !important;
+  color: #e2ffff !important;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow) !important;
+  animation: slowGlow 4s ease-in-out infinite !important;
 }
 
-a:hover {
-  transform: scale(1.03);
-  color: inherit; /* This stops it from darkening */
-}
-
-a {
-  color: #e22222;
-  text-decoration: none;
-  font-family: 'Halloween';
-}
