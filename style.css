@@ -575,7 +575,7 @@ strong, b {
 .blog-post-image {
   max-width: 60%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 4px;
   margin: 1.5rem 0;
   box-shadow:
     0 0 12px var(--red-primary),
@@ -989,8 +989,7 @@ nav ul li {
   display: inline-block;
   border:none;
   box-shadow:
-    2px 2px 5px rgba(0,0,0,0.1),
-    inset 0 0 5px rgba(255,255,255,0.8);
+    2px 2px 5px rgba(0,0,0,0.1),;
   margin: 2em auto;
   font-family: 'Courier New', Courier, monospace;
   cursor: default;
