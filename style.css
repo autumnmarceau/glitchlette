@@ -1155,3 +1155,8 @@ a:hover {
   transform: scale(1.03);
   color: inherit; /* This stops it from darkening */
 }
+
+a {
+  color: #e22255;
+  text-decoration: none;
+}
