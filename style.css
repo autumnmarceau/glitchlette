@@ -1104,3 +1104,30 @@ blockquote p {
     0 0 25px var(--red-shadow) !important;
   animation: slowGlow 4s ease-in-out infinite !important;
 }
+
+/* === Global red and glow for all headers and links === */
+
+h1, h2, h3, h4, h5, h6,
+a {
+  color: var(--red-primary);
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 8px var(--red-gradient-start),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow);
+  animation: slowGlow 4s ease-in-out infinite;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* On link hover/focus, brighten the glow and scale slightly */
+a:hover,
+a:focus {
+  color: var(--red-gradient-end);
+  text-shadow:
+    0 0 8px var(--red-gradient-start),
+    0 0 20px var(--red-primary),
+    0 0 30px var(--red-shadow);
+  outline: none;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
