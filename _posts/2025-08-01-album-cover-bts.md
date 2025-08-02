@@ -13,7 +13,7 @@ So, back in February my creative director Jaz convinced me to go to Long Beach, 
 On our way there, we stopped at a random consignment shop with no name or signage. Inside, we found the axe you see in the photo. The guy who sold it to us told us it had just been brought in and was super old. We named it Shelley (after Shelley Duvall, of course. RIP <3).
 
 <figure>
-  <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining">
+  <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining" class="blog-post-image">
   <figcaption>Not sure how Shelley Duvall would feel about us naming the axe after her, but at least it wasn’t a baseball bat. That’s a deep-cut reference for the nerds out there.</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ Quick research showed it only takes a few inches of water to make a car float. S
 Neither of us slept that night. Since then, we’ve developed a fear *and* fascination with the ocean. She’s our God now. She let us live. Honestly, I should probably dedicate the album to her.
 
 <figure>
-  <img src="/photos/EVERYRAT_OG.jpg" alt="Original Every Rat album cover">
+  <img src="/photos/EVERYRAT_OG.jpg" alt="Original Every Rat album cover" class="blog-post-image">
   <figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
 
