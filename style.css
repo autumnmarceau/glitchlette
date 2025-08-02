@@ -994,9 +994,7 @@ a {
 }
 
 
-/*Media Queries*/
-
-Okay here are all of my media queries together: /*Media Queries*/
+ /*Media Queries*/
 
  /* For narrow/mobile screens (max-width 540px), swap to vertical-friendly image */
 @media (max-width: 540px) {
