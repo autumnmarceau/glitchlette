@@ -924,14 +924,14 @@ nav ul li {
   font-family: 'Spectral', serif;
   font-size: 1rem;
   font-style: italic;
-  color: #666;
+  color:#000000;
   margin-top: 0.5rem;
   user-select: none;
   text-shadow:
     0 0 4px var(--red-dark),
     0 0 6px var(--red-gradient-start);
 }
-
+/*Force commit*/
 /* Hidden header for SEO purposes */
 
 .visually-hidden {
