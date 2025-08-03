@@ -712,7 +712,7 @@ nav ul li {
 /* Larger screens: switch to vertical nav */
 
 #backToTopBtn {
-  position: fixed;
+  position: center;
   bottom: 20px;
   right: 20px;
   z-index: 999;
@@ -818,12 +818,12 @@ nav ul li {
 
 /* Base blockquote styles */
 .main-content blockquote {
-  border-left: 4px solid black;     /* classic left border */
+  border-left: 4px solid #ee2222;     /* classic left border */
   margin: 2em 1.5em;                /* vertical and horizontal spacing */
   padding: 1em 1.2em;               /* comfy padding inside */
   background: #fdfdfd;              /* subtle off-white background */
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1em;
+  font-size: .8em;
   box-shadow: 2px 2px 0 black;     /* slight shadow for depth */
   transform: rotate(-0.5deg);      /* a little tilt for style */
   position: relative;
@@ -1032,6 +1032,7 @@ article a {
   .social-nav {
     justify-content: center;
     margin-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .main-content {
