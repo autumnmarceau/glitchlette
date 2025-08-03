@@ -25,14 +25,6 @@
   transition: background-size 0.3s ease;
 }
 
-/* RESPONSIVE BACKGROUND */
-@media (max-width: 540px) {
-  #bg-image {
-    background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
-    background-position: calc(50% - 30px) calc(50% + 20px);
-  }
-}
-
 /* Reset margin, padding, box-sizing */
 * {
   margin: 0;
@@ -528,13 +520,7 @@ strong, b {
   display: block;
 }
 
-/* On small screens, make images full width */
-@media (max-width: 600px) {
-  .blog-post-image {
-    max-width: 100%;
-    margin: 1rem 0;
-  }
-}
+
 
 .blog-thumbnail {
   width: 120px;
@@ -545,21 +531,6 @@ strong, b {
   box-shadow:
     0 0 6px var(--red-primary),
     0 0 12px var(--red-gradient-start);
-}
-
-/* smaller thumbnail on small screens */
-@media (max-width: 400px) {
-  .blog-post-thumbnail {
-    width: 80px;
-    height: 53px;
-  }
-}
-@media (max-width: 600px) {
-  /* Make all images inside main content and blog posts scale responsively */
-  .blog-post-image {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 /* Melting effect */
@@ -710,88 +681,7 @@ strong, b {
 
 /* Responsive fixes */
 
-/* Up to 640px: stack page wrapper vertically, nav full width and centered */
-@media (max-width: 640px) {
-  .page-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
-    width: 100%;
-    padding: 0 1rem;
-  }
 
-  #navbar {
-    width: 100%;
-    flex: 0 0 auto;
-    position: relative;
-    top: auto;
-    padding: 1rem 0;
-    align-items: center;
-    text-align: center;
-    max-height: none;
-    overflow-y: visible;
-  }
-
-  #navbar ul {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  #navbar li a {
-    font-size: 1.4rem;
-    padding: 6px 10px;
-  }
-
-  .social-nav {
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .main-content {
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
-    border-left: none;
-    max-width: 100%;
-  }
-}
-
-
-@media (max-width: 640px) {
-  #navbar ul.main-nav {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; /* <-- allow wrapping */
-    gap: 0.75rem; /* reduce gap a bit */
-  }
-
-  #navbar ul.social-nav {
-    justify-content: center;
-    gap: 0.75rem;
-  }
-
-  /* Allow nav items to shrink */
-  #navbar ul.main-nav li {
-    flex-shrink: 1;
-  }
-
-  /* Make nav links wrap text if needed */
-  #navbar ul.main-nav li a {
-    white-space: normal; /* allow wrapping */
-    font-size: 1.4rem;
-    padding: 6px 10px;
-  }
-
-  /* Remove the <br> spacing and replace with margin */
-  #navbar ul.social-nav {
-    margin-top: 1rem;
-  }
-
-  /* Prevent horizontal overflow on nav */
-  #navbar {
-    overflow-x: auto;
-  }
-}
 
 
 #nav {
@@ -801,17 +691,7 @@ strong, b {
   gap: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  #navbar ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 
 /* Base styles — small screens (default) */
 nav ul {
@@ -830,12 +710,7 @@ nav ul li {
 }
 
 /* Larger screens: switch to vertical nav */
-@media (min-width: 768px) {
-  nav ul {
-    flex-direction: column; /* Vertical layout */
-    align-items: flex-start; /* Align to left — change to center if you want centered vertical stack */
-  }
-}
+
 #backToTopBtn {
   position: fixed;
   bottom: 20px;
@@ -960,16 +835,7 @@ nav ul li {
   display: none !important;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 640px) {
-  .main-content blockquote {
-    max-width: 100%;               /* full width on small screens */
-    margin: 1.5em 0;              /* reduce horizontal margins */
-    padding: 1em;                 /* slightly less padding */
-    box-shadow: none;             /* remove shadow to reduce clutter */
-    transform: none;              /* remove tilt for easier reading */
-  }
-}
+
 
 
 
@@ -1009,14 +875,7 @@ h1
 }
 
 
-/* Responsive: stack preview vertically on small screens */
-@media screen and (max-width: 768px) {
-  .blog-post-preview {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-  }
-}
+
 
 /* Thumbnail image */
 .blog-post-thumbnail {
@@ -1030,14 +889,6 @@ h1
     0 0 12px var(--red-gradient-start);
 }
 
-/* Responsive: stack preview vertically on small screens */
-@media screen and (max-width: 768px) {
-  .blog-post-preview {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-  }
-}
 
 a {
   display: inline-block;
@@ -1076,4 +927,183 @@ article a {
     0 0 25px var(--red-shadow) !important;
   animation: slowGlow 4s ease-in-out infinite !important;
 }
+/*Media Queries*/
+/* ---------------------------------------
+   Up to 400px — smallest screens
+---------------------------------------- */
+@media (max-width: 400px) {
+  .blog-post-thumbnail {
+    width: 80px;
+    height: 53px;
+  }
+}
 
+/* ---------------------------------------
+   Up to 540px
+---------------------------------------- */
+@media (max-width: 540px) {
+  #bg-image {
+    background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
+    background-position: calc(50% - 30px) calc(50% + 20px);
+  }
+}
+
+/* ---------------------------------------
+   Up to 600px
+---------------------------------------- */
+@media (max-width: 600px) {
+  .blog-post-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+}
+
+/* ---------------------------------------
+   Up to 640px — mobile layout tweaks
+---------------------------------------- */
+@media (max-width: 640px) {
+  .page-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #navbar {
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    top: auto;
+    padding: 1rem 0;
+    align-items: center;
+    text-align: center;
+    max-height: none;
+    overflow-y: visible;
+    overflow-x: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  #navbar ul,
+  #navbar ul.main-nav,
+  #navbar ul.social-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  #navbar ul.main-nav li {
+    flex-shrink: 1;
+  }
+
+  #navbar ul.main-nav li a {
+    white-space: normal;
+    font-size: 1.4rem;
+    padding: 6px 10px;
+  }
+
+  #navbar ul.social-nav {
+    margin-top: 1rem;
+  }
+
+  .social-nav {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .main-content {
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    border-left: none;
+    max-width: 100%;
+  }
+
+  .main-content blockquote {
+    max-width: 100%;
+    margin: 1.5em 0;
+    padding: 1em;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+/* ---------------------------------------
+   Up to 768px — medium screen tweaks
+---------------------------------------- */
+@media (max-width: 768px) {
+  .blog-post-preview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+}
+
+/* ---------------------------------------
+   Min 768px — vertical nav on desktop
+---------------------------------------- */
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  #navbar {
+    width: 100%;  /* ensure navbar fills the container */
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .social-nav {
+    justify-content: center !important;  /* center horizontally */
+    flex-wrap: wrap !important;          /* allow wrapping */
+    gap: 0.75rem !important;              /* consistent spacing */
+    margin-top: 1rem !important;
+  }
+  
+  .social-nav li {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+  .social-icon {
+    flex: 0 0 auto;
+    padding: 4px;
+    /* optional: fix icon size for small screens */
+  }
+
+  .social-icon i {
+    font-size: 28px;  /* or smaller if needed */
+  }
+}
+
+@media (max-width: 640px) {
+  #navbar ul {
+    display: flex;            /* Make sure it's flex container */
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .social-nav ul{
+    display: flex;            /* Make sure it's flex container */
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+}
+
+/*test*
