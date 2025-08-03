@@ -105,7 +105,7 @@
 <!-- ================
  BODY STARTS HERE
  ==================-->
-<body class="{{ page.body_class | default: 'default-page' }}">
+<body class="default-page">
   <div id="bg-image"></div> <!-- Background image for the page -->
   <!-- SVG Ripple FX -->
   <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
@@ -148,15 +148,62 @@
         <section class="block guestbook-comments">
           <!-- This is where the guestbook form goes-->
            <p>To leave a comment, please fill out the form below:</p>
-           
-            
+           <form id="staticman-form" method="POST" action="https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments">
+            <label for="name">Name:</label><br/>
+            <input type="text" name="fields[name]" id="name" required /><br/><br/>
 
+            <label for="email">Email (won't be published):</label><br/>
+            <input type="email" name="fields[email]" id="email" required /><br/><br/>
+
+            <label for="comment">Comment:</label><br/>
+            <textarea name="fields[comment]" id="comment" rows="5" required></textarea><br/><br/>
+
+            <button type="submit">Submit Comment</button>
+          </form>
         </section>
         <!-- Comments-->
-        <section class="block guestbook-comments">
-          <!-- This is where the guestbook comments will be displayed -->
-          
-        </section>
+      <div class="comments-section">
+        <h2>Guestbook Comments</h2>
+
+        
+          <div class="comment">
+            <p><strong>Test User</strong> (2025-08-03)</p>
+            <div class="comment-body">
+              <p>This is a test.</p>
+
+            </div>
+
+            
+              <div class="comment-reply">
+                <em>Site owner reply:</em>
+                <div class="reply-body">
+                  <p>Thanks for testing!</p>
+
+                </div>
+              </div>
+            
+          </div>
+        
+          <div class="comment">
+            <p><strong>Another Person</strong> (2025-08-01)</p>
+            <div class="comment-body">
+              <p>Hello there!</p>
+
+            </div>
+
+            
+              <div class="comment-reply">
+                <em>Site owner reply:</em>
+                <div class="reply-body">
+                  <p>Glad to see your comment!</p>
+
+                </div>
+              </div>
+            
+          </div>
+        
+      </div>
+
     </div>
    </div>
 </body>

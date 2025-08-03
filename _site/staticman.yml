@@ -1,0 +1,12 @@
+production:
+  endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments
+  branch: main
+  path: "_data/comments"
+  allowedFields:
+    - "name"
+    - "email"
+    - "comment"
+  moderation: true
+  commitMessage: "New guestbook comment from {{name}}"
+  fileName: "{{year}}-{{month}}-{{day}}-{{timestamp}}-{{slug}}.yml"
+  format: "yaml"

@@ -1,3 +1,7 @@
+---
+layout:post
+title: Guestbook
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -162,28 +166,28 @@
           </form>
         </section>
         <!-- Comments-->
-        <section class="block guestbook-comments">
+      <div class="comments-section">
+        <h2>Guestbook Comments</h2>
 
-          <!-- This is where the guestbook comments will be displayed -->
-          <section class="comments-list">
-            <h2>Comments</h2>
-            {% assign sorted_comments = site.data.comments | sort: "date" | reverse %}
-            {% for comment in sorted_comments %}
-              <div class="comment">
-                <p><strong>{{ comment.name }}</strong> said:</p>
-                <p>{{ comment.comment | markdownify }}</p>
+        {% for comment in site.data.comments %}
+          <div class="comment">
+            <p><strong>{{ comment.name }}</strong> ({{ comment.date }})</p>
+            <div class="comment-body">
+              {{ comment.comment | markdownify }}
+            </div>
 
-                {% if comment.reply %}
-                  <div class="reply">
-                    <p><em>Reply:</em></p>
-                    <p>{{ comment.reply | markdownify }}</p>
-                  </div>
-                {% endif %}
+            {% if comment.reply %}
+              <div class="comment-reply">
+                <em>Site owner reply:</em>
+                <div class="reply-body">
+                  {{ comment.reply | markdownify }}
+                </div>
               </div>
-          {% endfor %}
-          </section>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
 
-        </section>
     </div>
    </div>
 </body>
