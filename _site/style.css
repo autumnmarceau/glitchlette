@@ -1126,4 +1126,9 @@ article a {
 
 }
 
-/*test*/
+.blog-note {
+  background: var(--text-light);
+  border: 2px solid purple;
+  border-radius: 15px;
+  color: lavenderblush;
+  padding: 10px 20px;}

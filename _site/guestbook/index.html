@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" /> <!--- Thumbnail ---> 
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="https://www.emojiall.com/images/240/skype/1fa93.png" type="image/png"> <!--- favicon --->
+  <meta name ="description" content="GLITCHLETTE's Guestbook" />
+  <meta name="keywords" content="GLITCHLETTE, Autumn Marceau, Seattle music, Seattle electronic music"/>
+  <meta name="author" content="Autumn Marceau" />
+  <meta property="og:title" content="GLITCHLETTE — Skygaze Pop for Final Girls" />
+  <meta property="og:description" content="GLITCHLETTE's Guestbook" />
+  <meta property="og:url" content="https://glitchlette.com/guestbook" />
+  <link rel="canonical" href="https://glitchlette.com/guestbook" />
+  <title>GUESTBOOK | GLITCHLETTE</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/style.css" />
+
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-33EL5WF8CW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-33EL5WF8CW');
+  </script>
+    <!-- Guestbook Style-->
+    <style>
+    /* Body font & background */
+    body {
+        color: #fef9f5;
+        font-family: 'Spectral', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Breadcrumb nav styling */
+    nav.breadcrumbs {
+        margin: 1rem auto;
+        max-width: 700px;
+        font-size: 0.9rem;
+        color: #aaa;
+    }
+
+    nav.breadcrumbs a {
+        color: #ee2222;
+        text-decoration: none;
+    }
+
+    /* Content wrapper */
+    .content {
+        max-width: 700px;
+        margin: 1rem auto 3rem;
+        padding: 1rem;
+    }
+
+    /* Guestbook intro block */
+    .guestbook-intro {
+        border: 2px dashed #ee2222;
+        padding: 1.5rem;
+        background-color: #111;
+        border-radius: 6px;
+        box-shadow: 0 0 15px #ee222288;
+        margin-bottom: 1.5rem;
+    }
+
+    .guestbook-intro h1 {
+        margin-top: 0;
+        color: #ee2222;
+        font-size: 2.5rem;
+        text-shadow: 1px 1px 0 #0a0a0a;
+    }
+
+    .guestbook-intro p {
+        font-size: 1rem;
+        color: #fef9f5cc;
+        line-height: 1.5;
+    }
+
+    .guestbook-comments {
+    border: 2px dashed #ee2222;
+    background-color: #111;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #ee222288;
+    margin-top: 3rem;
+    }
+
+    .guestbook-comments h2 {
+    color: #ee2222;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 0 #0a0a0a;
+    }
+
+    </style>
+
+</head>
+<!-- ================
+ BODY STARTS HERE
+ ==================-->
+<body class="{{ page.body_class | default: 'default-page' }}">
+  <div id="bg-image"></div> <!-- Background image for the page -->
+  <!-- SVG Ripple FX -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
+    <filter id="ripple" x="0" y="0">
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="turbulence" seed="2" />
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <ul class="main-nav">
+        <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
+        <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
+        <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
+        <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
+        <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
+        <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
+      </ul>
+      <ul class="social-nav">
+        <li><a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i class="bi bi-spotify"></i></a></li>
+        <li><a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer"><i class="bi bi-cloud"></i></a></li>
+      </ul>
+    </nav>
+    <!-- Main Content Area -->
+    <div class="content">
+        <!-- Header/Intro-->
+        <section class="block guestbook-intro">
+            <center><h1 class="melting-text" data-text="Guestbook">Guestbook</h1></center>
+            <br>
+            <p>
+            For those inclined to sign guestbooks. Thank you to everyone who has left kind words for me, I will respond to every entry eventually!
+            </p>
+        </section>
+        <!-- Form-->
+        <section class="block guestbook-comments">
+          <!-- This is where the guestbook form goes-->
+           <p>To leave a comment, please fill out the form below:</p>
+           <div class="giscus"></div>
+            <script src="https://giscus.app/client.js"
+              data-repo="autumnmarceau/glitchlette"
+              data-repo-id="R_kgDOPWQ4jQ"
+              data-mapping="number"
+              data-term="1"
+              data-reactions-enabled="0"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="custom"
+              data-theme-url="https://glitchlette.com/style.css"
+              data-lang="en"
+              data-loading="lazy"
+              crossorigin="anonymous"
+              async></script>
+        </section>
+        <!-- Comments-->
+        <section class="block guestbook-comments">
+          <!-- This is where the guestbook comments will be displayed -->
+          
+        </section>
+    </div>
+   </div>
+</body>
+
+</html>
