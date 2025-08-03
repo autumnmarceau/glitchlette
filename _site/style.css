@@ -538,6 +538,7 @@ strong, b {
 .melting-text {
   margin: 0;
   padding: 0;
+  padding-bottom: 2rem;
 }
 
 .melting-text {
@@ -882,6 +883,7 @@ h1
   width: 120px;
   height: 80px;
   object-fit: cover;
+  object-position: top center;
   border-radius: 8px;
   flex-shrink: 0;
   box-shadow:
@@ -1106,4 +1108,4 @@ article a {
 
 }
 
-/*test*
+/*test*/
