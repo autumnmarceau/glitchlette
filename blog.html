@@ -5,13 +5,13 @@ permalink: /blog/
 description: "Transmissions from the Glitch herself"
 ---
 <div class="melting-text-container">
-  <h1 class="melting-text" data-text="BLOGLETTE">BLOGLETTE</h1>
+  <h1 class="blog-page-header melting-text"data-text="BLOGLETTE">BLOGLETTE</h1>
   <hr>
 </div>
 
 <ul class="blog-post-list" style="list-style: none; padding-left: 0;">
   {% for post in site.posts %}
-    <li style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; display: flex; gap: 1rem; align-items: flex-start;">
+    <li style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; padding-top: 1rem; display: flex; gap: 1rem; align-items: flex-start;">
       
       {% if post.thumbnail %}
         <a href="{{ post.url | relative_url }}">

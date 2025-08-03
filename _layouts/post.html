@@ -6,14 +6,13 @@ description: "{{ page.excerpt | strip_html | truncate: 160 }}"
 ---
 
 <div class="melting-text-container">
-  <h1 class="melting-text" data-text="GLITCHLETTE BLOG">GLITCHLETTE BLOG</h1>
+  <h1 class="melting-text" data-text="BLOGLETTE">BLOGLETTE</h1>
 </div>
-
-<br />
 
 <article>
   <header>
-  <h1>{{ page.title }}</h1>
+  <h1 class="blog-post-header">{{ page.title }}</h1>
+
   <p style="font-variant: small-caps; font-weight: 600; color: rgba(230, 80, 80, 0.85); user-select:none;">
     {{ page.date | date: "%B %-d, %Y" }}
   </p>

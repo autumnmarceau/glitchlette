@@ -538,7 +538,6 @@ strong, b {
 .melting-text {
   margin: 0;
   padding: 0;
-  padding-bottom: 2rem;
 }
 
 .melting-text {
@@ -760,6 +759,7 @@ nav ul li {
   font-style: italic;
   color:#000000;
   margin-top: 0.5rem;
+  padding-top: 1rem;
   user-select: none;
   text-shadow:
     0 0 4px var(--red-dark),
@@ -810,7 +810,7 @@ nav ul li {
   font-size: 0.85rem;
   font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   position: relative;
   bottom: 1.5rem;
 }
@@ -928,6 +928,22 @@ article a {
     0 0 15px var(--red-primary),
     0 0 25px var(--red-shadow) !important;
   animation: slowGlow 4s ease-in-out infinite !important;
+}
+
+.blog-post-header{
+  font-family: 'Halloween', serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #fff !important;
+  text-shadow:
+    0 0 4px var(--red-dark),
+    0 0 15px var(--red-primary),
+    0 0 25px var(--red-shadow);
+  animation: none !important;
+}
+
+.blog-page-header{
+  padding-bottom: 2rem;
 }
 /*Media Queries*/
 /* ---------------------------------------
