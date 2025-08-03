@@ -1,5 +1,12 @@
 {
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
     "markdown.styles": [
-        "style.css"
+      "style.css"
     ]
+  }
 }
