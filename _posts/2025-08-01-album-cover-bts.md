@@ -17,7 +17,7 @@ On our way there, we stopped at a random consignment shop with no name or signag
 
 <figure>
   <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining" class="blog-post-image">
-  <br><figcaption>Not sure how Shelley Duvall would feel about us naming the axe after her, but at least it wasn’t a baseball bat. That’s a deep-cut reference for the nerds out there.</figcaption>
+  <br><figcaption>Not sure how she would feel about us naming the axe after her, though at least it wasn’t a baseball bat. Kubrick made her swing one in The Shining for 127 takes straight. Deep-cut trivia for the horror nerds out there.</figcaption>
 </figure>
 
 
