@@ -1,27 +1,25 @@
 production:
-  # Comments submission config (individual YAML files per comment)
   comments:
-    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments
+    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main
     branch: main
-    path: "_data/comments"
+    path: "_data"
+    fileName: "comments.yml"
     allowedFields:
       - "name"
       - "email"
       - "comment"
     moderation: true
     commitMessage: "New guestbook comment from {{name}}"
-    fileName: "{{year}}-{{month}}-{{day}}-{{timestamp}}-{{slug}}.yml"
     format: "yaml"
-  # Lyrics submission config (single YAML file for all submissions)
+
   lyrics-submissions:
-    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/lyrics-submissions.yml
+    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main
     branch: main
-    path: "_data/lyric-submissions.yml"
+    path: "_data"
+    fileName: "lyric-submissions.yml"
     allowedFields:
       - "name"
       - "lyrics"
     moderation: true
     commitMessage: "New lyrics submission from {{name}}"
     format: "yaml"
-    fileName: "lyrics-submissions.yml"  # ignored for single file? Just keep consistent
-
