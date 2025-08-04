@@ -42,7 +42,7 @@ We ended up naming the axe Shelley (after Shelley Duvall, of course. RIP <3).
 
 ## The Shoot at Long Beach
 
-Once we got to Long Beach, we checked into our hotel and prepped for the shoot while we waited for it to get dark. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). Marsh's was half the reason we came to Long Beach, because their outdoor lighting used to be a mix of candy-colored LEDs and neon signs, but in recent years they must have dialed back. Still, we got some cool shots, but we were eager for the big event of the evening: shooting on the beach. 
+Once we got to Long Beach, we checked into our hotel and prepped for the shoot while we waited for it to get dark. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). Marsh's was half the reason we came to Long Beach, because their outdoor lighting used to be a mix of candy-colored LEDs and neon signs, but in recent years they must have dialed back. Still, we got some cool shots, but we were eager for the big event of the evening: shooting on *the* beach. 
 
 Long Beach is cool because in the winter, you're allowed to drive directly onto the sand. So we did, parking about 50 feet from the shore. The shoot itself was a mix of fun and totally miserable due to how little clothing I was wearing. Our only light sources were the car’s headlights and a tiny 6x3-inch lightbox Jaz brought along.
 
