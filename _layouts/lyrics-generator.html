@@ -295,10 +295,10 @@
     <div id="loading-text">loading lyrics_generator.exe</div>
   </div>
 
-  <h1>Lyric Generator</h1>
-
+  <h1>GLITCHLETTE Lyric Generator</h1>
+  <p> Write your own song in the style of GLITCHLETTE.</p>
   <div class="crt-wrapper" role="main" aria-live="polite" aria-atomic="true" aria-label="Generated lyric output">
-    <div id="lyric-output" tabindex="0">Click "Generate" to create a glitchy lyric snippet.</div>
+    <div id="lyric-output" tabindex="0">Click "Generate" to get started.</div>
   </div>
 
   <div class="btn-group">
@@ -499,32 +499,162 @@ With my heart so reckless
 I've been foolish, darling
 But you played into it
 about
+
+	
+I can't sleep another night away from you
+
+Close my eyes and all I see is where I am supposed to be
+
+I shouldn't even be here
+at least that's what it felt like
+nineteen, breathing green
+crystalized within a dream
+tripping to the street lights
+
+wasted at my Nan's house
+how'd the hell i get here
+fading to the echoes
+peeling off the wall's veneer
+
+oh wow so mature analyze and reassure
+to be young is to be careless
+whiskey soaking your velour
+sleeping on a stranger's floor
+
+Lie and you lie and you lie and you realize
+i have no words for what I'm trying to say to you
+We live and we lie in our youth
+
+And I can't even see straight
+but babe why would i want to
+heat is building in my bones
+and i wanna be alone now
+
+Oh wow so mature
+analyze and reassure
+to be young it to be careless
+whiskey soaking your velour
+sleeping on a stranger's floor
+
+Lie and you lie and you lie and you realize
+i have no words for what I'm trying to say to you
+We live and we lie in our youth
+
+I can't forget the faces I have seen
+Crystalized visions lost within a dream
+
+Lie and you lie and you lie and you realize
+i have no words for what I'm trying to say to you
+We live and we lie in our youth
+
+This ice has thawed from all the embers
+of the flame that we had smothered
+I had to melt myself a la auto-sarcophagy
+But if I'm lucky I'll freeze
+
+When I'm with you I don't feel human
+More like a god that's seen the light
+I can't wait for you to come home
+At the end of every day
+Much like they wait for the sun
+
+You make me want to live
+You made me human
+
+Thought it was broke
+But it was froze
+And you melted me down
+Icicles have gone and pierced my heart
+
+You make me want to live
+You made me human
+
+this heart will exhume itself
+consume itself
+resume itself
+
+we were the whispered words
+of a hymn so soft and cold
+a beckoning broken vow untold
+now you are the shroud I wear
+to deny it all
+
+Well was it worth it for you?
+You gave it all
+(You are the shroud I wear to deny everything we had but it dies with me)
+
+On the phone your speech it was slurred
+With every bottle we promised to drink
+That cackling echo it shackled my ego
+And bound that night to my brain
+
+Now every reverie is fused with you
+and every shroud i'll wear
+
+Well was it worth it for you?
+You gave it all
+(You are the shroud I wear to deny everything we had but it dies with me)
+(This heart will exhume itself, consume itself, resume itself)
+
+All I wanted was to heal and to hold you
+All I wanted was to peel and unfold
+but you let go
+
+Part of me hopes if we keep playing this game
+That you will change your mind
+This mangled heart you've broken
+between my lungs will heal just fine
+You'll never know my love
+
+Part of me hopes if we keep playing this game
+That you will change your mind
+(why would you leave me)
+This mangled heart you've broken
+between my lungs will heal just fine
+(why would you leave me)
+You'll never know my love
+(why would leave me)
+
+All i wanted was to heal and to hold you
+All I wanted was to peel and unfold
+But you let go
+
+Baby hide me somewhere they can't follow
+(I'll always love you)
+I will soundly sleep between your teeth
+(I'll never hurt you)
+Bury all these dusted bones somewhere hollow
+(I won't forget you)
+I'll stay silent here and weep beneath
+(You know that I do)
+
+YEAH
+YEAAAAAAAAAAHHHHHH!
+
+Bitch! 
+What? 
+
 `;
 
-  const words = lyrics
-    .replace(/\n/g, ' ')
-    .replace(/[^a-zA-Z0-9' ]+/g, '')
-    .split(' ')
-    .filter(Boolean);
+  const lines = lyrics
+  .split('\n')
+  .map(line => line.trim())
+  .filter(line => line.length > 0);
 
   function randInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   function generateLyric() {
-    const linesCount = randInt(3, 6);
-    let output = '';
-    for (let i = 0; i < linesCount; i++) {
-      const wordsInLine = randInt(4, 8);
-      let line = [];
-      for (let j = 0; j < wordsInLine; j++) {
-        const w = words[randInt(0, words.length - 1)];
-        line.push(w);
-      }
-      output += line.join(' ') + '\n';
-    }
-    return output.trim();
+  const linesCount = randInt(3, 6);
+  let output = '';
+  for (let i = 0; i < linesCount; i++) {
+    const line = lines[randInt(0, lines.length - 1)];
+    output += line + '\n';
   }
+  return output.trim();
+}
+
 
   const btn = document.getElementById('generate-btn');
   const output = document.getElementById('lyric-output');
