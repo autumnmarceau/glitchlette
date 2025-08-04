@@ -1,25 +1,22 @@
-production:
-  comments:
-    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments
-    branch: main
-    path: "_data"
-    fileName: "comments.yml"
-    allowedFields:
-      - "name"
-      - "email"
-      - "comment"
-    moderation: true
-    commitMessage: "New guestbook comment from {{name}}"
-    format: "yaml"
+comments:
+  branch: main
+  path: "_data"
+  filename: "comments"
+  format: "yaml"
+  allowedFields:
+    - name
+    - email
+    - comment
+  moderation: true
+  commitMessage: "New guestbook comment from {{name}}"
 
-  lyrics-submissions:
-    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/lyrics-submissions
-    branch: main
-    path: "_data"
-    fileName: "lyric-submissions.yml"
-    allowedFields:
-      - "name"
-      - "lyrics"
-    moderation: true
-    commitMessage: "New lyrics submission from {{name}}"
-    format: "yaml"
+lyrics-submissions:
+  branch: main
+  path: "_data"
+  filename: "lyric-submissions"
+  format: "yaml"
+  allowedFields:
+    - name
+    - lyrics
+  moderation: true
+  commitMessage: "New lyrics submission from {{name}}"
