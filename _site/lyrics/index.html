@@ -304,33 +304,10 @@
   <div class="btn-group">
     <button id="generate-btn" aria-describedby="generate-desc">Generate</button>
     <button id="copy-btn" aria-describedby="copy-desc">Copy</button>
-    <button id="view-shared-btn">View Shared Lyrics</button>
   </div>
 
   <div id="copy-confirmation" role="alert" aria-live="assertive">Copied to clipboard!</div>
-  <div id="share-confirmation" role="alert" aria-live="assertive">Share link copied!</div>
 
-  <button id="open-share-form" class="glitch-button" aria-haspopup="dialog" aria-controls="share-modal">Share Your Lyrics</button>
-
-  <!-- Modal for sharing lyrics -->
-  <div id="share-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
-    <div class="crt-wrapper modal-content" style="max-width: 480px;">
-      <h2 id="modal-title">Share Your Lyrics</h2>
-      <p id="modal-desc">Submit your lyrics to be shared on the site.</p>
-      <form id="share-lyrics-form" method="POST" action="https://staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/lyrics-submissions
-">
-
-        <label for="user-name">Name:</label><br />
-        <input type="text" name="fields[name]" id="user-name" required autocomplete="name" /><br /><br />
-
-        <label for="user-lyrics">Your Lyrics:</label><br />
-        <textarea name="fields[lyrics]" id="user-lyrics" rows="8" required></textarea><br /><br />
-
-        <button type="submit" class="glitch-button" id="submit-btn">Submit Lyrics</button>
-        <button type="button" id="close-share-form" class="glitch-button">Cancel</button>
-
-        <div id="form-message" role="alert" aria-live="assertive" style="margin-top: 1rem; color: #ff9999;"></div>
-      </form>
     </div>
   </div>
 
