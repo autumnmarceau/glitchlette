@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GUESTBOOK | GLITCHLETTE</title>
-  <meta name="description" content="GLITCHLETTE's Guestbook - Leave your thoughts, comments, or just say hi." />
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description | default: 'GLITCHLETTE Guestbook' }}" />
   <meta name="keywords" content="GLITCHLETTE, Autumn Marceau, Seattle music, Seattle electronic music" />
   <meta name="author" content="Autumn Marceau" />
   
   <meta property="og:title" content="GLITCHLETTE — Skygaze Pop for Final Girls" />
-  <meta property="og:description" content="GLITCHLETTE's Guestbook - Leave your thoughts, comments, or just say hi." />
+  <meta property="og:description" content="{{ page.description | default: 'GLITCHLETTE Guestbook' }}" />
   <meta property="og:url" content="https://glitchlette.com/guestbook" />
   <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" />
   <meta property="twitter:card" content="summary_large_image" />
@@ -67,7 +67,7 @@
   </style>
 </head>
 
-<body class="guestbook-page">
+<body class="{{ page.body_class | default: 'guestbook-page' }}">
   <div id="bg-image"></div>
   <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
     <filter id="ripple" x="0" y="0">
@@ -98,62 +98,7 @@
 
     <!-- Main Content -->
     <div class="content">
-      <section class="block guestbook-intro">
-  <center><h1 class="melting-text" data-text="SEND TRANSMISSION">SEND TRANSMISSION</h1></center>
-  <br>
-  <hr>
-  <br>
-  <p>Welcome to the Guestbook! Leave your thoughts, comments, or just say hi. All comments are welcome!</p>
-  <br>
-  <section class="block guestbook-form">
-    <!-- Form -->
-    <form id="staticman-form" class="glitch-form" method="POST" action="https://staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments">
-      <label for="name">Name:</label><br/>
-      <input class="glitch-input" type="text" name="fields[name]" id="name" required /><br/><br/>
-
-      <label for="email">Email (optional, won't be published):</label><br/>
-      <input class="glitch-input" type="email" name="fields[email]" id="email" /><br/><br/>
-
-      <label for="comment">Comment:</label><br/>
-      <textarea class="glitch-textarea" name="fields[comment]" id="comment" rows="5" required></textarea><br/><br/>
-
-      <button class="glitch-button" type="submit">Submit</button>
-    </form>
-  </section>
-</section>
-
-<!-- Comments Section -->
-<div class="comments-section">
-  <h2>RECEIVED TRANSMISSIONS</h2>
-
-  
-
-  
-    
-
-    
-    
-
-    <div class="comment">
-      <p><strong></strong>
-        
-          <span class="comment-date">({"comments)</span>
-        
-      </p>
-      
-      <div class="comment-body">
-        
-
-      </div>
-      
-    </div>
-  
-</div>
-
-<p style="text-align: center; margin-top: 2rem;">
-  <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
-</p>
-
+      {{ content }}
     </div>
   </div>
 </body>
