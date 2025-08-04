@@ -2,8 +2,6 @@
 layout:post
 title: Guestbook
 ---
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -520,7 +518,7 @@ title: Guestbook
             <br>
              <section class="block guestbook-form">
            <!-- Form-->
-              <form id="staticman-form" class="glitch-form" method="POST" action="https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments">
+              <form id="staticman-form" class="glitch-form" method="POST" action="https://staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments">
 
                 <label for="name">Name:</label><br/>
                 <input class="glitch-input" type="text" name="fields[name]" id="name" required /><br/><br/>
@@ -540,16 +538,28 @@ title: Guestbook
       <div class="comments-section">
         <h2>RECEIVED TRANSMISSIONS</h2>
 
-        {% for comment in site.data.comments %}
+        {% assign sorted_comments = site.data.comments | sort_natural: '0' | reverse %}
+
+        {% for filename, comment in sorted_comments %}
+          {% comment %}
+            Extract date from filename prefix like '2025-08-04-abcdef.yaml'
+            Assuming format: YYYY-MM-DD-uniqueid.yaml
+          {% endcomment %}
+          {% assign date_str = filename | slice: 0, 10 %}
+          {% assign comment_date = date_str | date: "%B %d, %Y" %}
+
           <div class="comment">
-            <p><strong>{{ comment.name }}</strong>  <span class="comment-date">({{ comment.date }})</span></p>
+            <p><strong>{{ comment.name }}</strong>
+              {% if comment_date != blank %}
+                <span class="comment-date">({{ comment_date }})</span>
+              {% endif %}
+            </p>
             {% if comment.email %}
               <p>Email: <a href="mailto:{{ comment.email }}">{{ comment.email }}</a></p>
             {% endif %}
             <div class="comment-body">
               {{ comment.comment | markdownify }}
             </div>
-
             {% if comment.reply %}
               <div class="comment-reply">
                 <em>Site owner reply:</em>
@@ -560,6 +570,7 @@ title: Guestbook
             {% endif %}
           </div>
         {% endfor %}
+
       </div>
       <p style="text-align: center; margin-top: 2rem;">
             <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
@@ -569,4 +580,3 @@ title: Guestbook
   
 </body>
 
-</html>

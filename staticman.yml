@@ -1,7 +1,6 @@
 comments:
   branch: main
-  path: "_data"
-  filename: "comments"
+  path: "_data/comments"
   format: "yaml"
   allowedFields:
     - name
@@ -12,8 +11,7 @@ comments:
 
 lyrics-submissions:
   branch: main
-  path: "_data"
-  filename: "lyric-submissions"
+  path: "_data/lyric-submissions"
   format: "yaml"
   allowedFields:
     - name
