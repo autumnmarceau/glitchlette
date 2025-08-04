@@ -149,6 +149,30 @@
     </div>
   
 </div>
+<div id="form-status"></div>
+<script>
+  const form = document.getElementById('staticman-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+    })
+    .then(response => {
+      if (response.ok) {
+        status.innerHTML = "📡 Transmission received! Awaiting approval.";
+        form.reset();
+      } else {
+        status.innerHTML = "⚠️ There was an error sending your message.";
+      }
+    })
+    .catch(() => {
+      status.innerHTML = "⚠️ Network error. Try again later.";
+    });
+  });
+</script>
 
 <p style="text-align: center; margin-top: 2rem;">
   <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>

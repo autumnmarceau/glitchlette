@@ -18,3 +18,4 @@ lyrics-submissions:
     - lyrics
   moderation: true
   commitMessage: "New lyrics submission from {{name}}"
+  
