@@ -230,7 +230,8 @@
     color: #eee;
   }
 
-  /* Modal box */
+  /* Modal box — now removed because we use crt-wrapper inside modal */
+  /*
   .modal-content {
     background: #1c1e26;
     padding: 2rem;
@@ -239,6 +240,7 @@
     width: 90%;
     box-shadow: 0 0 30px #ff5555;
   }
+  */
 
   /* Form inputs */
   .modal-content input[type="text"],
@@ -307,6 +309,7 @@
   }
 }
 
+
 </style>
 </head>
 <body>
@@ -335,7 +338,7 @@
 
   <!-- Modal for sharing lyrics -->
   <div id="share-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
-    <div class="modal-content">
+    <div class="crt-wrapper modal-content" style="max-width: 480px;">
       <h2 id="modal-title">Share Your Lyrics</h2>
       <p id="modal-desc">Submit your lyrics to be shared on the site.</p>
       <form id="share-lyrics-form" method="POST" action="https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/lyrics-submissions">
@@ -345,16 +348,16 @@
         <label for="user-lyrics">Your Lyrics:</label><br />
         <textarea name="fields[lyrics]" id="user-lyrics" rows="8" required></textarea><br /><br />
 
-        <button type="submit" class="glitch-button">Submit Lyrics</button>
+        <button type="submit" class="glitch-button" id="submit-btn">Submit Lyrics</button>
         <button type="button" id="close-share-form" class="glitch-button">Cancel</button>
-      <textarea id="user-lyrics" name="fields[lyrics]" rows="8" required></textarea>
-        <input type="text" id="user-name" name="fields[name]" required autocomplete="name" />
 
-    </form>
+        <div id="form-message" role="alert" aria-live="assertive" style="margin-top: 1rem; color: #ff9999;"></div>
+      </form>
     </div>
   </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   // Lyric source text
   const lyrics = `
 Nor yet no vain wraiths nor quiet ghosts
@@ -571,18 +574,15 @@ about
   const btn = document.getElementById('generate-btn');
   const output = document.getElementById('lyric-output');
   const copyBtn = document.getElementById('copy-btn');
-  const shareBtn = document.getElementById('share-btn');
   const copyConfirm = document.getElementById('copy-confirmation');
   const shareConfirm = document.getElementById('share-confirmation');
 
-  // Generate lyric snippet
   btn.addEventListener('click', () => {
     output.textContent = generateLyric();
     copyConfirm.classList.remove('visible');
     shareConfirm.classList.remove('visible');
   });
 
-  // Copy to clipboard
   copyBtn.addEventListener('click', () => {
     if (!output.textContent.trim()) return;
     navigator.clipboard.writeText(output.textContent)
@@ -595,48 +595,34 @@ about
       });
   });
 
-  // Share button copies URL with lyrics encoded in query param
-  shareBtn.addEventListener('click', () => {
-    if (!output.textContent.trim()) return;
-    const baseUrl = window.location.origin + window.location.pathname;
-    const shareUrl = `${baseUrl}?lyrics=${encodeURIComponent(output.textContent)}`;
-    navigator.clipboard.writeText(shareUrl)
-      .then(() => {
-        shareConfirm.classList.add('visible');
-        setTimeout(() => shareConfirm.classList.remove('visible'), 1500);
-      })
-      .catch(() => {
-        alert('Failed to copy share URL. Please try manually.');
-      });
-  });
+  // Load shared lyrics from URL param if present
+  const params = new URLSearchParams(window.location.search);
+  const sharedLyrics = params.get('lyrics');
+  if (sharedLyrics) {
+    output.textContent = decodeURIComponent(sharedLyrics);
+  }
 
-  // On page load, if ?lyrics= present, decode and show in output
-  window.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const sharedLyrics = params.get('lyrics');
-    if (sharedLyrics) {
-      output.textContent = decodeURIComponent(sharedLyrics);
-    }
-  });
-
-  // Modal open/close logic
+  // Share modal elements
   const openShareBtn = document.getElementById('open-share-form');
   const closeShareBtn = document.getElementById('close-share-form');
   const shareModal = document.getElementById('share-modal');
   const shareForm = document.getElementById('share-lyrics-form');
   const userLyricsField = document.getElementById('user-lyrics');
   const userNameField = document.getElementById('user-name');
+  const submitBtn = document.getElementById('submit-btn');
+  const formMessage = document.getElementById('form-message');
 
   openShareBtn.addEventListener('click', () => {
-    // Auto-fill lyrics and disable editing
     userLyricsField.value = output.textContent.trim() || '';
     userLyricsField.readOnly = true;
     userLyricsField.required = false;
 
-    // Clear and enable the name field (required)
     userNameField.value = '';
     userNameField.disabled = false;
     userNameField.required = true;
+
+    formMessage.textContent = '';
+    submitBtn.disabled = false;
 
     shareModal.classList.remove('hidden');
     userNameField.focus();
@@ -644,27 +630,73 @@ about
 
   closeShareBtn.addEventListener('click', () => {
     shareModal.classList.add('hidden');
+    formMessage.textContent = '';
     openShareBtn.focus();
   });
 
-  // Optional: close modal on ESC key
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !shareModal.classList.contains('hidden')) {
       shareModal.classList.add('hidden');
+      formMessage.textContent = '';
       openShareBtn.focus();
     }
   });
 
-  // New "View Shared Lyrics" button handler
+  shareForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    submitBtn.disabled = true;
+    formMessage.style.color = '#ff9999';
+    formMessage.textContent = 'Submitting...';
+
+    const formData = {
+      fields: {
+        name: userNameField.value.trim(),
+        lyrics: userLyricsField.value.trim()
+      }
+    };
+
+    try {
+      const response = await fetch(shareForm.action, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        formMessage.style.color = '#99ff99';
+        formMessage.textContent = 'Thanks! Your lyrics have been shared.';
+        userNameField.value = '';
+        setTimeout(() => {
+          shareModal.classList.add('hidden');
+          formMessage.textContent = '';
+          submitBtn.disabled = false;
+          openShareBtn.focus();
+        }, 2000);
+      } else {
+        const errorData = await response.json();
+        formMessage.style.color = '#ff6666';
+        formMessage.textContent = 'Failed to submit: ' + (errorData.message || response.statusText);
+        submitBtn.disabled = false;
+      }
+    } catch (error) {
+      formMessage.style.color = '#ff6666';
+      formMessage.textContent = 'Network error: ' + error.message;
+      submitBtn.disabled = false;
+    }
+  });
+
+  // View Shared Lyrics button
   const viewSharedBtn = document.getElementById('view-shared-btn');
   if (viewSharedBtn) {
     viewSharedBtn.addEventListener('click', () => {
       window.location.href = '/lyrics/shared.html';
     });
   }
+});
 </script>
-
-
 
 </body>
 </html>

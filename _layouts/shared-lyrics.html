@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Shared Lyrics — Glitchlette</title>
+<title>{{ page.title | default: "Shared Lyrics — Glitchlette" }}</title>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
@@ -282,34 +282,27 @@
     </div>
 
     <nav aria-label="Primary site navigation">
-      <a href="/lyrics/" tabindex="0">Lyric Generator</a>
+      <a href="{{ '/lyrics/' | relative_url }}" tabindex="0">Lyric Generator</a>
       <!-- Add other links as needed -->
     </nav>
 
-    <a href="/" id="back-link" tabindex="0" aria-label="Back to main site">← Back to Main Site</a>
+    <a href="{{ '/' | relative_url }}" id="back-link" tabindex="0" aria-label="Back to main site">← Back to Main Site</a>
   </aside>
 
   <section id="main-content" tabindex="0" aria-label="Shared lyrics submissions container">
 
     <div class="lyrics-windows" id="lyrics-list" role="list">
-    
-    
-        
-        <article class="lyrics-window" tabindex="0" aria-label="Shared lyrics from user Autumn" role="listitem">
-            <div class="window-header">Autumn</div>
-            <div class="lyrics-content">This is a lyric line
-And another line
-</div>
+    {% assign submissions = site.data['lyric-submissions'] %}
+    {% if submissions and submissions.size > 0 %}
+        {% for submission in submissions %}
+        <article class="lyrics-window" tabindex="0" aria-label="Shared lyrics from user {{ submission.name | escape }}" role="listitem">
+            <div class="window-header">{{ submission.name | escape }}</div>
+            <div class="lyrics-content">{{ submission.lyrics | escape }}</div>
         </article>
-        
-        <article class="lyrics-window" tabindex="0" aria-label="Shared lyrics from user Guest" role="listitem">
-            <div class="window-header">Guest</div>
-            <div class="lyrics-content">Ghosts in the hallway
-Whispers in the rain
-</div>
-        </article>
-        
-    
+        {% endfor %}
+    {% else %}
+        <p>No lyrics have been shared yet. Be the first!</p>
+    {% endif %}
     </div>
 
   </section>

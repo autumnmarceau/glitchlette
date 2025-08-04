@@ -1,4 +1,11 @@
-- name: "User Name"
+- name: "Autumn"
   lyrics: |
-    These are the submitted lyrics...
+    This is a lyric line
+    And another line
   date: 2025-08-03T12:00:00Z
+
+- name: "Guest"
+  lyrics: |
+    Ghosts in the hallway
+    Whispers in the rain
+  date: 2025-08-04T14:35:00Z
