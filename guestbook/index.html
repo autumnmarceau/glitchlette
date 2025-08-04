@@ -24,6 +24,8 @@ title: Guestbook
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
 
    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-33EL5WF8CW"></script>
@@ -34,76 +36,444 @@ title: Guestbook
 
     gtag('config', 'G-33EL5WF8CW');
   </script>
-    <!-- Guestbook Style-->
+    <!-- ================
+     Guestbook Style
+     ================ -->
     <style>
-    /* Body font & background */
-    body {
-        color: #fef9f5;
-        font-family: 'Spectral', sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+  /* --- Body & Layout --- */
+  body {
+    color: #fef9f5;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Breadcrumb nav styling */
-    nav.breadcrumbs {
-        margin: 1rem auto;
-        max-width: 700px;
-        font-size: 0.9rem;
-        color: #aaa;
-    }
+  .content {
+    max-width: 700px;
+    margin: 1rem auto 3rem;
+    padding: 1rem;
 
-    nav.breadcrumbs a {
-        color: #ee2222;
-        text-decoration: none;
-    }
+    /* New flex layout for consistent block width */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    /* Content wrapper */
-    .content {
-        max-width: 700px;
-        margin: 1rem auto 3rem;
-        padding: 1rem;
-    }
+  nav.breadcrumbs {
+    margin: 1rem auto;
+    max-width: 700px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  nav.breadcrumbs a {
+    color: #ee2222;
+    text-decoration: none;
+  }
 
-    /* Guestbook intro block */
-    .guestbook-intro {
-        border: 2px dashed #ee2222;
-        padding: 1.5rem;
-        background-color: #111;
-        border-radius: 6px;
-        box-shadow: 0 0 15px #ee222288;
-        margin-bottom: 1.5rem;
-    }
-
-    .guestbook-intro h1 {
-        margin-top: 0;
-        color: #ee2222;
-        font-size: 2.5rem;
-        text-shadow: 1px 1px 0 #0a0a0a;
-    }
-
-    .guestbook-intro p {
-        font-size: 1rem;
-        color: #fef9f5cc;
-        line-height: 1.5;
-    }
-
-    .guestbook-comments {
+  /* --- Guestbook Intro --- */
+  .guestbook-intro {
     border: 2px dashed #ee2222;
-    background-color: #111;
     padding: 1.5rem;
+    background-color: #111;
     border-radius: 6px;
     box-shadow: 0 0 15px #ee222288;
-    margin-top: 3rem;
-    }
+    margin-bottom: 0.75rem;
 
-    .guestbook-comments h2 {
-    color: #ee2222;
-    font-size: 2rem;
+    /* Remove min-width to allow full width */
+    min-width: auto !important;
+    max-width: 100% !important;
+  }
+  .guestbook-intro p {
+    font-size: 1rem;
+    color: #fef9f5cc;
+    line-height: 1.5;
+  }
+
+  /* --- Guestbook Comments Container --- */
+  .block.guestbook-comments {
+    position: relative;
+    padding: 2rem;
+    margin: 3rem auto 4rem;
+    background-color: #111;
+    border-radius: 12px;
+    box-shadow:
+      0 0 15px #8a0035,
+      inset 0 0 25px #7d0048;
+    overflow: hidden;
+    z-index: 0;
+    color: #e0e0f8;
+
+    /* Remove width constraints for uniform width */
+    min-width: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Neon glowing border - dual layers for flicker */
+  .block.guestbook-comments::before,
+  .block.guestbook-comments::after {
+    content: "";
+    position: absolute;
+    border-radius: 14px;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    z-index: 1;
+    animation: neon-flicker 3s infinite alternate;
+    box-shadow:
+      0 0 10px #c00,
+      0 0 30px #c00,
+      0 0 40px #900,
+      0 0 70px #b3004d,
+      0 0 100px #7e0073,
+      0 0 150px #7e0073;
+  }
+  .block.guestbook-comments::before {
+    top: -6px; bottom: -6px;
+    left: -6px; right: -6px;
+  }
+  .block.guestbook-comments::after {
+    top: -10px; bottom: -10px;
+    left: -10px; right: -10px;
+    border-radius: 18px;
+    animation-delay: 1.5s;
+    box-shadow:
+      0 0 15px #7e0073,
+      0 0 40px #7e0073,
+      0 0 50px #c00,
+      0 0 80px #b3004d,
+      0 0 120px #c00,
+      0 0 180px #900;
+  }
+
+  /* Neon flicker keyframes */
+  @keyframes neon-flicker {
+    0%, 100% {
+      opacity: 1;
+      filter: drop-shadow(0 0 3px #f33) drop-shadow(0 0 10px #a0043c);
+    }
+    50% {
+      opacity: 0.7;
+      filter: drop-shadow(0 0 2px #b3004d) drop-shadow(0 0 8px #7e0073);
+    }
+    75% {
+      opacity: 0.85;
+      filter: drop-shadow(0 0 5px #f33) drop-shadow(0 0 12px #c00);
+    }
+  }
+
+  /* --- Comments Section Styling --- */
+  .comments-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+
+  .comment {
+    background: #1a1a1a; /* slightly lighter than bg */
+    border: 1.5px dashed #ee2222;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 8px rgba(238, 34, 34, 0.25);
     margin-bottom: 1rem;
-    text-shadow: 1px 1px 0 #0a0a0a;
-    }
+    transition: box-shadow 0.3s ease;
+  }
 
-    </style>
+  .comment:hover {
+    box-shadow: 0 4px 15px rgba(238, 34, 34, 0.5);
+  }
+
+  .comment p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: #fef9f5cc;
+    font-size: 1rem;
+  }
+
+  .comment p strong {
+    color: #ee2222;
+    font-weight: 700;
+    font-family: 'Halloween', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .comment-body {
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-size: 1rem;
+  }
+
+  .comment-date {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+    margin-left: 6px;
+  }
+
+  .comment-reply {
+    margin-top: 1rem;
+    background: #2e2e2e;
+    border-left: 4px solid #ee2222;
+    padding: 0.8rem 1rem;
+    border-radius: 0 6px 6px 0;
+    color: #fef9f5cc;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  .reply-body {
+    margin-top: 0.3rem;
+    font-style: normal;
+    color: #fef9f5;
+  }
+
+  .comment-reply em {
+    font-weight: 600;
+    color: #ee6666;
+  }
+
+  /* --- Guestbook Form Container (VHS glitch style) --- */
+  .block.guestbook-form {
+    position: relative;
+    margin: 1rem auto 1.5rem;
+    padding: 2rem 2.5rem;
+    background: #0a0a0a; /* very dark */
+    border: 12px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+
+    /* VHS tape scratch border image */
+    border-image-source: url('/photos/vhs_tape_border.png');
+    border-image-slice: 30;
+    border-image-repeat: stretch;
+    border-image-width: 12px;
+
+    /* Static noise background */
+    background-image:
+      url('/photos/static_noise.png'),
+      linear-gradient(45deg, #111111, #222222);
+    background-repeat: repeat;
+    background-blend-mode: screen;
+    background-size: auto;
+
+    box-shadow: 0 0 20px #ff0000bb; /* red glow */
+    animation: vhsFlicker 3s infinite;
+    width: 100%;
+
+    /* Remove conflicting padding/margin */
+    padding: 0; 
+  }
+  form.glitch-form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Flickering tracking error animation */
+  @keyframes vhsFlicker {
+    0%, 100% {
+      filter: brightness(1);
+      box-shadow: 0 0 20px #ff0000bb;
+    }
+    50% {
+      filter: brightness(1.3) contrast(1.2);
+      box-shadow: 0 0 35px #ff3333dd;
+    }
+  }
+
+  /* Static noise overlay */
+  .block.guestbook-form::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: url('/photos/static_noise.png') repeat;
+    opacity: 0.15;
+    animation: staticMove 5s linear infinite;
+    z-index: 10;
+  }
+  @keyframes staticMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+  }
+
+  /* --- Form inside guestbook-form --- */
+  .block.guestbook-form form {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    color: #e0e0f8;
+  }
+
+  /* Inputs & textarea styling */
+  .glitch-input, .glitch-textarea {
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid #ff3333;
+    color: #ff6666;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-family: 'Share Tech Mono', monospace;
+    box-shadow: inset 0 0 10px #cc4444;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  .glitch-input:focus, .glitch-textarea:focus {
+    border-color: #ff6666;
+    box-shadow: 0 0 15px #ff6666, inset 0 0 15px #ff9999;
+    outline: none;
+  }
+
+  /* Submit button */
+  .glitch-button {
+    background: #b30000;
+    color: #fef9f5;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 20px #ff0000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glitch-button:hover {
+    background-color: #ff3333;
+    box-shadow: 0 0 30px #ff6666;
+  }
+
+  /* --- Responsive adjustments --- */
+  @media (max-width: 600px) {
+    .block.guestbook-form {
+      border-width: 8px;
+      max-width: 100%;
+      margin: 1rem auto 2rem;
+      padding: 1.2rem 1.5rem;
+    }
+    .glitch-input,
+    .glitch-textarea,
+    .glitch-button {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .glitch-form {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* --- Optional: Form window header bar inside guestbook-comments --- */
+  .block.guestbook-comments form {
+    background: #222;
+    border: 2px solid #55aaff;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px #55aaff80, 0 0 10px #33bbffcc;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+    color: #aad4ff;
+    position: relative;
+  }
+  .block.guestbook-comments form::before {
+    content: "Guestbook Window";
+    display: block;
+    background: #005599;
+    color: #cceeff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 0 -3px 5px #003366;
+    user-select: none;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+  }
+
+  .glitch-button {
+    background: #180018;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #a1001c;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 8px #a1001c;
+    transition: 0.2s ease;
+  }
+
+  .glitch-button:hover {
+    box-shadow: 0 0 12px #a1001c, 0 0 24px #7a006b;
+  }
+
+  /* On click */
+  .glitch-button:active {
+    animation: glitch-click 0.3s steps(2, end);
+  }
+
+  @keyframes glitch-click {
+    0% {
+      transform: translate(0);
+      box-shadow: 0 0 4px #a1001c;
+    }
+    20% {
+      transform: translate(-3px, 2px);
+      box-shadow: 2px 2px 10px #7a006b;
+    }
+    40% {
+      transform: translate(3px, -2px);
+      box-shadow: -2px -2px 10px #a1001c;
+    }
+    60% {
+      transform: translate(-2px, 1px);
+      box-shadow: 2px -2px 8px #7a006b;
+    }
+    80% {
+      transform: translate(2px, -1px);
+      box-shadow: -2px 2px 8px #a1001c;
+    }
+    100% {
+      transform: translate(0);
+      box-shadow: 0 0 4px #7a006b;
+    }
+  }
+
+  /* General block styling for spacing and full width */
+  .block {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .guestbook-intro {
+    margin-bottom: 0.75rem;
+  }
+
+  .block.guestbook-form {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .comments-section {
+    margin-top: 1.5rem;
+  }
+
+  .comment {
+    margin-bottom: 1rem;
+  }
+  .block.guestbook-form {
+  background-image: url('/photos/grunge_texture.jpg');
+  background-repeat: repeat; /* repeat the texture */
+  background-size: auto; /* or 'cover' if you want full area */
+  background-blend-mode: multiply; /* try overlay, screen, multiply, etc. */
+  background-color: #0a0a0a; /* fallback base color */
+  opacity: 0.8; /* lowers entire element's opacity (not always ideal) */
+  position: relative;
+}
+
+</style>
 
 </head>
 <!-- ================
@@ -128,8 +498,8 @@ title: Guestbook
         <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
         <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
         <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
-        <!-- <li><a href="https://glitchlette.com/blog" data-text="BLOG">BLOG</a></li> -->
-        <!-- <li><a href="https://glitchlette.com/faq" data-text="FAQ">FAQ</a></li> -->
+        <li><a href="https://glitchlette.com/blog" data-text="BLOG">Blog</a></li>
+        <li><a href="https://glitchlette.com/faq" data-text="FAQ">FAQ</a></li>
         <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
       </ul>
       <ul class="social-nav">
@@ -142,36 +512,39 @@ title: Guestbook
     <div class="content">
         <!-- Header/Intro-->
         <section class="block guestbook-intro">
-            <center><h1 class="melting-text" data-text="Guestbook">Guestbook</h1></center>
+            <center><h1 class="melting-text" data-text="SEND TRANSMISSION">SEND TRANSMISSION</h1></center>
             <br>
-            <p>
-            For those inclined to sign guestbooks. Thank you to everyone who has left kind words for me, I will respond to every entry eventually!
-            </p>
-        </section>
-        <!-- Form-->
-        <section class="block guestbook-comments">
-          <!-- This is where the guestbook form goes-->
-           <p>To leave a comment, please fill out the form below:</p>
-           <form id="staticman-form" method="POST" action="https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments">
-            <label for="name">Name:</label><br/>
-            <input type="text" name="fields[name]" id="name" required /><br/><br/>
+            <hr>
+            <br>
+            <p>Welcome to the Guestbook! Leave your thoughts, comments, or just say hi. All comments are welcome!</p>
+            <br>
+             <section class="block guestbook-form">
+           <!-- Form-->
+              <form id="staticman-form" class="glitch-form" method="POST" action="https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments">
+                <label for="name">Name:</label><br/>
+                <input class="glitch-input" type="text" name="fields[name]" id="name" required /><br/><br/>
 
-            <label for="email">Email (won't be published):</label><br/>
-            <input type="email" name="fields[email]" id="email" required /><br/><br/>
+                <label for="email">Email (optional, won't be published):</label><br/>
+                <input class="glitch-input" type="email" name="fields[email]" id="email" optional /><br/><br/>
 
-            <label for="comment">Comment:</label><br/>
-            <textarea name="fields[comment]" id="comment" rows="5" required></textarea><br/><br/>
+                <label for="comment">Comment:</label><br/>
+                <textarea class="glitch-textarea" name="fields[comment]" id="comment" rows="5" required></textarea><br/><br/>
 
-            <button type="submit">Submit Comment</button>
-          </form>
+                <button class="glitch-button" type="submit">Submit</button>
+              </form>
+
+            </section>
         </section>
         <!-- Comments-->
       <div class="comments-section">
-        <h2>Guestbook Comments</h2>
+        <h2>RECEIVED TRANSMISSIONS</h2>
 
         {% for comment in site.data.comments %}
           <div class="comment">
-            <p><strong>{{ comment.name }}</strong> ({{ comment.date }})</p>
+            <p><strong>{{ comment.name }}</strong>  <span class="comment-date">({{ comment.date }})</span></p>
+            {% if comment.email %}
+              <p>Email: <a href="mailto:{{ comment.email }}">{{ comment.email }}</a></p>
+            {% endif %}
             <div class="comment-body">
               {{ comment.comment | markdownify }}
             </div>
@@ -187,9 +560,12 @@ title: Guestbook
           </div>
         {% endfor %}
       </div>
-
+      <p style="text-align: center; margin-top: 2rem;">
+            <a href="#top" style="color: var(--text-light); text-decoration: underline;">Back to Top</a>
+          </p>
     </div>
    </div>
+  
 </body>
 
 </html>
