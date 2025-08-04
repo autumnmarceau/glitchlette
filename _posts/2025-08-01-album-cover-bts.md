@@ -33,6 +33,7 @@ As we pulled away, I opened Google Maps to mark the spot so we could return tomo
 
 We ended up naming the axe Shelley (after Shelley Duvall, of course. RIP <3).
 
+
 ### An Homage to the Scream Queen 
 <figure>
   <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining" class="blog-post-image">
