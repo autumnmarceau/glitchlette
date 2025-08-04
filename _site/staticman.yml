@@ -1,6 +1,6 @@
 production:
   comments:
-    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main
+    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/comments
     branch: main
     path: "_data"
     fileName: "comments.yml"
@@ -13,7 +13,7 @@ production:
     format: "yaml"
 
   lyrics-submissions:
-    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main
+    endpoint: https://api.staticman.net/v3/entry/github/autumnmarceau/glitchlette/main/lyrics-submissions
     branch: main
     path: "_data"
     fileName: "lyric-submissions.yml"
