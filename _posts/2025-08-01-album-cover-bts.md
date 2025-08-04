@@ -9,20 +9,20 @@ thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in 
 
 What started as a hot girl photo shoot almost ended with DEATH AND DISASTER! 
 
-So, back in February my creative director Jaz convinced me to go to Long Beach, WA for a photoshoot. All we had prepared was the outfit, some fake blood and a few locations. I'm know Jaz had a vision, but I was pretty much just along for the ride. 
+So, back in February my creative director Jaz convinced me to go to Long Beach, WA for a photoshoot. All we had prepared was the outfit, some fake blood and a few locations. I know Jaz had a vision, but I was pretty much just along for the ride. 
 
 The journey from Long Beach to Seattle is about 3 and a half hours. Once you get off I-5, the vibe shifts. The road begins to wind through misty lowlands, old growth forests, logging towns that feel just beyond the veil. The drive encapsulated that particular eeriness that seems to hang over so much of rural Washington.  It was easy to see why David Lynch chose this kind of place for *Twin Peaks.* 
 
-We stopped inMontesano, WA for gas, pulling into a Chevron and an adjacent small shopping complex. 
+We stopped in Montesano, WA for gas, pulling into a Chevron and an adjacent small shopping complex. 
 Across from the gas station was small consignment shop, with no signage but a big "OPEN" sign. We'd been wanting to find some sort of weapon or prop for me for the shoot, so we thought we'd take a look before we got back on the road. 
 
-The shop was a shrine to weird antqiues and used tools. They had everything from old dolls, vintage chainsaws, antique guns, and *axes*. 
+The shop was a shrine to weird antqiues and used tools. They had everything from old dolls, to vintage chainsaws, antique guns, and *axes*. 
 
 There was one that drew my eye. A bright red head, sturdy handle and a suitable amount of wear and tear, for authenticity. 
 
-We checked out, making casual conversation with the elderly married couple who owned the place. They were *very* excited I was buying the axe, telling me how it was new to their inventory, having just been brought in a few days prior. We mentioned that we would be heading back through tomorrow on our way home and they encouraged us to stop by. The woman laughed as she handed me the receipt. "Our business name isn't even on here!"
+We checked out, while making casual conversation with the elderly married couple who owned the place. They were *very* excited I was buying the axe, telling me how it was new to their inventory, having just been brought in a few days prior. We mentioned that we would be heading back through tomorrow on our way home and they encouraged us to stop by. The woman laughed as she handed me the receipt. "Our business name isn't even on here!"
 
-As we pulled away, I opened google maps to mark the spot so we could return tomorrow. 
+As we pulled away, I opened Google Maps to mark the spot so we could return tomorrow. 
 
 I could not find any record of that business existing. 
 
@@ -58,7 +58,7 @@ It was.
 *Very fast.*
 
 As the wall of water rushed towards us, I yelled “GO GO GO GO GO." Jaz cranked the car into reverse, slammed the gas and flipped the car around, speeding away from the incoming wave *just in time.* 
-We didn't stop to look back, heading straight for the hotel, erupting into maniacal, adrenaline-fueld laughter once we entered our room. I opened the weather app again to re-check the gale warning… and saw something I had missed before:
+We didn't stop to look back, heading straight for the hotel, erupting into maniacal, adrenaline-fueled laughter once we entered our room. I opened the weather app again to re-check the gale warning… and saw something I had missed before:
 
  **SLEEPER WAVE WARNING**
 
@@ -77,7 +77,7 @@ We didn't stop to look back, heading straight for the hotel, erupting into mania
 
 Quick research showed it only takes a few inches of water to make a car float. So when I say it was a near-death experience, I MEAN IT, y’all. 
 
-Neither of us slept that night. Since then, we’ve developed a fear *and* fascination with the ocean. She’s our God now. She let us live. Honestly, I should probably dedicate the album to her.
+Neither of us slept that night. Since then, we’ve developed a healthy fear *and* reverent fascination with the ocean. She’s our God now. She let us live. Honestly, I should probably dedicate the album to her.
 
 <figure>
   <img src="/photos/EVERYRAT_OG.jpg" alt="Original Every Rat album cover" class="blog-post-image">
