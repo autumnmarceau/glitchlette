@@ -13,7 +13,7 @@ This is the story of how my creative director Jaz and I took the album cover pho
 ## Dear David Lynch: I Get It Now
 
 
-Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3 and a half hours, and once you get off I-5, the landscape begins to exhale the iconic eeriness of rural Washington. Winding roads lead you through misty lowlands, old growth forests, and drowsy logging towns that toe the seam of here and *there*. Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
+Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3 and a half hours, and once you get off I-5, the landscape begins to exhale the liminal eeriness that pervades Washington's most rural areas. Winding roads lead you through misty lowlands, old growth forests, and drowsy logging towns that toe the seam of here and *there*. Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
 
 
 One such town, Montesano, was where we stopped for gas, an unassuming Chevron adjacent to a small, even more unassuming shopping complex. The concrete buildings felt especially unnatural among the verdant stillness of the hillside, as if they weren't meant to be there and  *you* certainly weren't meant to see them. 
