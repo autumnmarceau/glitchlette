@@ -14,7 +14,9 @@ This is the story of how my creative director Jaz and I took the album cover pho
 ## Dear David Lynch: I Get It Now
 
 
-Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3 and a half hours, and once you get off I-5, the landscape begins to exhale the same, liminal eeriness that pervades Washington's most rural areas. Winding roads lead you through misty lowlands, old growth forests, and drowsy logging towns that toe the seam of here and *there*. Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
+Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3 and a half hours, and once you get off I-5, the landscape begins to exhale the same, liminal eeriness that pervades Washington's most rural areas. Winding roads lead you through misty lowlands, old growth forests, and drowsy logging towns that toe the seam of here and *there*. 
+
+Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
 
 
 One such town, Montesano, was where we stopped for gas, an unassuming Chevron adjacent to a small, even more unassuming shopping complex. The concrete buildings felt especially unnatural among the verdant stillness of the hillside, as if they weren't meant to be there and  *you* certainly weren't meant to see them. 
@@ -26,7 +28,7 @@ Across from the gas station was a small consignment shop, with no signage or bra
 ## The Axe from The Shop With No Name
 
 
-Inside was a hazardous shrine to chaos. Old dolls whose barren eyes stared blankly across from gun racks. A sideways refrigerator box housed a *pit* of antlers and animal bones, serving as overflow for the dozens that hung from the ceiling. Tetanus was a constant threat, with rusty chainsaws and garden tools from various centuries enclosing the narrow aisles. Any remaining wall space not used for product display was filled with a mix of the rare and mundane.Vintage Elvis figurines next to singing fish. 
+Inside was a hazardous shrine to chaos. Old dolls whose barren eyes stared blankly across from gun racks. A sideways refrigerator box housed a *pit* of antlers and animal bones, serving as overflow for the dozens that hung from the ceiling. Tetanus was a constant threat, with rusty chainsaws and garden tools from various centuries enclosing the narrow aisles. Any remaining wall space not used for product display was filled with a mix of the rare and mundane. Vintage Elvis figurines next to singing fish. 
 
 
 Among the weapons and tools was what I would lovingly describe as an *abundant* selection of axes,  hazardously propped against the wall, blades out, like a domino line of mini-guillotines for those with misguided steps. There was one that drew my eye, with a bright red head, sturdy handle and a suitable amount of wear and tear for authenticity. 
@@ -62,7 +64,9 @@ Once we got to Long Beach, we checked into our hotel and prepped for the shoot w
   <br><figcaption>A warning about getting stuck on the beach near the front desk of our hotel. Just post on facebook!</figcaption>
 </figure>
 
-Long Beach is cool because in the winter, you're allowed to drive directly onto the sand. So we did, parking about 50 feet from the shore. The shoot itself was a mix of fun and totally miserable due to how little clothing I was wearing. Our only light sources were the car’s headlights and a tiny 6x3-inch lightbox Jaz brought along.
+Long Beach is cool because in the winter, you're allowed to drive directly onto the sand. So we did, parking about 50 feet from the shore, what we assumed was a safe distance. The tide was out, and it would stay that way. 
+
+The shoot itself was a mix of fun and totally miserable due to how little clothing I was wearing. Our only light sources were the car’s headlights and a tiny 6x3-inch lightbox Jaz brought along.
 
 
 In between takes, I huddled in the ghost hoodie to stay warm, which is how we got the thumbnail photo.
@@ -104,16 +108,17 @@ Whoops. My bad.
 
 
 ### What is a Sleeper Wave?
->- **Sleeper waves** (aka a sneaker wave) are potentially deadly waves that surge further up the beach than expected, overtaking the unaware.>- Beach goers can be swept into the ocean.
->- This can result in cold water immersion.
->- Cold water immersion can be dangerous, even deadly.
+>- **Sleeper waves** (also called sneaker waves) are powerful, unpredictable waves that surge far higher up the beach than expected.
+>- *They can knock people over, drag them into the ocean, and cause sudden cold water immersion, which is often dangerous and sometimes deadly.*
+>- How can you avoid them? **Never turn your back on the ocean.**
 
 ### The Danger of Sleeper Waves
->- Stay farther back from the ocean than you think is necessary. Sneaker waves can run up the beach by at least 150 feet (45 meters) into the dry beach.
->- **Never turn your back on the ocean.**
->- Be aware of the following dangers:.
->- The force and speed with which sneaker waves move.
->- No place on the beach is too high for the wave to reach.
+>- They strike without warning.
+>- *Sneaker waves can surge over 150 feet (45 meters) beyond the waterline.*
+>- No place on the beach is guaranteed safe.
+>- *The water is cold enough to cause shock, disorientation, or drowning.*
+>- The waves move fast and with surprising force.
+
 
 
 Quick research showed it only takes a few inches of water to make a car float. The totality of what we had narrowly avoided began to sink in. 
@@ -161,4 +166,4 @@ I'd love to hear about it, [let's commiserate!](https://glitchlette.com/guestboo
 
 --
 --
-Sleeper Wave definition from [NOAA](https://www.weather.gov/safety/sneaker-waves)
+Sleeper Wave info from [NOAA](https://www.weather.gov/safety/sneaker-waves)
