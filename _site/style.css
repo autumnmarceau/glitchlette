@@ -9,6 +9,9 @@
   --red-gradient-end: #770000;
   --text-light: #f6f0e7;
   --background-dark: #111111;
+  --purple-accent: #7e0073;
+  --purple-gradient-start: #a000a0;
+  --purple-gradient-end: #4b004b;
 }
 
 /* Background image full viewport fixed behind everything */
@@ -50,7 +53,7 @@ html, body {
   height: 100vh;
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
@@ -1148,3 +1151,4 @@ article a {
     padding-top: 1rem;
   }
 }
+

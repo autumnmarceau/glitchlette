@@ -75,6 +75,20 @@
     <main class="main-content">
       <div class="melting-text-container">
   <h1 class="blog-page-header melting-text"data-text="BLOGLETTE">BLOGLETTE</h1>
+    <style>
+      hr li ::before li ::after {
+      border: none; /* remove default border */
+      height: 4px; /* thickness of the line */
+      background: linear-gradient(
+        to right,
+        var(--purple-gradient-start),
+        var(--purple-accent),
+        var(--purple-gradient-end)
+      );
+      border-radius: 2px; /* optional: rounded edges */
+      margin: 1em 0; /* spacing above/below */
+    }
+  </style>
   <hr>
 </div>
 
