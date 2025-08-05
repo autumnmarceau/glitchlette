@@ -9,6 +9,7 @@ thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in 
 
 This is the story of how my creative director Jaz and I took the album cover photo for the latest GLITCHLETTE EP [EVERY RAY WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH!](/music), and how we almost didn't live to tell the tale. 
 
+--
 
 ## Dear David Lynch: I Get It Now
 
@@ -85,7 +86,7 @@ Most of the photos were unusable—I just looked cold and miserable. I could bar
 
 After the shoot, we got back in the car and I tried my best to talk through labored exhales and chattering teeth. I put my glasses on, finally able to see clearly for the first time in hours, and looked ahead.
 
- "Hey, is it just me or is the water getting closer?"
+#### "Hey, is it just me or is the water getting closer?"
 
 It was.
 
@@ -151,12 +152,13 @@ In the end, despite the strange occurrences and nearly shuffling off this mortal
 **ALL HAIL THE OCEAN. ALL HAIL SHELLEY THE AXE**
 
 
-(See the album cover in action and stream the EP now!)[/music]
+[See the album cover in action and stream the EP now!](/music)
 
 
 ## Have you had a near death experience? 
 
 I'd love to hear about it, [let's commiserate!](https://glitchlette.com/guestbook)
 
+--
 --
 Sleeper Wave definition from [NOAA](https://www.weather.gov/safety/sneaker-waves)
