@@ -25,7 +25,7 @@ Across from the gas station was a small consignment shop, with no signage or bra
 ## The Axe from The Shop With No Name
 
 
-Inside was a hazardous shrine to chaos. Old dolls whose barren eyes stared blankly across from gun racks. A sideways refrigerator box housed a *pit* of antlers and animal bones, serving as overflow for the dozens that hung from the ceiling. Tetanus was a constant threat, with rusty chainsaws and garden tools from various centuries enclosing the narrow aisles. Any remaining wall space not used for product display was filled with a mix of the rare and mundane.Coca Vintage Elvis figurines next to singing fish. 
+Inside was a hazardous shrine to chaos. Old dolls whose barren eyes stared blankly across from gun racks. A sideways refrigerator box housed a *pit* of antlers and animal bones, serving as overflow for the dozens that hung from the ceiling. Tetanus was a constant threat, with rusty chainsaws and garden tools from various centuries enclosing the narrow aisles. Any remaining wall space not used for product display was filled with a mix of the rare and mundane.Vintage Elvis figurines next to singing fish. 
 
 
 Among the weapons and tools was what I would lovingly describe as an *abundant* selection of axes,  hazardously propped against the wall, blades out, like a domino line of mini-guillotines for those with misguided steps. There was one that drew my eye, with a bright red head, sturdy handle and a suitable amount of wear and tear for authenticity. 
