@@ -77,7 +77,7 @@ In between takes, I huddled in the ghost hoodie to stay warm, which is how we go
 The weather was *awful*. Low 40s, windy, raining sideways. My weather app showed a **gale warning** advisory, but we figured we could ignore it since we weren’t getting in the water. Bad call.
 
 
-Most of the photos were unusable—I just looked cold and miserable. I could barely see due to my non-prescription sclera lenses.  
+Most of the photos were unusable due to me looking cold and miserable. I could barely see due to my non-prescription sclera lenses.  
 
 
 ## Never Turn Your Back On The Ocean
