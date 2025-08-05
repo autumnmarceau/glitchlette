@@ -13,7 +13,7 @@ This is the story of how my creative director Jaz and I took the album cover pho
 ## Dear David Lynch: I Get It Now
 
 
-Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3 and a half hours, and once you get off I-5, the landscape begins to exhale the iconic eeriness of rural Washington. Winding roads lead you through misty lowlands, old growth forests, and drowsy logging towns that toe the seam of here and *there*. It's easy to see why David Lynch chose this kind of place for *Twin Peaks.* Here it feels like every tree portends your doom. 
+Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3 and a half hours, and once you get off I-5, the landscape begins to exhale the iconic eeriness of rural Washington. Winding roads lead you through misty lowlands, old growth forests, and drowsy logging towns that toe the seam of here and *there*. Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
 
 
 One such town, Montesano, was where we stopped for gas, an unassuming Chevron adjacent to a small, even more unassuming shopping complex. The concrete buildings felt especially unnatural among the verdant stillness of the hillside, as if they weren't meant to be there and  *you* certainly weren't meant to see them. 
@@ -45,8 +45,6 @@ As we pulled away, I opened Google Maps to mark the spot so we could return tomo
 
 We ended up naming the axe Shelley (after Shelley Duvall, of course. RIP <3).
 
-
-### An Homage to the Scream Queen 
 <figure>
   <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining" class="blog-post-image">
   <br><figcaption>Not sure how she would feel about us naming the axe after her, though at least it wasn’t a baseball bat. Kubrick made her swing one in The Shining for 127 takes in a row. Deep-cut trivia for the horror nerds out there.</figcaption>
@@ -58,6 +56,10 @@ We ended up naming the axe Shelley (after Shelley Duvall, of course. RIP <3).
 
 Once we got to Long Beach, we checked into our hotel and prepped for the shoot while we waited for it to get dark. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). Marsh's was half the reason we came to Long Beach, because their outdoor lighting used to be a mix of candy-colored LEDs and neon signs, but in recent years they must have dialed back. Still, we got some cool shots, but we were eager for the big event of the evening: shooting on *the* beach. 
 
+<figure>
+  <img src="/photos/longbeach_warning.jpeg" alt="A warning about getting stranded on the beach seen at our hotel" class="blog-post-image">
+  <br><figcaption>A warning about getting stuck on the beach near the front desk of our hotel. Just post on facebook!</figcaption>
+</figure>
 
 Long Beach is cool because in the winter, you're allowed to drive directly onto the sand. So we did, parking about 50 feet from the shore. The shoot itself was a mix of fun and totally miserable due to how little clothing I was wearing. Our only light sources were the car’s headlights and a tiny 6x3-inch lightbox Jaz brought along.
 
@@ -79,11 +81,11 @@ Most of the photos were unusable—I just looked cold and miserable. I could bar
 
 ## Never Turn Your Back On The Ocean
 
+<figure> <img src="/photos/There she is_filtered.jpg" alt="The waves at Long Beach" class="blog-post-image"><br><figcaption>The ocean bares its crinkly maw to bellow hymns of hell</figcaption></figure>
 
 After the shoot, we got back in the car and I tried my best to talk through labored exhales and chattering teeth. I put my glasses on, finally able to see clearly for the first time in hours, and looked ahead.
 
-
- #### “Hey, is it just me or is the water getting closer?”
+ "Hey, is it just me or is the water getting closer?"
 
 It was.
 
@@ -95,7 +97,7 @@ As the wall of water rushed towards us, I yelled “GO GO GO GO GO." Jaz cranked
 We didn't stop to look back, heading straight for the hotel, erupting into maniacal, adrenaline-fueled laughter once we entered our room. I opened the weather app again to re-check the gale warning… and saw something I had missed before:
 
 
- #### SLEEPER WAVE WARNING!
+ SLEEPER WAVE WARNING!
 
 Whoops. My bad. 
 

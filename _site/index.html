@@ -56,6 +56,14 @@
 
     gtag('config', 'G-33EL5WF8CW');
   </script>
+  <style>/* Glitch background layer inside nav */
+    /* Make sure the nav is relative so the background can position inside it */
+    #navbar {
+      position: relative;
+      z-index: 10;
+      overflow: hidden;
+    }
+</style>
 </head>
 
 <!-- =======================
@@ -87,6 +95,8 @@
          NAVIGATION BAR
     ========================== -->
     <nav id="navbar">
+      <!-- Glitch background layer -->
+    <div class="navbar-bg-glitch"></div>
       <ul class="main-nav">
         <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
         <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
