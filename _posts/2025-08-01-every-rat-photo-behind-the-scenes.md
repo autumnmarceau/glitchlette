@@ -38,10 +38,10 @@ Among the weapons and tools was what I would lovingly describe as an *abundant*
 #### "That's the one."
 As we checked out, we made casual conversation with the elderly married couple who owned the place. They seemed like an ordinary couple, eccentric only in their complete unawareness of the gonzo shopping experience they’d curated.
 
-They were *very* excited that I was buying the axe, telling me how it was new to their inventory, having just been brought in a few days prior by ‘some guy’. I zoned out the details as I perused the stickers at the counter,  that said “BIG FOOT IS REAL AND I HELPED HIM COMMIT TAX FRAUD,” which I popped on my laptop. (Maybe you'll see it at the next [show?](/shows))
+They were *very* excited that I was buying the axe, telling me how it was new to their inventory, having just been brought in a few days prior by ‘some guy’. I zoned out the details as I perused the stickers at the counter, snagging one that said “BIG FOOT IS REAL AND I HELPED HIM COMMIT TAX FRAUD." (Maybe you'll see it on my laptop at the next [show?](/shows))
 
 
-We mentioned we’d be passing through town again the next day, and they encouraged us to stop by and chimed, "we'll be here!" 
+We mentioned we’d be passing through town again the next day. They encouraged us to stop by and chimed, "we'll be here!" 
 
 The woman laughed as she handed me the receipt. “Our business name isn’t even on here!” We gave it no thought.  
 
