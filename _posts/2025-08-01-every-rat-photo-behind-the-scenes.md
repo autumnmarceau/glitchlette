@@ -11,7 +11,6 @@ This is how my creative director Jaz and I shot the cover for the latest GLITCHL
 
 ## Dear David Lynch, I Get It Now
 
-
 Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3.5 hours. Once you get off I-5, the landscape unfurls into the liminal eeriness that pervades Washington’s most rural areas. Winding roads cut through misty lowlands, old-growth forests, and drowsy logging towns that straddle the seams of here and *there*. 
 
 Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
@@ -58,14 +57,14 @@ We named the axe Shelley (after Shelley Duvall, of course. RIP <3).
 
 <figure>
   <img src="https://pyxis.nymag.com/v1/imgs/481/940/29ff3982bc6fc7b699a298fe651df6808b-08-shelley-duvall-the-shining.1x.rsquare.w1400.jpg" alt="Shelley Duvall from The Shining" class="blog-post-image">
-  <br><figcaption>Not sure how she would feel about us naming the axe after her, though at least it wasn’t a baseball bat. Kubrick made her swing one in The Shining for 127 takes in a row. Deep-cut trivia for the horror nerds out there.</figcaption>
+  <br><figcaption>Not sure how she’d feel about us naming the axe after her, those 127 takes considered..</figcaption>
 </figure>
 
 
 ## The Shoot at Long Beach
 
 
-We arrived in Long Beach,checked into our hotel, and prepped for the shoot while we waited for it to get dark. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). Marsh’s was half the reason we came to Long Beach, because their outdoor lighting used to be a mix of candy-colored LEDs and neon signs, but in recent years they must have dialed back. We still got some cool shots, but we were eager for the big event of the evening: *shooting on the beach*. 
+We arrived in Long Beach,checked into our hotel, and started prepping for the shoot. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man) and half of our reasing for coming. The lighting used to be a mix of candy-colored LEDs and neon signs, but they must have dialed it down in  back. (Totally rude of them to compromise our artistic vision). We still got some [cool shots](/photos/antique_axe_filtered.jpg), but the main event was next: *shooting on the beach*. 
 
 <figure>
   <<img src="/photos/longbeach_warning.jpeg" alt="A warning about getting stranded on the beach seen at our hotel in Long Beach, WA" class="blog-post-image">
