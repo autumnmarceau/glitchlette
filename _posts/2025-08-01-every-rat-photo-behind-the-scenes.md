@@ -58,7 +58,7 @@ We named the axe Shelley (after Shelley Duvall, of course. RIP <3).
 ## The Shoot at Long Beach
 
 
-We arrived in Long Beach,checked into our hotel, and started prepping for the shoot. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man), and half of our reason for coming. The lighting used to be a mix of candy-colored LEDs and neon signs, but they must have dialed it down in  back. (Totally rude of them to compromise our artistic vision). We still got some [cool shots](/photos/antique_axe_filtered.jpg), but the main event was next: *shooting on the beach*. 
+We arrived in Long Beach,checked into our hotel, and started prepping for the shoot. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man), and half of our reason for coming. The lighting used to be a mix of candy-colored LEDs and neon signs, but they must have dialed it down in recent years. (Totally rude of them to compromise our artistic vision). We still got some [cool shots](/photos/antique_axe_filtered.jpg), but the main event was next: *shooting on the beach*. 
 
 <figure>
   <img src="/photos/longbeach_warning.jpeg" alt="A warning about getting stranded on the beach seen at our hotel in Long Beach, WA" class="blog-post-image">
