@@ -11,7 +11,7 @@ This is how my creative director Jaz and I shot the cover for the latest GLITCHL
 
 ## Dear David Lynch, I Get It Now
 
-Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3.5 hours. Once you get off I-5, the landscape unfurls into the familiar eeriness that pervades Washington’s most rural areas. Winding roads cut through misty lowlands, old-growth forests, and drowsy logging towns that straddle the seams of here and *there*; Places with no tourists, only outsiders. 
+Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journey from Seattle is about 3.5 hours. Once you get off I-5, the landscape unfurls into the familiar eeriness that seems to pervade Washington’s most rural areas. Winding roads cut through misty lowlands, old-growth forests, and drowsy logging towns that straddle the seams of here and *there*; Places with no tourists, only outsiders. 
 
 Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
 
