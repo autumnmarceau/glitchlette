@@ -798,6 +798,7 @@ nav ul li {
   box-shadow:
     2px 2px 5px rgba(0,0,0,0.1),;
   margin: 2em auto;
+  margin-bottom: 0.5rem;
   font-family: 'Courier New', Courier, monospace;
   cursor: default;
   user-select: none;
@@ -807,6 +808,36 @@ nav ul li {
   max-width: 90%;
   width: fit-content;
   text-align: center;
+}
+
+.side-by-side {
+  display: block;
+  max-width: 700px; /* control container width */
+  margin: 0 auto;
+}
+
+.image-pair {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.image-pair img {
+  flex: 1 1 0;
+  max-width: 48%;
+  height: auto;
+  display: block;
+}
+
+.side-by-side figcaption {
+  font-size: 0.85rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  padding-top: 1rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0.25; /* remove bottom offset for better spacing */
 }
 
 
@@ -952,6 +983,8 @@ article a {
     0 0 15px var(--red-primary),
     0 0 25px var(--red-shadow);
   animation: none !important;
+  margin-bottom: 1rem;
+  margin-top: 1rem
 }
 
 .blog-page-header{
@@ -1151,4 +1184,18 @@ article a {
     padding-top: 1rem;
   }
 }
+
+.image-pair img.blog-post-image {
+  max-width: 48% !important;   /* smaller max-width so two images fit side by side */
+  margin: 0 !important;        /* remove vertical margin that breaks flex layout */
+  flex: 1 1 0;                 /* flex-grow and shrink */
+  height: auto;
+  border-radius: 12px;         /* keep border radius */
+  box-shadow:
+    0 0 12px var(--red-primary),
+    0 0 24px var(--red-gradient-start);
+  display: block;
+}
+
+
 

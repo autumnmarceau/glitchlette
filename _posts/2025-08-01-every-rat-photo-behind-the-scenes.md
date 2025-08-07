@@ -15,17 +15,19 @@ Back in February, Jaz and I drove to Long Beach, WA for a photo shoot. The journ
 
 Here, it feels like every tree portends your doom. It's easy to see why David Lynch chose this region for *Twin Peaks.* 
 
-We stopped for gas in Montesano, pulling into an unassuming Chevron adjacent to a small motel-turned-shopping complex. The buildings felt especially unnatural among the verdant stillness of the hillside, as if they weren't meant to be there and  *you* certainly weren't meant to see them. 
+We stopped for gas in Montesano, pulling into an unassuming Chevron adjacent to a small motel-turned-shopping complex. The buildings felt especially unnatural among the verdant stillness of the hillside, as if they weren't meant to be there and  *we* certainly weren't meant to see them. 
 
 Across from the gas station was a small consignment shop, with no signage or branding but a big “OPEN” sign. We’d been wanting to find some weapon or prop for the shoot, so we took a look before hitting the road again. Our only criteria was that the weapon looked "cursed". Be careful what you wish for. 
 
 <figure class="side-by-side">
-  <div class="image-pair blog-post-image">
-    <img src="/photos/spookylighthouse.JPG" alt="The North Head Lighthouse">
-    <img src="/photos/PNWgraveyard.JPG" alt="The Graveyard of the Pacific">
-  </div>
-  <figcaption> <u>Left:</u> Long Beach is near many paranormal hotspots, like the <a href=
-  "https://www.evergreencoastwa.com/peninsula-pacific-county-have-a-haunted-history/">infamously haunted</a> North Head Lighthouse. Jaz wanted to shoot here that night but I was too sketched out. <br> <u>Right</u>: The Graveyard of the Pacific, a small section of a vast swath of rocky shore where thousands of sailors have died. (photo cred for both: Jaz, of course)</figcaption>
+  <div class="image-pair">
+    <img class="blog-post-image" src="/photos/spookylighthouse.JPG" alt="The North Head Lighthouse">
+    <img class="blog-post-image" src="/photos/PNWgraveyard.JPG" alt="The Graveyard of the Pacific">
+  </div><br>
+  <figcaption>
+    <u>Left:</u> Long Beach is near many paranormal hotspots, like the <a href="https://www.evergreencoastwa.com/peninsula-pacific-county-have-a-haunted-history/">infamously haunted</a> North Head Lighthouse. Jaz wanted to shoot here that night but I was too sketched out. <br>
+    <u>Right:</u> The Graveyard of the Pacific, a small section of a vast swath of rocky shore where thousands of sailors have died. (photo cred for both: Jaz, of course)
+  </figcaption>
 </figure>
 
 ## The Axe from The Shop With No Name
@@ -112,11 +114,13 @@ A quick search showed it would only take a foot of rushing water to make Jaz's t
 #### "These photos better be damn good!"
 
 <figure class="side-by-side">
-  <div class="image-pair blog-post-image">
-    <img src="/photos/wedidntdie.JPG" alt="First image">
-    <img src="/photos/oops.jpg" alt="Second image">
-  </div>
-  <figcaption><u>Left:</u> Moments after we got back from the beach. We were not okay. <u>Right:</u> We felt compelled to return the next day and noticed this inconspicuous sign.</figcaption>
+  <div class="image-pair">
+    <img class="blog-post-image" src="/photos/wedidntdie.JPG" alt="First image">
+    <img class="blog-post-image" src="/photos/oops.jpg" alt="Second image">
+  </div><br>
+  <figcaption>
+    <u>Left:</u> Moments after we got back from the beach. We were not okay. <u>Right:</u> We felt compelled to return the next day and noticed this inconspicuous sign.
+  </figcaption>
 </figure>
 
 Neither of us slept that night. Since then, we’ve developed a healthy fear *and* reverent fascination with the ocean. She’s our God now. She let us live. Honestly, I should probably dedicate the album to her.
@@ -152,10 +156,6 @@ Whether the poltergeist plotted our demise or protected us from it is TBD. We're
 The goal for the shoot was originally rooted in one murky vision: the [final girl](https://en.wikipedia.org/wiki/Final_girl) becomes the killer. While I think we nailed it, method acting was *not* our intended strategy. 
 
 **ALL HAIL THE OCEAN. ALL HAIL SHELLEY THE AXE**
-
-
-[See the album cover in action and stream the EP now!](/music)
-
 
 ## Have you had a near-death experience? 
 

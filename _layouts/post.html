@@ -9,8 +9,27 @@ description: "{{ page.excerpt | strip_html | truncate: 160 }}"
   <h1 class="melting-text" data-text="GLITCH LORE">GLITCH LORE</h1>
 </div>
 <article>
-  <style> h2,h3,h4,h5,h6 {margin-bottom: 1em; margin-top: 2em; font-family: 'Halloween', sans-serif; } </style>
-  <style> h2,h3 {text-transform: uppercase;}</style>
+  <style> h2,h3,h4,h5,h6 {margin-bottom: .5em; margin-top: .75em; font-family: 'Halloween', sans-serif; } </style>
+  <style> h2,h3 {text-transform: uppercase; text-align: center;}</style>
+  <style> p {
+  margin-bottom: .5em;    /* increases space between paragraphs */      /* adds indentation on the first line */
+}
+h2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px dashed var(--text-light);  /* dashed cute line */
+  margin: 0 10px;
+  height: 0;
+}
+
+</style>
   <header>
   <h1 class="blog-post-header" style="font-family: 'Halloween', sans-serif;">{{ page.title }}</h1>
     {{ page.subtitle | default: "From the Glitch herself" }}
@@ -21,7 +40,7 @@ description: "{{ page.excerpt | strip_html | truncate: 160 }}"
     <figure>
       <img src="{{ page.thumbnail | relative_url }}" alt="Thumbnail image for {{ page.title }}" class="blog-post-image" style="max-width: 100%; margin: 1rem 0;" />
       {% if page.thumbnail_caption %}
-        <figcaption style="color: var(--text-light); font-style: italic; font-size: 0.9rem; margin-top: 0.3rem; text-align: center;">
+        <figcaption style="color: var(--text-light); font-style: italic; font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0.5rem; text-align: center;">
           {{ page.thumbnail_caption }}
         </figcaption>
       {% endif %}
