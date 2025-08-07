@@ -125,19 +125,19 @@ Neither of us slept that night. Since then, we’ve developed a healthy fear *an
 ## The Uncanny Mystery of Shelley the Axe
 
 
-On our way back, we followed through on our promise to the old couple and stopped at the same Chevron for gas, hoping to see what else we could find at the Shop with No Name.
+On our way home, we followed through on our promise to the old couple and stopped at the same Chevron for gas, hoping to see what else we could find at the Shop with No Name.
 
 The shop was closed, blinds pulled, obscuring what was (or wasn't) inside. 
 
 "Didn't they say they'd be open today?" Jaz asked. 
 
-I pulled up the pin I’d dropped on Google Maps to check their hours. The business wasn't even registered as a consignment shop, but a permanently closed nail salon.
+I pulled up the pin I’d dropped on Google Maps to check their hours. The business wasn't even listed as a consignment shop, *but a permanently closed nail salon.*
 
-The Shop with No Name was actually the Shop That Didn't Exist. 
+Turns out the Shop with No Name was actually the Shop That Didn't Exist. 
 
-It hit us that the whole experience may have been some kind of curse we'd placed on ourselves. The axe, mysterious in origin, came from a place that according to public record did not exist, and while it was in our possession, we almost died. Granted, our chances of being taken out by a sleeper wave were the same without the axe, but whose to say its infernal aura didn't contribute?
+It was starting to feel like Shelley might be a cursed object. In the 24 hours since we'd bought it, we'd escaped a freak accident, and no longer had a way to explain where it came from. It could be a coincidence,our chances of being taken out by a sleeper wave were the same without the axe, but whose to say its infernal aura didn't contribute?
 
-Whether the poltergeist plotted our demise or protected us from it is TBD. We're terrified to get rid of the axe either way. It currently lives in the trunk of Jaz's car, for safekeeping. 
+Whether the poltergeist plotted our demise or protected us from it is TBD. We're terrified to get rid of the axe either way. It currently lives in the trunk of Jaz's car, for safekeeping.  
 
 
 ## Life Imitates Art 
@@ -147,9 +147,9 @@ Whether the poltergeist plotted our demise or protected us from it is TBD. We're
   <br><figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
 
-I've seen around [160 horror movies](https://letterboxd.com/hailsagan666/list/horror-ive-seen/) (a shamefully conversative number, IMO). In hindsight, we comically played into the tropes in some of my favorite slashers. I imagined myself as a viewer at home, fruitlessly pleading with the dumb girls on screen to "Listen to the old man!" "Read the warning signs!" "NEVER TURN YOUR BACK ON THE OCEAN!". 
+ In hindsight, we lived out the casual hubris of your typical slasher-flick protagonists: ignoring danger, dismissing local townsfolk, and buying a *clearly* cursed object. (I've seen around [160 horror movies](https://letterboxd.com/hailsagan666/list/horror-ive-seen/), I really should know better). 
 
-The goal for the shoot was originally rooted in one murky vision: the [final girl](https://en.wikipedia.org/wiki/Final_girl) becomes the killer, and while we certainly nailed it, we did not intend to achieve that through method acting. 
+The goal for the shoot was originally rooted in one murky vision: the [final girl](https://en.wikipedia.org/wiki/Final_girl) becomes the killer. While I think we nailed it, method acting was *not* our intended strategy. 
 
 **ALL HAIL THE OCEAN. ALL HAIL SHELLEY THE AXE**
 
