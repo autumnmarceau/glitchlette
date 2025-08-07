@@ -69,23 +69,19 @@ Long Beach is cool because in the winter, you’re allowed to drive directly ont
 
 The shoot itself oscillated between fun and suffering. I mean, look at me, I was wearing pleather and a dress made of tissue paper. Our only light sources were the car’s headlights and a tiny 6x3-inch lightbox Jaz brought along.
 
-In between takes, I huddled in the ghost hoodie to stay warm, which is how we got the thumbnail photo.
 
+We rolled onto the beach around 11PM. The weather was *awful*. Low 40s, with brash gusts of wind and sheets of rain pouring sideways. My weather app showed a **gale warning advisory**, but we figured we could ignore it since we weren’t planning on getting on a boat or going swimming.
+
+In hindsight, a bad call.
 
 <figure>
   <img src="/photos/feltcute.jpeg" alt="Glitchlette on the beach" class="blog-post-image">
   <br><figcaption>If you zoom in, you can see how the rain fell sideways in this photo.</figcaption>
 </figure>
 
-
-We rolled onto the beach around 11PM. The weather was *awful*. Low 40s, with brash gusts of wind and sheets of rain pouring sideways. My weather app showed a **gale warning advisory**, but we figured we could ignore it since we weren’t planning on getting on a boat or going swimming.
-
-In hindsight, a bad call.
-
 Most of the photos were unusable thanks to my frigid posture and shivering jaw. My non-prescription sclera lenses and LED headlights blasting into my periphery robbed me of sight. 
 
-If I look terrified in the photo, it's because I was. In the moment the album cover was taken, I caught a glimpse of another cars headlights rapidly approaching us. They quickly turned to exit the shore, but I spent a solid 10 seconds thinking I was about to get flattened. 
-
+If I look terrified in the photo, it's because I was. In the moment the shot was taken, I caught a glimpse of another cars headlights rapidly approaching us. They quickly turned to exit the shore, but Jaz caught the brief flash of mortal terror in my eyes. 
 
 ## Never Turn Your Back On The Ocean
 
@@ -111,7 +107,7 @@ Whoops. My bad.
 ### What is a Sleeper Wave?
 >Sleeper (or sneaker) waves are unpredictable surges that can rush up to 150 feet beyond the waterline without warning. Cold, fast, and violent, they can knock people down or drag cars into the sea. The typically safety adage is: **Never turn your back on the ocean.**
 
-A quick search showed it only takes a foot of rushing water to make Jaz's tiny sedan float, and what we narrowly escaped began to sink in.
+A quick search showed it would only take a foot of rushing water to make Jaz's tiny sedan float, and what we narrowly escaped began to sink in. Even a split second longer and we would've been swept out to sea. 
 
 #### "These photos better be damn good!"
 
@@ -120,7 +116,7 @@ A quick search showed it only takes a foot of rushing water to make Jaz's tiny s
     <img src="/photos/wedidntdie.JPG" alt="First image">
     <img src="/photos/oops.jpg" alt="Second image">
   </div>
-  <figcaption>Left: Moments after we got back from the beach. Right: we felt compelled to return the next day and noticed this inconspicuous sign.</figcaption>
+  <figcaption><u>Left:</u> Moments after we got back from the beach. We were not okay. <u>Right:</u> We felt compelled to return the next day and noticed this inconspicuous sign.</figcaption>
 </figure>
 
 Neither of us slept that night. Since then, we’ve developed a healthy fear *and* reverent fascination with the ocean. She’s our God now. She let us live. Honestly, I should probably dedicate the album to her.
@@ -139,7 +135,7 @@ I pulled up the pin I’d dropped on Google Maps to check their hours. The busin
 
 The Shop with No Name was actually the Shop That Didn't Exist. 
 
-It hit us that the whole experience may have been some kind of curse. The axe, mysterious in origin, came from a place that per any public record, did not exist. While in our possession, we almost died. Granted, our chances of being taken out by a sleeper wave were the same without the axe, but whose to say its infernal aura didn't contribute. 
+It hit us that the whole experience may have been some kind of curse we'd placed on ourselves. The axe, mysterious in origin, came from a place that according to public record did not exist, and while it was in our possession, we almost died. Granted, our chances of being taken out by a sleeper wave were the same without the axe, but whose to say its infernal aura didn't contribute?
 
 Whether the poltergeist plotted our demise or protected us from it is TBD. We're terrified to get rid of the axe either way. It currently lives in the trunk of Jaz's car, for safekeeping. 
 
@@ -151,9 +147,9 @@ Whether the poltergeist plotted our demise or protected us from it is TBD. We're
   <br><figcaption>Totally worth it. That photo is unsettling as fuck, which was the goal.</figcaption>
 </figure>
 
-I've seen around [160 horror movies](https://letterboxd.com/hailsagan666/list/horror-ive-seen/) (a shamefully conversative number, IMO). In hindsight, we comically played into the tropes in some of my favorite slashers. I imagined watching myself on screen, fruitlessly pleading "Listen to the old man!" "Read the warning signs!" "NEVER TURN YOUR BACK ON THE OCEAN!". 
+I've seen around [160 horror movies](https://letterboxd.com/hailsagan666/list/horror-ive-seen/) (a shamefully conversative number, IMO). In hindsight, we comically played into the tropes in some of my favorite slashers. I imagined myself as a viewer at home, fruitlessly pleading with the dumb girls on screen to "Listen to the old man!" "Read the warning signs!" "NEVER TURN YOUR BACK ON THE OCEAN!". 
 
-The goal for the shoot was rooted in one murky vision: the [final girl](https://en.wikipedia.org/wiki/Final_girl) becomes the killer, and while we certainly nailed it I think we did it a little too well 
+The goal for the shoot was originally rooted in one murky vision: the [final girl](https://en.wikipedia.org/wiki/Final_girl) becomes the killer, and while we certainly nailed it, we did not intend to achieve that through method acting. 
 
 **ALL HAIL THE OCEAN. ALL HAIL SHELLEY THE AXE**
 
