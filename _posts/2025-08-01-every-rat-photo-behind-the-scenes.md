@@ -20,7 +20,7 @@ We stopped for gas in Montesano, pulling into an unassuming Chevron adjacent to 
 Across from the gas station was a small consignment shop, with no signage or branding but a big “OPEN” sign. We’d been wanting to find some weapon or prop for the shoot, so we took a look before hitting the road again. Our only criteria was that the weapon looked "cursed". Be careful what you wish for. 
 
 <figure class="side-by-side">
-  <div class="image-pair">
+  <div class="image-pair blog-post-image">
     <img src="/photos/spookylighthouse.JPG" alt="The North Head Lighthouse">
     <img src="/photos/PNWgraveyard.JPG" alt="The Graveyard of the Pacific">
   </div>
@@ -112,7 +112,7 @@ A quick search showed it would only take a foot of rushing water to make Jaz's t
 #### "These photos better be damn good!"
 
 <figure class="side-by-side">
-  <div class="image-pair">
+  <div class="image-pair blog-post-image">
     <img src="/photos/wedidntdie.JPG" alt="First image">
     <img src="/photos/oops.jpg" alt="Second image">
   </div>
