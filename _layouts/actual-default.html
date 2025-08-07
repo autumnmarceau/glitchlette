@@ -10,18 +10,20 @@
   <meta property="twitter:card" content="summary_large_image" />
   <meta name="keywords" content="glitchlette, autumn marceau, seattle, seattle music, seattle pop, seattle electronic music, seattle female producer, seattle femme fronted music, seattle femme fronted band,">
   <meta name="author" content="Autumn Marceau" />
-  <meta property="og:title" content="Shows | GLITCHLETTE" />
-  <meta property="og:description" content="Autumn Marceau's music project GLITCHLETTE is skygaze pop for final girls." />
-  <meta property="og:url" content="http://localhost:4000/shows/" />
-  
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  {% if page.thumbnail %}
+    <meta property="og:image" content="{{ page.thumbnail | absolute_url }}" />
+  {% else %}
     <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" />
-  
+  {% endif %}
   <link rel="icon" href="/photos/favicon.png" type="image/png" />
-  <link rel="canonical" href="http://localhost:4000/shows/" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect for Google Fonts -->
 
-  <title>Shows | GLITCHLETTE</title>
+  <title>{{ page.title | default: site.title }}</title>
 
   <!-- =========================
        FONTS
@@ -41,7 +43,7 @@
   <!-- =========================
       CUSTOM CSS
   ========================== -->
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
     <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-33EL5WF8CW"></script>
   <script>
@@ -53,7 +55,7 @@
   </script>
 </head>
 
-<body class="default-page">
+<body class="{{ page.body_class | default: 'default' }}">
   <div id="bg-image"></div>
 
   <!-- SVG filter same as before -->
@@ -64,50 +66,19 @@
     </filter>
   </svg>
 
-  
+  {% if page.body_class == 'no-container' %}
+    <!-- NO container wrapper on no-container pages -->
+    {% include nav.html %}
+    {{ content }}
+  {% else %}
     <!-- Usual container on other pages -->
     <div class="page-wrapper">
-      <nav id="navbar">
-  <ul class="main-nav">
-    <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
-    <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
-    <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
-    <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
-    <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
-    <li><a href="https://glitchlette.com/faq" data-text="FAQ">FAQ</a></li>
-    <li><a href="https://glitchlette.com/lyrics" data-text="LYRICS">Lyrics</a></li>
-    <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
-  </ul>
-  <ul class="social-nav">
-    <li>
-      <a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-spotify"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-instagram"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-cloud"></i>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-      <main class="main-content">
-              <center>
-        <h1 class="melting-text" data-text="UPCOMING SHOWS">UPCOMING SHOWS</h1>
-        <br><br>
-        <strong> Sept 21st </strong> | The Kraken Bar & Lounge | <em> Seattle, WA </em> | With: Gravure, Iffin 
-      </center>
-
-
+      {% include nav.html %}
+      <main class="{{ page.main-content_class | default: 'main-content' }}">
+        {{ content }}
       </main>
     </div>
-  
+  {% endif %}
 
 </body>
 

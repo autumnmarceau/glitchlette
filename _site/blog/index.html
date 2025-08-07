@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- =========================
+       BASIC META & TITLE
+  ========================== -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.jpeg" /> <!--- Thumbnail ---> 
   <meta property="twitter:card" content="summary_large_image" />
-  <meta name="description" content="Transmissions from the Glitch herself" />
-  <meta name="keywords" content="GLITCHLETTE, Autumn Marceau, Seattle music, Seattle electronic music, GLITCHLETTE blog" />
+  <meta name="keywords" content="glitchlette, autumn marceau, seattle, seattle music, seattle pop, seattle electronic music, seattle female producer, seattle femme fronted music, seattle femme fronted band,">
   <meta name="author" content="Autumn Marceau" />
   <meta property="og:title" content="BLOGLETTE" />
   <meta property="og:description" content="Transmissions from the Glitch herself" />
@@ -13,19 +16,33 @@
   
     <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" />
   
-
-  <link rel="icon" href="https://www.emojiall.com/images/240/skype/1fa93.png" type="image/png" />
+  <link rel="icon" href="/photos/favicon.png" type="image/png" />
   <link rel="canonical" href="http://localhost:4000/blog/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect for Google Fonts -->
+
   <title>BLOGLETTE</title>
 
-  <!-- Fonts & Icons -->
+  <!-- =========================
+       FONTS
+  ========================== -->
+  <!-- Body font: Spectral -->
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  
+
+  <!-- =========================
+       BOOTSTRAP ICONS
+  ========================== -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+
+  <!-- =========================
+      CUSTOM CSS
+  ========================== -->
   <link rel="stylesheet" href="/style.css" />
-
-
-   <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-33EL5WF8CW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -34,44 +51,12 @@
 
     gtag('config', 'G-33EL5WF8CW');
   </script>
-  <style>p {
-  margin-bottom: 1.5em;
-}
-/* Side-by-side figure with shared caption */
-figure.side-by-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 2em auto;
-  text-align: center;
-  max-width: 100%;
-}
-
-figure.side-by-side .image-pair {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap; /* Makes it stack on smaller screens */
-}
-
-figure.side-by-side img {
-  max-width: 100%;
-  width: 45%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow:
-    0 0 12px var(--red-primary),
-    0 0 24px var(--red-gradient-start);
-}
-
-</style>
 </head>
 
-<body class="default-page">
-  <a id="top"></a>
+<body class="default">
   <div id="bg-image"></div>
 
+  <!-- SVG filter same as before -->
   <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
     <filter id="ripple" x="0" y="0">
       <feTurbulence baseFrequency="0.02" numOctaves="2" result="turbulence" seed="2" />
@@ -79,29 +64,41 @@ figure.side-by-side img {
     </filter>
   </svg>
 
-  <div class="page-wrapper">
-    <nav id="navbar">
-      <ul class="main-nav">
-        <li><a href="http://localhost:4000/" data-text="HOME">Home</a></li>
-        <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
-        <li><a href="http://localhost:4000/shows" data-text="SHOWS">Shows</a></li>
-        <li><a href="http://localhost:4000/about" data-text="ABOUT">About</a></li>
-        <li><a href="http://localhost:4000/gallery" data-text="GALLERY">Gallery</a></li>
-         <!-- <li><a href="https://glitchlette.com/blog" data-text="BLOG">BLOG</a></li> -->
-        <!-- <li><a href="https://glitchlette.com/faq" data-text="FAQ">FAQ</a></li> -->
-        <li><a href="http://localhost:4000/blog" data-text="BLOG">Blog</a></li>
-        <li><a href="http://localhost:4000/faq" data-text="FAQ">FAQ</a></li>
-        <li><a href="http://localhost:4000/contact" data-text="HATE MAIL">Contact</a></li>
-      </ul>
-      <ul class="social-nav">
-        <li><a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i class="bi bi-spotify"></i></a></li>
-        <li><a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
-        <li><a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer"><i class="bi bi-cloud"></i></a></li>
-      </ul>
-    </nav>
+  
+    <!-- Usual container on other pages -->
+    <div class="page-wrapper">
+      <nav id="navbar">
+  <ul class="main-nav">
+    <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
+    <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
+    <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
+    <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
+    <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
+    <li><a href="https://glitchlette.com/faq" data-text="FAQ">FAQ</a></li>
+    <li><a href="https://glitchlette.com/lyrics" data-text="LYRICS">Lyrics</a></li>
+    <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
+  </ul>
+  <ul class="social-nav">
+    <li>
+      <a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-spotify"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-cloud"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-    <main class="main-content">
-      <div class="melting-text-container">
+      <main class="main-content">
+        <div class="melting-text-container">
   <h1 class="blog-page-header melting-text"data-text="BLOGLETTE">BLOGLETTE</h1>
     <style>
       hr li ::before li ::after {
@@ -147,9 +144,10 @@ figure.side-by-side img {
 
 
 
-    </main>
-  </div>
+      </main>
+    </div>
+  
 
-  <div id="overlay"></div>
 </body>
-</html>
+
+  </html>

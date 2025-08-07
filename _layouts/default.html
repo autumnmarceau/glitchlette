@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta name="description" content="{{ page.description | default: site.description }}" />
-  <meta name="keywords" content="GLITCHLETTE, Autumn Marceau, Seattle music, Seattle electronic music, GLITCHLETTE blog" />
   <meta name="author" content="Autumn Marceau" />
+  <meta name="keywords" content="glitchlette, autumn marceau, seattle, seattle music, seattle pop, seattle electronic music, seattle female producer, seattle femme fronted music, seattle femme fronted band">
   <meta property="og:title" content="{{ page.title | default: site.title }}" />
   <meta property="og:description" content="{{ page.description | default: site.description }}" />
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
@@ -81,28 +81,10 @@ figure.side-by-side img {
     </filter>
   </svg>
 
-  <div class="page-wrapper">
-    <nav id="navbar">
-      <ul class="main-nav">
-        <li><a href="{{ '/' | absolute_url }}" data-text="HOME">Home</a></li>
-        <li><a href="https://glitchlette.bandcamp.com/" data-text="MUSIC">Music</a></li>
-        <li><a href="{{ '/shows' | absolute_url }}" data-text="SHOWS">Shows</a></li>
-        <li><a href="{{ '/about' | absolute_url }}" data-text="ABOUT">About</a></li>
-        <li><a href="{{ '/gallery' | absolute_url }}" data-text="GALLERY">Gallery</a></li>
-         <!-- <li><a href="https://glitchlette.com/blog" data-text="BLOG">BLOG</a></li> -->
-        <!-- <li><a href="https://glitchlette.com/faq" data-text="FAQ">FAQ</a></li> -->
-        <li><a href="{{ '/blog' | absolute_url }}" data-text="BLOG">Blog</a></li>
-        <li><a href="{{ '/faq' | absolute_url }}" data-text="FAQ">FAQ</a></li>
-        <li><a href="{{ '/contact' | absolute_url }}" data-text="HATE MAIL">Contact</a></li>
-      </ul>
-      <ul class="social-nav">
-        <li><a href="https://open.spotify.com/artist/4KSdHqY2Mu29KG5ustJ5hU?si=shanQGEwSA-reO194c9v6w" class="social-icon" aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i class="bi bi-spotify"></i></a></li>
-        <li><a href="https://www.instagram.com/glitchlette" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
-        <li><a href="https://soundcloud.com/glitchlette" class="social-icon" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer"><i class="bi bi-cloud"></i></a></li>
-      </ul>
-    </nav>
+  {% include nav.html %}
 
-    <main class="main-content">
+
+    <main class="{{ page.main-content_class | default: 'main-content' }}">
       {{ content }}
     </main>
   </div>
