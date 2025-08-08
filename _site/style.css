@@ -820,7 +820,6 @@ nav ul li {
   display: flex;
   gap: 1rem;
   flex-wrap: nowrap;
-  justify-content: center;
 }
 
 .image-pair img {
@@ -828,6 +827,7 @@ nav ul li {
   max-width: 48%;
   height: auto;
   display: block;
+  justify-content: center;
 }
 
 .side-by-side figcaption {
@@ -1196,6 +1196,5 @@ article a {
     0 0 24px var(--red-gradient-start);
   display: block;
 }
-
 
 

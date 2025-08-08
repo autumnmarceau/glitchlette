@@ -1,5 +1,5 @@
 ---
-layout: actual-default
+layout: blog-default
 title: "{{ page.title }} | GLITCHLETTE"
 body_class: post-page
 description: "{{ page.excerpt | strip_html | truncate: 160 }}"
@@ -29,6 +29,14 @@ h2::after {
   height: 0;
 }
 
+article img {
+  display: block;
+  margin: 1.5rem auto; /* centers horizontally */
+  max-width: 100%;     /* keeps them responsive */
+  height: auto;        /* keeps aspect ratio */
+}
+
+
 </style>
   <header>
   <h1 class="blog-post-header" style="font-family: 'Halloween', sans-serif;">{{ page.title }}</h1>
@@ -37,14 +45,6 @@ h2::after {
     {{ page.date | date: "%B %-d, %Y" }}
   </p>
   {% if page.thumbnail %}
-    <figure>
-      <img src="{{ page.thumbnail | relative_url }}" alt="Thumbnail image for {{ page.title }}" class="blog-post-image" style="max-width: 100%; margin: 1rem 0;" />
-      {% if page.thumbnail_caption %}
-        <figcaption style="color: var(--text-light); font-style: italic; font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0.5rem; text-align: center;">
-          {{ page.thumbnail_caption }}
-        </figcaption>
-      {% endif %}
-    </figure>
   {% endif %}
 </header>
   <section>
