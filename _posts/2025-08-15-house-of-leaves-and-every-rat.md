@@ -5,9 +5,9 @@ In fact, it shows up in the first track, WRAITH SPACE:
 
 >"Not yet nor vain wraiths or quaint ghosts constrained thy chariot to go backwards such as that, they say, in diverse places. The wraiths walk of ghosts dying or dead."
 
-This quote is actually from an obscure translation of The Aenid that shows up in HOL's labryinth of footnotes. When I read that quote, it was so lyrically beautiful it compelled me to open my laptop and make something. That something wound up being WRAITH SPACE.
+This quote is actually from an obscure translation of The Aeneid that shows up in HOL's labryinth of footnotes. When I read that quote, it was so lyrically beautiful it compelled me to open my laptop and make something. That something wound up being WRAITH SPACE.
 
-I'll be the first one to say, that song is solely a progeny of vibes and vibes alone. And, even though it's the intro to the EP, it was actually the last song I wrote for it. 
+I'll be the first one to say, that song is a progeny of vibes and vibes alone. And, even though it's the intro to the EP, it was actually the last song I wrote for it. 
 
 HOL's influence shows up again on the third track, Hard Thoughts. 
 

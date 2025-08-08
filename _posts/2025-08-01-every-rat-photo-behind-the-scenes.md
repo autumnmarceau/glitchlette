@@ -7,7 +7,7 @@ thumbnail: https://glitchlette.com/bts.jpg
 thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in February."
 ---
 
-This is how my creative director Jaz and I shot the album cover for the latest GLITCHLETTE EP [EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH!](/music) and how we accidentally risked our lives to get it. I swear to Björk this is a true story. 
+<center>This is how my creative director Jaz and I shot the album cover for the latest GLITCHLETTE EP <a href="/glitchlette.bandcamp.com">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH!</a> and how we accidentally risked our lives to get it. <b>I swear to Björk this is a true story.</b> </center>
 
 ## Dear David Lynch, I Get It Now
 
@@ -30,7 +30,7 @@ You are never a tourist here, not really. Only an outsider.
 
 We stopped for gas in Montesano, pulling into an unassuming Chevron adjacent to a small motel-turned-shopping complex. The buildings felt especially unnatural among the verdant stillness of the hillside, as if they weren't meant to be there and we certainly weren't meant to see them. 
 
-Across from the gas station was a small consignment shop, with no signage or branding but a big “OPEN” sign. We’d been wanting to find some weapon or prop for the shoot, so we took a look before hitting the road again. I was partial to a chainsaw, but our only criteria was that the weapon looked "cursed". Be careful what you wish for. 
+In the complex was a small consignment shop, with no branding or signage but a big “OPEN” sign. We’d been wanting to find a weapon or prop for the shoot, so we took a look before hitting the road again. I was partial to a chainsaw, but our only criteria was that the weapon looked "cursed". Be careful what you wish for. 
 
 ## Shelley The Axe and The Shop With No Name
 
@@ -47,7 +47,7 @@ As we checked out, we made casual conversation with the elderly married couple w
 
 And, they were oddly excited that I was buying the axe. The man was beaming as he told me it was new to their inventory, having just been brought in a few days prior by ‘some guy’. I zoned out the details as I perused the stickers at the counter, snagging one that said “BIG FOOT IS REAL AND I HELPED HIM COMMIT TAX FRAUD." (Maybe you'll see it on my laptop at the next [show?](/shows))
 
-We mentioned we’d be passing through town again the next day. They encouraged us to stop by and chimed, "we'll be here!" 
+We mentioned we’d be passing through town again the next day. They encouraged us to return and chimed, "we'll be here!" 
 
 The woman laughed as she handed me the receipt. “Our business name isn’t even on here!” We gave it no thought.  
 
@@ -65,11 +65,11 @@ We named the axe Shelley (after Shelley Duvall, of course. RIP <3).
   </div><br>
   <figcaption><u>Left:</u>Posted at the front desk of our hotel: A warning about getting stuck on the beach.<br><u>Right:</u> Jake the Alligator Man, star of <a href="https://www.marshsfreemuseum.com/jake-s-place">Marsh's Free Museum.</a></figcaption></figure></center>
 
-We arrived in Long Beach, checked into our hotel, and started prepping for the shoot. We started outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). We chose Marsh's because the afterhours lighting used to be a mix of candy-colored LEDs and neon signs, but they must have dialed it down in recent years.  It only compromised our vision a little bit, and we still got some [cool shots](/photos/antique_axe_filtered.jpg), but the main event was next: *shooting on the beach*. 
+We arrived in Long Beach, checked into our hotel, and prepped for the shoot. We started around 10pm outside Marsh’s Free Museum, home to [Jake the Alligator Man](https://en.wikipedia.org/wiki/Jake_the_Alligator_Man). We chose Marsh's because the afterhours lighting used to be a mix of candy-colored LEDs and neon signs, but they must have dialed it down in recent years.  It only compromised our vision a little bit, and we still got some [cool shots](/photos/antique_axe_filtered.jpg), but the main event was next: *shooting on the beach*. 
 
-Long Beach is cool because in the winter, you’re allowed to drive directly onto the sand. So we did, parking about 50 feet from the shore, which we assumed was a safe distance. The tide was out, and it would stay that way, right?  
+Long Beach is cool because in the winter, you’re allowed to drive directly onto the sand. So we did, parking about 75 feet from the shore, which we assumed was a safe distance. The tide was out, and it would stay that way, right?  
 
-We rolled onto the beach around 11PM. The weather was *awful*. Low 40s, with brash gusts of wind and sheets of rain pouring sideways. My weather app showed a **gale warning advisory**, but we figured we could ignore it since we weren’t planning on getting on a boat or going swimming.
+We rolled onto the beach around midnight. The weather was *awful*. Low 40s, with brash gusts of wind and sheets of rain pouring sideways. My weather app showed a **gale warning advisory**, but we figured we could ignore it since we weren’t planning on getting on a boat or going swimming.
 
 In hindsight, a bad call.
 
