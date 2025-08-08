@@ -108,7 +108,7 @@ Whoops. My bad.
 
 
 ### What is a Sleeper Wave?
->Sleeper (or sneaker) waves are unpredictable surges that can rush up to 150 feet beyond the waterline without warning. Cold, fast, and violent, they can knock people down or drag cars into the sea. The typically safety adage is: **Never turn your back on the ocean.**
+>Sleeper (or sneaker) waves are unpredictable surges that can rush up to 150 feet beyond the waterline without warning. Cold, fast, and violent, they can knock people down or drag cars into the sea. The typical safety adage is: **Never turn your back on the ocean.**
 
 A quick search showed it only takes a foot of rushing water to float a sedan like Jaz's. Even a split second longer and we would've been swept out to sea. 
 
