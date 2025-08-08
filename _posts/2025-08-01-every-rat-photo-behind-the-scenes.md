@@ -43,7 +43,7 @@ The shop was a hazardous shrine to chaos. Old dolls with barren eyes stared blan
 
 Among the weapons and tools was what I would lovingly describe as an *abundant* selection of axes, precariously propped against the wall, blades out, like a domino line of mini-guillotines for klutzy toes. There was one that drew my eye, with a bright red head, sturdy handle, and a suitable amount of wear and tear for authenticity. Jaz and I agreed. 
 #### "That's the one."
-As we checked out, we made casual conversation with the elderly married couple who owned the place. They were eccentric only in their apparent unawareness of the gonzo shopping experience they’d curated.
+As we checked out, we made casual conversation with the elderly married couple who owned the place. They were surprisngly oridinary, eccentric only in their apparent unawareness of the gonzo shopping experience they’d curated.
 
 And, they were oddly excited that I was buying the axe. The man was beaming as he told me it was new to their inventory, having just been brought in a few days prior by ‘some guy’. I zoned out the details as I perused the stickers at the counter, snagging one that said “BIG FOOT IS REAL AND I HELPED HIM COMMIT TAX FRAUD." (Maybe you'll see it on my laptop at the next [show?](/shows))
 
