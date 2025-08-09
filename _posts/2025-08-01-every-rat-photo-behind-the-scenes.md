@@ -95,7 +95,7 @@ It was.
 
 *Fast.*
 
-The ocean had surged its hands up the shore in a vulgar display of power. A wave about three feet tall was rapidly rushing towards us. 
+The ocean had surged its hands up the shore in a vulgar display of power. A wave was rapidly rushing towards us. 
 
 "Hey Jaz, we GOTTA GO like RIGHT NOW!" Jaz slammed the gas, and flipped a U, spiriting us away from the incoming wave *just in time.*
 
