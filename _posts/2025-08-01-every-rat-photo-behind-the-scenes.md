@@ -28,9 +28,7 @@ The journey from Seattle is about 3.5 hours. Once you get off I-5, the landscape
 
 You are never a tourist here, not really. Only an outsider. 
 
-We stopped for gas in Montesano, pulling into an unassuming Chevron adjacent to a small motel-turned-shopping complex. The buildings felt especially unnatural among the verdant stillness of the hillside, as if they weren't meant to be there and we certainly weren't meant to see them. 
-
-In the complex was a small consignment shop, with no branding or signage but a big “OPEN” sign. We’d been wanting to find a weapon or prop for the shoot, so we took a look before hitting the road again. I was partial to a chainsaw, but our only criteria was that the weapon looked "cursed". Be careful what you wish for. 
+We stopped for gas in Montesano, pulling into an unassuming Chevron adjacent to a small motel-turned-shopping complex that housed a small consignment shop, with no branding or signage but a big “OPEN” sign. We’d been wanting to find a weapon or prop for the shoot, so we took a look before hitting the road again. I was partial to a chainsaw, but our only criteria was that the weapon looked "cursed". Be careful what you wish for. 
 
 ## Shelley The Axe and The Shop With No Name
 
