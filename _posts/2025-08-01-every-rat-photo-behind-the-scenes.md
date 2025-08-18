@@ -157,7 +157,7 @@ The goal for the shoot was originally rooted in one murky vision: the [final gir
 
 ## Have you had a near-death experience? 
 
-I'd love to hear about it.[Let's commiserate!](https://glitchlette.com/guestbook)
+I'd love to hear about it.[Let's commiserate!](https://found.ee/YqVEud)
 
 --
 --
