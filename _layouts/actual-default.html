@@ -1,72 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- =========================
-       BASIC META & TITLE
-      
-      HEY NERD! glad you're here. If you're wondering, this website was coded and designed entirely by me, GLITCHLETTE.
-  ========================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.jpeg" /> <!--- Thumbnail ---> 
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta name="keywords" content="glitchlette, autumn marceau, seattle, seattle music, seattle pop, seattle electronic music, seattle female producer, seattle femme fronted music, seattle femme fronted band,">
-  <meta name="author" content="Autumn Marceau" />
-  <meta property="og:title" content="{{ page.title | default: site.title }}" />
-  <meta property="og:description" content="{{ page.description | default: site.description }}" />
-  <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  {% if page.thumbnail %}
-    <meta property="og:image" content="{{ page.thumbnail | absolute_url }}" />
-  {% else %}
-    <meta property="og:image" content="https://glitchlette.com/photos/cross_leg_w_flail.png" />
-  {% endif %}
-  <link rel="icon" href="/photos/favicon.png" type="image/png" />
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect for Google Fonts -->
-
-  <title>{{ page.title | default: site.title }}</title>
-
-  <!-- =========================
-       FONTS
-  ========================== -->
-  <!-- Body font: Spectral -->
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet" />
-  
-
-  <!-- =========================
-       BOOTSTRAP ICONS
-  ========================== -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  />
-
-  <!-- =========================
-      CUSTOM CSS
-  ========================== -->
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-33EL5WF8CW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-33EL5WF8CW');
-  </script>
-</head>
+{% include head.html %}
 
 <body class="{{ page.body_class | default: 'default' }}">
   <div id="bg-image"></div>
-
-  <!-- SVG filter same as before -->
-  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;">
-    <filter id="ripple" x="0" y="0">
-      <feTurbulence baseFrequency="0.02" numOctaves="2" result="turbulence" seed="2" />
-      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="6" xChannelSelector="R" yChannelSelector="G" />
-    </filter>
-  </svg>
 
   {% if page.body_class == 'no-container' %}
     <!-- NO container wrapper on no-container pages -->

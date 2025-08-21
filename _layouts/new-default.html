@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      {% include nav.html %}
+    </aside>
+
+    <!-- Main Content -->
+     <main class="main">
+      <div class="page-wrapper">
+      <main class="{{ page.main_class | default: 'main' }}">
+        {{ content }}
+      </main>
+    </div>
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include epk-head.html %}
+<body class="{{ page.body_class | default: 'default' }}">
+  <div id="bg-image"></div>
+
+  {% if page.body_class == 'no-container' %}
+    <!-- NO container wrapper on no-container pages -->
+    {% include nav.html %}
+    {{ content }}
+  {% else %}
+    <!-- Usual container on other pages -->
+    <div class="page-wrapper">
+      {% include nav.html %}
+      <main class="{{ page.main-content_class | default: 'main-content' }}">
+        {{ content }}
+      </main>
+    </div>
+  {% endif %}
+</body>
+
+</html>
