@@ -43,7 +43,7 @@
   <!-- =========================
       CUSTOM CSS
   ========================== -->
-  <link rel="stylesheet" href="{{ '/style_new.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
     <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-33EL5WF8CW"></script>
   <script>
@@ -53,4 +53,28 @@
 
     gtag('config', 'G-33EL5WF8CW');
   </script>
+
+  <style>/* Cards and grids */
+    .card {
+    margin-bottom: 20px;
+    }
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    }
+
+    .grid img {
+    width: 100%;
+    border-radius: 8px;
+    }
+
+    .quote {
+    font-family: 'Spectral', serif
+    padding: 10px;
+    background: var(--background-dark);
+    border-left: 3px solid #ccc;
+    }
+</style>
 </head>
