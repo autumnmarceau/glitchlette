@@ -53,49 +53,81 @@
 
     gtag('config', 'G-33EL5WF8CW');
   </script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 
   <style>
   /* Cards and grids */
     .hero {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
+  max-width: 100%;        /* fixed invalid flex value */
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
 
-  .tagline {
-    margin-bottom: 20px;
-    font-style: italic;
-  }
+.tagline {
+  margin-bottom: 10px;
+  font-family: 'Halloween', serif;
+  font-size: 25px;
+  text-align: center;      /* fixed text centering */
+}
 
-  .socials {
-    margin-bottom: 30px;
-  }
+.socials {
+  margin-bottom: 30px;
+}
 
-  .socials a {
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-    .card {
-    margin-bottom: 20px;
-    }
+.socials a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 20px;
-    }
+.socials svg {
+  margin-right: 15px;
+  fill: white;   /* or currentColor to match text color */
+  transition: transform 0.2s;
+  width: 40px;   /* increase size */
+  height: 40px;
+}
+.socials svg:hover {
+  transform: scale(2.2);
+  fill: #ee2222; /* optional hover color */
+}
 
-    .grid img {
-    width: 100%;
-    border-radius: 8px;
-    }
 
-    .quote {
-    font-family: 'Spectral', serif
-    padding: 10px;
-    background: var(--background-dark);
-    border-left: 3px solid #ccc; }
+.card {
+  position: relative;
+  width: 100%;    /* portrait ratio for photos */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+ .card img {aspect-ratio: 3 / 4; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* crop instead of squish */
+  border-radius: 8px;
+}
+
+.quote {
+  font-family: 'Spectral', serif;  /* added missing semicolon */
+  padding: 10px;
+  background: var(--background-dark);
+  text-align: center;      /* fixed alignment */
+}
+
+
+
 </style>
 </head>
 <body class="default-page">
@@ -119,14 +151,43 @@
 </nav>
 
       <main class="main-content">
-            <section id="about">
-      <h1 class="melting-text" data-text="PRESS KIT">PRESS KIT</h1><br>
-      <img src="/photos/face_card_2.jpg" alt="Hero image" class="hero">
-        <p class="tagline">CRYGAZE POP FOR FINAL GIRLS.<br>
-      <p>Since 2017, GLITCHLETTE has been the sonic moniker of Autumn Marceau, a self-taught producer, songwriter, and vocalist based in Seattle, WA. GLITCHLETTE crafts cinematic, beat-driven songs that swing between tender ballads and explosive breakdowns, lush dirges and mosh-pit anthems punctuated by ethereal vocals both soft and belted.</p>
+          <section id="about">
+      <center><h1 class="melting-text" data-text="PRESS KIT">PRESS KIT</h1></center><br>
+      <center>
+      <p><a href="#bio"> Bio | </a> 
+      <a href="#music"> Music/Video |</a>
+       <a href="#photos"> Photos |</a>
+       <a href="#press"> Press  |</a> 
+       <a href="#contact"> Contact  |</a> 
+      <div class="socials">
+        <style> .socials{font-size: 25px;}</style>
+    <a href="https://instagram.com/glitchlette" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://glitchlette.bandcamp.com" target="_blank"><i class="fab fa-bandcamp"></i></a>
+    <a href="https://youtube.com/@glitchlette" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@glitchlette" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/1946/1946552.png" 
+       alt="TikTok" 
+       style="width:25px; height:25px; filter: invert(1);">
+</a>
+
+  </div>
+
+      </p>
+      </center>
+      <hr>
+       <p class="tagline">GLITCHLETTE is the cinematic, beat-driven solo project of Autumn Marceau, weaving visceral electronic soundscapes and ethereal vocals into ghostly ballads and explosive anthems.<br>
+      <div class="grid">
+      <div class="card">
+      <img src="/photos/face_card_2.jpg" alt="Hero image" class="hero"></div>
+      <p style="font-size:17px">Since 2017, GLITCHLETTE has been the moniker of Autumn Marceau, a self-taught producer, vocalist, and songwriter. GLITCHLETTE's music exclusively features her own productionm, crafting songs that swing between intimate ballads and explosive, beat-driven breakdowns. <br> 
+        <br> After debuting with the 2018 EP <a href="https://glitchlette.bandcamp.com/album/subsoil">SUBSOIL</a>, she <a href="https://soundcloud.com/magicalpessimism/checking-in-with-the-old-1">collaborated</a> with Default Genders in 2020. In September 2025, GLITCHLETTE will showcase the evolution of her sound in sophomore EP: EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH, a sonic diary of manic love, psychological horror, and catharsis in spades. </p>
+      </div>
     </section>
+    <hr>
+    <br>
       <section id="music">
-        <h2 class="about-subtitle">Music & Video</h2>
+        <center><h2 class="about-subtitle">Music & Video</h2></center>
+        <div class="grid">
         <div class="card">
           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6HsFqXespmlrJvQcIAEsTa?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
@@ -134,37 +195,57 @@
           <iframe width="100%" height="200"
             src="https://youtube.com/embed/GGFsyrug-KE"
             frameborder="0" allowfullscreen>
-          </iframe>
+          </iframe></div>
+        <div class="card">
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1131135046%3Fsecret_token%3Ds-jzhogCZF4Mp&color=%23f01e2b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/glitchlette" title="GLITCHLETTE" target="_blank" style="color: #cccccc; text-decoration: none;">GLITCHLETTE</a> · <a href="https://soundcloud.com/glitchlette/sets/we-are-going-to-rot/s-jzhogCZF4Mp" title="EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH (demo)" target="_blank" style="color: #cccccc; text-decoration: none;">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH (demo)</a></div>
         </div>
       </section>
-
+<hr>
       <section id="photos">
-        <h2 class="about-subtitle">Photos</h2>
-        <div class="grid">
-          <div class="card"><img src="/photos/face_card_2.jpg" alt="Press Photo 1"></div>
-          <div class="card"><img src="/photos/hallway_2.jpeg" alt="Press Photo 2"></div>
+  <center><h2 class="about-subtitle">Photos</h2></center>
+  <div class="grid">
+    <div class="card">
+      <a href="/photos/EveryRatAlbumCoverPhoto_7_filteredno_noise copy.png" download="glitchlette-every-rat-cover-no-text.jpg">
+        <img src="/photos/EveryRatAlbumCoverPhoto_7_filteredno_noise copy.png" alt="Press Photo 1">
+      </a></div>
+      <div class="card">
+      <a href="/photos/hallway_2.jpeg" download="glitchlette-hallway.jpg">
+        <img style="max-height: 30%;" src="/photos/hallway_2.jpeg" alt="Press Photo 2">
+      </a>
         </div>
-      </section>
+  </div>
+      <br>
+      <center><p style="font-size: 20px;"> Find more in the <a href="/gallery">Gallery</a></p></center><br>
+  
+</section>
 
+<hr>
       <section id="press">
-        <h2 class="about-subtitle">Press / Reviews</h2>
+        <center>
+          <h2 class="about-subtitle">Press / Reviews</h2>
         <div class="grid">
           <div class="card"><p class="quote">
-“Bellingham’s electronic scene has once again struck gold in its introduction of another highly talented artist to the roster. […] GLITCHLETTE’S choral prowess is as unique as her beats – distinct, powerful, and captivating.” -What’s Up Magazine 
-</p></div>
-          <div class="card"><p class="quote">“Really, really, really, really, really good stuff. – Some guy on Medicine Box Magazine TikTok Live </p></div>
-        </div>
-        <div class="card">
-          <p class="quote">
+          “Bellingham’s electronic scene has once again struck gold in its introduction of another highly talented artist to the roster. […] GLITCHLETTE’S choral prowess is as unique as her beats – distinct, powerful, and captivating.” -What’s Up Magazine 
+       </p></div>
+        <div class="card"> <p class="quote"> "The second and more inspired of the album’s two “checking in with the old gang” remixes, 
+          there’s a hint of continuity. In the hands of GLITCHLETTE, 
+          a self-described emo and synthpop musician based out of Washington, 
+          the track becomes an ethereal duet." - 
+          <a href="https://pitchfork.com/reviews/albums/default-genders-pain-mop-girl-2020/">Pitchfork Magazine</a>
+        </p>
+         </div>
+         <div class="card">
          <blockquote class="twitter-tweet"><p lang="en" dir="ltr" style="justify-content: center;">ur voice reminds me of fave van band the organ. prod is legit on shit phone speakers, respect.copped the ep</p>&mdash; 𝖦𝗋𝗂𝗆𝖾𝗌 ⏳ (@Grimezsz) <a href="https://twitter.com/Grimezsz/status/1002275029231419393?ref_src=twsrc%5Etfw">May 31, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-      </section>
-
+       </div>
+      
+        </section>
+<hr>
+<center>
       <section id="contact">
         <h2 class="about-subtitle">Contact</h2>
         <p>Email: <a href="mailto:hatemail@glitchlette.com">hatemail@glitchlette.com</a></p>
-        <p>Instagram: <a href="https://instagram.com/glitchlette">@glitchlette</a></p>
       </section>
-
+</center>
    
       </main>
     </div>
