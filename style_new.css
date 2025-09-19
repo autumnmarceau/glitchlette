@@ -2,12 +2,12 @@
    COLOR VARIABLES
 ========================= */
 :root {
-  --red-primary: #ee2222;
+  --red-primary: #E2430E;
   --red-dark: #7a0d0d;
   --red-shadow: #550808;
   --red-gradient-start: #cc0000;
   --red-gradient-end: #770000;
-  --text-light: #f6f0e7;
+  --text-light: #FAEBB3;
   --background-dark: #111111;
   --purple-accent: #7e0073;
   --purple-gradient-start: #a000a0;
@@ -183,7 +183,6 @@ strong, b {
 }
 
 .hero {
-  max-width: 40%;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -1036,4 +1035,24 @@ article a {
     0 0 12px var(--red-primary),
     0 0 24px var(--red-gradient-start);
   display: block;
+}
+
+.vertical-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* spacing between image and bio */
+}
+
+.hero-container {
+  max-width: 700px;   /* limits width */
+  width: 90%;         /* responsive */
+  margin: 0 auto 20px auto; /* center and spacing */
+}
+
+.hero {
+  width: 100%;        /* fill container width */
+  height: auto;       /* maintain aspect ratio */
+  display: block;
+  border-radius: 8px;
+  object-fit: contain; /* ensures image isn’t stretched */
 }
