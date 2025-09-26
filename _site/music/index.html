@@ -64,91 +64,189 @@
       <nav id="navbar">
   <ul class="main-nav">
     <li><a href="https://glitchlette.com" data-text="HOME">Home</a></li>
-    <li><a href="https://found.ee/ADrONk" data-text="MUSIC">Music</a></li>
+    <li><a href="https://ffm.to/3av2g6r" data-text="MUSIC">Music</a></li>
     <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
     <li><a href="https://glitchlette.com/gallery" data-text="GALLERY">Gallery</a></li>
     <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
     <li><a href="https://glitchlette.com/lyrics" data-text="LYRICS">Lyrics</a></li>
     <li><a href="https://glitchlette.com/contact/" data-text="HATE MAIL">Contact</a></li>
-    <li><a href="https://found.ee/YqVEud" data-text="SOCIALS">Socials</a></li>
+    <li><a href="https://linktr.ee/glitchlette" data-text="SOCIALS">Socials</a></li>
+    <li><iframe scrolling="no" style="border: 0;width: 100%;height: 50px;" src="https://bandcamp.com/band_follow_button_deluxe/1308150478"></iframe></li>
   </ul>
 </nav>
 
       <main class="main-content">
-          <style>
+        <style>
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
+  .release {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .release h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #F55614;
+  }
+
+  .release p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+
+  /* responsive embed wrapper */
+  .release-embed {
+    position: relative;
+    width: 100%;
+    padding-top: 135%; /* aspect ratio ~ 470/350 */
+  }
+
+  .release-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* buttons */
+  .release-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .release-buttons a {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .release-buttons a.purchase {
+    background: var(--highlight-green, #679D22);
+    color: #fff;
+  }
+
+  .release-buttons a.purchase:hover {
+    background: #56831c;
+    transform: translateY(-2px);
+  }
+
+  .release-buttons a.stream {
+    background: var(--highlight-red, #F55614);
+    color: #fff;
+  }
+
+  .release-buttons a.stream:hover {
+    background: #d64710;
+    transform: translateY(-2px);
+  }
+@media (max-width: 400px) {
     .catalog {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .release {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 12px;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
       padding: 1rem;
-      box-shadow: 0 0 15px rgba(255, 0, 128, 0.2);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
     }
 
     .release h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: #F55614;
+      font-size: 1rem;
     }
-
-    .release p {
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-      color: #ccc;
-    }
-
-    .release iframe {
-      width: 100%;
-      border: none;
-      flex-grow: 1;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <h1>Back Catalog</h1>
+  <div class="melting-text-container">
+    <h1 class="melting-text" data-text="MUSIC">MUSIC</h1>
+  </div>
 
   <div class="catalog">
+
     <div class="release">
-        <h2>FESTER (2025)</h2>
-        <p>Second single from 'EVERY RAT'</p>
-        <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1236568193/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/track=3428270278/transparent=true/" seamless><a href="https://glitchlette.bandcamp.com/album/every-rat-wants-to-crawl-in-your-mouth-and-clean-your-teeth">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH by GLITCHLETTE</a></iframe>
+      <h2>FESTER (2025)</h2>
+      <p>Second single from 'EVERY RAT'</p>
+      <div class="release-embed">
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1236568193/size=medium/bgcol=333333/linkcol=e32c14/tracklist=false/track=3428270278/transparent=true/" seamless>
+        </iframe>
+      </div>
+      <div class="release-buttons">
+        <a href="https://glitchlette.bandcamp.com/track/fester" target="_blank" class="purchase">Purchase</a>
+        <a href="https://open.spotify.com/track/6XsEjA1Kg3qUe9U46konEm?si=da823c0d6c4b4179" target="_blank" class="stream">Stream</a>
+      </div>
     </div>
+
     <div class="release">
       <h2>SIDEPIECE HYMNAL (2025)</h2>
       <p>First single from 'EVERY RAT'</p>
-     <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1236568193/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/track=3702078808/transparent=true/" seamless><a href="https://glitchlette.bandcamp.com/album/every-rat-wants-to-crawl-in-your-mouth-and-clean-your-teeth">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH by GLITCHLETTE</a></iframe>
+      <div class="release-embed">
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1236568193/size=medium/bgcol=333333/linkcol=e32c14/tracklist=false/track=3702078808/transparent=true/" seamless>
+        </iframe>
+      </div>
+      <div class="release-buttons">
+        <a href="https://glitchlette.bandcamp.com/track/sidepiece-hymnal" target="_blank" class="purchase">Purchase</a>
+        <a href="https://open.spotify.com/track/6HsFqXespmlrJvQcIAEsTa?si=f1dbe24e047945b2" target="_blank" class="stream">Stream</a>
+      </div>
     </div>
 
     <div class="release">
       <h2>Discordant Dream Emulator (2022)</h2>
-      <p>Mostly instrumental. Known colloquially as "The Yeah Song" </p>
-     <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=3758560127/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://glitchlette.bandcamp.com/track/discordant-dream-emulator">Discordant Dream Emulator by GLITCHLETTE</a></iframe>
+      <p>Mostly instrumental. Known colloquially as "The Yeah Song"</p>
+      <div class="release-embed">
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/track=3758560127/size=medium/bgcol=333333/linkcol=2ebd35/tracklist=false/transparent=true/" seamless>
+        </iframe>
+      </div>
+      <div class="release-buttons">
+        <a href="https://glitchlette.bandcamp.com/track/discordant-dream-emulator" target="_blank" class="purchase">Purchase</a>
+        <a href="https://open.spotify.com/track/7rjVqCqQ811scGiRYhuRJj?si=fd7ba8bff6ec4104" target="_blank" class="stream">Stream</a>
+      </div>
     </div>
 
     <div class="release">
       <h2>SUBSOIL EP (2018)</h2>
-      <p>GLITCHLETTE's first EP</p>
-      <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=459575017/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://glitchlette.bandcamp.com/album/subsoil">SUBSOIL by GLITCHLETTE</a></iframe>
+      <p>GLITCHLETTE's first EP; BANDCAMP ONLY</p>
+      <div class="release-embed">
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=459575017/size=medium/bgcol=333333/linkcol=2ebd35/tracklist=false/transparent=true/" seamless>
+        </iframe>
+      </div>
+      <div class="release-buttons">
+        <a href="https://glitchlette.bandcamp.com/album/subsoil" target="_blank" class="purchase">Purchase</a>
+      </div>
     </div>
 
     <div class="release">
-        <h2> Gymnos (Demo) (2017)</h2>
-        <p>First single</p>
-        <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=929460074/size=large/bgcol=333333/linkcol=9a64ff/tracklist=false/transparent=true/" seamless><a href="https://glitchlette.bandcamp.com/track/gymnos">gymnos by GLITCHLETTE</a></iframe>
-        </div>
+      <h2>Gymnos (Demo) (2017)</h2>
+      <p>First single</p>
+      <div class="release-embed">
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/track=929460074/size=medium/bgcol=333333/linkcol=9a64ff/tracklist=false/transparent=true/" seamless>
+        </iframe>
+      </div>
+      <div class="release-buttons">
+        <a href="https://glitchlette.bandcamp.com/track/gymnos" target="_blank" class="purchase">Purchase</a>
+        <a href="https://open.spotify.com/track/6XsEjA1Kg3qUe9U46konEm?si=da823c0d6c4b4179" target="_blank" class="stream">Stream</a>
+      </div>
     </div>
+
   </div>
 </body>
 </html>
