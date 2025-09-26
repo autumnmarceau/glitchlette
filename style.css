@@ -466,7 +466,7 @@ strong, b {
 
 .movies-list li em {
   font-style: italic;
-  color: #fff;
+  color: var(--text-light);
   flex-shrink: 0;
 }
 
