@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "The Story of the EVERY RAT Album Cover: A Near Death Experience"
-date: 2025-08-01 14:30:00 -0700
-excerpt: "A haunted axe. A brush with death. The birth of a vibe. The story behind the EVERY RAT album cover and how Jaz and I almost died getting it."
+title: "The Story of the FesterCover: A Near Death Experience"
+date: 2025-09-27 14:30:00 -0700
+excerpt: "A haunted axe. A brush with death. The birth of a vibe. The story behind the FESTER cover art and how Jaz and I almost died getting it."
 thumbnail: https://glitchlette.com/bts.jpg
 thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in February."
 ---
 
-<center>This is how my creative director Jaz and I shot the album cover for the latest GLITCHLETTE EP <a href="/glitchlette.bandcamp.com">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH!</a> and how we accidentally risked our lives to get it. <b>I swear to Björk this is a true story.</b> </center>
+<center>This is how my creative director Jaz and I shot the cover for the latest GLITCHLETTE track <a href="glitchlette.bandcamp.com/track/fester">FESTER</a> and how we accidentally risked our lives to get it. <b>I swear to Björk this is a true story.</b> </center>
 
 ## Dear David Lynch, I Get It Now
 
@@ -22,7 +22,7 @@ thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in 
   </figcaption>
 </figure></center>
 
-Back in February of this year, Jaz and I drove to Long Beach, WA for a GLITCHLETTE photo shoot. We weren't exactly intending for it to be the album cover, but what we wound up with was so perfect that we knew it when we saw it, y'know what I mean?
+Back in February of this year, Jaz and I drove to Long Beach, WA for a GLITCHLETTE photo shoot. We weren't exactly intending for it to be the official cover art, but what we wound up with was so perfect that we knew it when we saw it, y'know what I mean?
 
 The journey from Seattle is about 3.5 hours. Once you get off I-5, the landscape exhales the usual eeriness of western Washington’s rural areas. It's easy to see why David Lynch chose the PNW for *Twin Peaks.*  Winding roads cut through misty lowlands, old-growth forests, and drowsy logging towns that straddle the seams of here and *there*, where it feels like every tree portends your doom. 
 
