@@ -1234,6 +1234,13 @@ article a {
   border-radius: 6px;
 }
 
+.epk-embedded {
+  width: 100%;
+  height: 180px;
+  border: none;
+  border-radius: 8px;
+}
+
 .quote {
   font-style: italic;
   font-size: 0.95rem;
