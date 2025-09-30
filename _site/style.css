@@ -49,14 +49,15 @@ html, body {
   background-color: var(--background-dark);
   color: var(--text-light);
   font-family: 'Spectral', serif;
-  width: 100vw;
-  height: 100vh;
+  margin:0;
+  padding:0;
+  width: 100%;
+  min-width: 400px;
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
   position: relative;
   z-index: 1;
 }
@@ -64,10 +65,11 @@ html, body {
 /* Page wrapper: flex container for sidebar and main content */
 .page-wrapper {
   display: flex;
-  max-width: 960px;
-  width: 90vw;
+  max-width: none;
+  width: auto;
+  min-width: 400px;
   margin: 0 auto;
-  gap: 20px;
+  gap: 20px; 
   align-items: flex-start;
   min-height: calc(100vh - 4rem);
   position: relative;
@@ -85,7 +87,7 @@ html, body {
   flex-direction: column;
   align-items: flex-start;
   box-shadow: none;
-  border-radius: 8px;
+  border-radius: 0px;
   margin-left: 0;
   position: fixed;
   top: 0rem;   
@@ -95,10 +97,6 @@ html, body {
   max-height: none;     /* no height limit */
   overflow-y: visible;  /* no scrolling */
 }
-.main-content {
-  margin-left: 120px; /* Match your sidebar's min-width */
-}
-
 
 /* Nav list styles */
 #navbar ul {
@@ -1234,7 +1232,7 @@ article a {
   border-radius: 6px;
 }
 
-.epk-embedded {
+.epk-embed {
   width: 100%;
   height: 180px;
   border: none;
