@@ -44,7 +44,7 @@
 
 /* Base styles */
 html, body {
-  background-color: var(--background-dark);
+  background-color: rgba(52, 25, 18, 0.85);;
   color: var(--text-light);
   font-family: 'Spectral', serif;
   margin:0;
