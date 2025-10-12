@@ -215,15 +215,15 @@ html, body {
 
 /* Main content */
 .main-content {
-  background: rgba(14, 6, 10, 0.85);
-  border-left: 5px solid #aa0000;
+  background: var(--background-dark);
+  border-left: 5px solid var(--red-primary);
   padding: 2rem 3rem;
   margin-left: 0;
   margin-top: 2rem;
   border-radius: 12px;
   max-width: 960px;
   box-shadow: 0 0 60px rgba(170, 0, 0, 0.3);
-  color: #eae3da;
+  color: var(--text-light);
   font-family: 'Spectral', serif;
   line-height: 1.7;
   overflow-wrap: break-word;
