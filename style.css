@@ -215,7 +215,7 @@ html, body {
 
 /* Main content */
 .main-content {
-  background: var(--background-dark);
+  background: rgba(52, 25, 18, 0.85); /* slightly transparent version of #341912 */
   border-left: 5px solid var(--red-primary);
   padding: 2rem 3rem;
   margin-left: 0;
