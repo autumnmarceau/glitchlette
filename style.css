@@ -2,14 +2,14 @@
    COLOR VARIABLES
 ========================= */
 :root {
-  --red-primary: #E2430E;
+  --red-primary: #BD400D;
   --red-dark: #7a0d60;
   --red-shadow: #a30b57;
   --red-gradient-start: #899b02;
   --red-gradient-end: #414a02;
   --text-light: #FAEBB3;
-  --link-text: #bed700;
-  --background-dark: #2e130b;
+  --link-text: #DA9C9C;
+  --background-dark: #341912;
 }
 
 /* Background image full viewport fixed behind everything */
