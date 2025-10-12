@@ -3,22 +3,20 @@
 ========================= */
 :root {
   --red-primary: #E2430E;
-  --red-dark: #7a0d0d;
-  --red-shadow: #550808;
-  --red-gradient-start: #cc0000;
-  --red-gradient-end: #770000;
-  --text-light: #f8f3e2;
-  --background-dark: #111111;
-  --purple-accent: #7e0073;
-  --purple-gradient-start: #a000a0;
-  --purple-gradient-end: #4b004b;
+  --red-dark: #7a0d60;
+  --red-shadow: #a30b57;
+  --red-gradient-start: #899b02;
+  --red-gradient-end: #414a02;
+  --text-light: #FAEBB3;
+  --link-text: #bed700;
+  --background-dark: #2e130b;
 }
 
 /* Background image full viewport fixed behind everything */
 #bg-image {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('https://glitchlette.com/photos/EveryRatAlbumCoverPhoto_7_filteredno_noise.png');
+  background-image: url('EVERYRATFINALRATALBUMRAT\ \(2\).png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* covers viewport responsively */
@@ -111,7 +109,7 @@ html, body {
 
 /* Nav links */
 #navbar li a {
-  color: var(--red-primary);
+  color: var(--link-text);
   font-family: 'Halloween', serif;
   font-weight: 600;
   font-size: 1.6rem;
@@ -129,11 +127,6 @@ html, body {
   background-color: transparent;
   font-variant: small-caps;
   text-transform: none;
-  text-shadow:
-    0 0 4px var(--red-dark),
-    0 0 8px var(--red-gradient-start),
-    0 0 15px var(--red-primary),
-    0 0 25px var(--red-shadow);
   animation: slowGlow 4s ease-in-out infinite;
   transition: transform 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -340,7 +333,6 @@ strong, b {
   color: var(--text-light);
   font-family: 'Spectral', serif;
   line-height: 1.6;
-  filter: drop-shadow(0 0 6px #aa0000);
 }
 
 .about-subtitle {
@@ -369,10 +361,7 @@ strong, b {
 
 .about-bio a:hover,
 .about-bio a:focus {
-  color: var(--red-gradient-end);
-  text-shadow:
-    0 0 8px var(--red-gradient-start),
-    0 0 20px var(--red-primary);
+  color: var(--link-text);
   outline: none;
 }
 
@@ -408,7 +397,7 @@ strong, b {
 .gallery-caption {
   font-family: Spectral, serif;
   font-size: 0.85rem;
-  color: #ffffff;
+  color: var(--text-light);
   padding: 4px 8px;
   font-style: italic;
   position: absolute;
@@ -478,7 +467,7 @@ strong, b {
 /* About page links */
 .about-page a {
   font-family: 'Halloween', serif;
-  color: var(--red-primary);
+  color: var(--link-text);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -859,16 +848,16 @@ nav ul li {
 
 /* Base blockquote styles */
 .main-content blockquote {
-  border-left: 4px solid #ee2222;     /* classic left border */
+  border-left: 4px solid var(--red-primary);     /* classic left border */
   margin: 2em 1.5em;                /* vertical and horizontal spacing */
   padding: 1em 1.2em;               /* comfy padding inside */
-  background: #fdfdfd;              /* subtle off-white background */
+  background: var(--text-light);              /* subtle off-white background */
   font-family: 'Courier New', Courier, monospace;
   font-size: .8em;
   box-shadow: 2px 2px 0 black;     /* slight shadow for depth */
   transform: rotate(-0.5deg);      /* a little tilt for style */
   position: relative;
-  color: #000;                     /* text color */
+  color: var(--background-dark);                     /* text color */
 }
 
 /* Remove tape decorations completely */
@@ -881,26 +870,13 @@ nav ul li {
 
 
 
-/* Force nav links glow inside about-page or anywhere */
-#navbar li a {
-  text-shadow:
-    0 0 4px var(--red-dark),
-    0 0 8px var(--red-gradient-start),
-    0 0 15px var(--red-primary),
-    0 0 25px var(--red-shadow) !important;
-  animation: slowGlow 4s ease-in-out infinite !important;
-}
+
 
 /* === Force red color and glowing text for all headers and links === */
 
 h1
   {
   color: var(--red-primary) !important;
-  text-shadow:
-    0 0 4px var(--red-dark),
-    0 0 8px var(--red-gradient-start),
-    0 0 15px var(--red-primary),
-    0 0 25px var(--red-shadow);
   animation: slowGlow 4s ease-in-out infinite;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -935,7 +911,7 @@ h1
 
 a {
   display: inline-block;
-  color: #e2ffff;
+  color: var(--link-text);
   text-decoration: none;
   font-family: 'Halloween', serif;
   transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.3s ease;
@@ -962,7 +938,7 @@ a:focus {
 .blog-post-content a,
 article a {
   font-family: 'Halloween', serif !important;
-  color: #e2ffff !important;
+  color: var(--link-text) !important;
   text-shadow:
     0 0 4px var(--red-dark),
     0 0 8px var(--red-gradient-start),
@@ -975,7 +951,7 @@ article a {
   font-family: 'Halloween', serif;
   font-weight: 900;
   font-size: 2.5rem;
-  color: #fff !important;
+  color: var(--text-light) !important;
   text-shadow:
     0 0 4px var(--red-dark),
     0 0 15px var(--red-primary),
@@ -1004,8 +980,8 @@ article a {
 ---------------------------------------- */
 @media (max-width: 540px) {
   #bg-image {
-    background-image: url('https://glitchlette.com/photos/EVERYRAT_OG.jpg');
-    background-position: calc(50% - 30px) calc(50% + 20px);
+    background-image: url('rateverymotelphonebg.jpg');
+    background-position: calc(50% - 20px) calc(50%);
   }
 }
 
@@ -1116,7 +1092,7 @@ article a {
 #navbar {
   position: static; /* default no sticky/fixed */
   width: 100%;
-  color: white;
+  color: var(--link-text);
   padding: 1rem;
   overflow: hidden;
   z-index: 10;
