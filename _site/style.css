@@ -16,7 +16,7 @@
 #bg-image {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('EVERYRATFINALRATALBUMRAT\ \(2\).png');
+  background-image: url('everyratalbumbg Large.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* covers viewport responsively */
@@ -112,6 +112,12 @@ html, body {
   align-items: center;
   white-space: nowrap;
   transition: transform 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease;
+  background: linear-gradient(
+    rgba(46, 19, 11, 0.25) 0%,
+    rgba(46, 19, 11, 0.10) 100%
+  );
+   backdrop-filter: blur(4px);  /* optional, adds a soft glassy look */
+  -webkit-backdrop-filter: blur(4px);
 }
 
 #navbar .main-nav li a:hover {
@@ -927,7 +933,6 @@ article a {
 @media (max-width: 540px) {
   #bg-image {
     background-image: url('rateverymotelphonebg.jpg');
-    background-position: calc(50% - 20px) calc(50%);
     background-size: cover;
   }
 }
