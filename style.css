@@ -67,150 +67,91 @@ html, body {
   width: auto;
   min-width: 400px;
   margin: 0 auto;
-  gap: 20px; 
+  gap: 18px; 
   align-items: flex-start;
   min-height: calc(100vh - 4rem);
   position: relative;
   z-index: 1;
 }
 
-/* Sidebar (navbar) styles */
+/* Sidebar container */
 #navbar {
-  flex: 0 0 auto;       /* shrink to fit content */
-  width: max-content;   /* width fits content */
+  width: max-content;
   min-width: 120px;
-  background: transparent;
-  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: none;
-  border-radius: 0px;
-  margin-left: 0;
   position: fixed;
-  top: 0rem;   
-  left: 0rem;
+  top: 0;
+  left: 0;
   height: 100vh;
-  z-index: 1000;         /* sticks below body padding */
-  max-height: none;     /* no height limit */
-  overflow-y: visible;  /* no scrolling */
+  padding: 1rem 0;
+  background: transparent;
+  z-index: 1000;
 }
 
-/* Nav list styles */
-#navbar ul {
-  list-style: none;
-  width: 100%;
+/* Main nav links */
+#navbar .main-nav {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin: 0;
+  gap: 0.05rem; /* closer spacing for links */
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-/* Nav links */
-#navbar li a {
-  color: var(--link-text);
+#navbar .main-nav li a {
   font-family: 'Halloween', serif;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.4rem; /* slightly smaller for tighter look */
+  color: var(--link-text);
   text-decoration: none !important;
-  padding: 6px 8px;
+  padding: 4px 4px;
   border-radius: 4px;
-  letter-spacing: 0.08em;
   display: inline-flex;
-  justify-content: flex-start;
   align-items: center;
   white-space: nowrap;
-  max-width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  background-color: transparent;
-  font-variant: small-caps;
-  text-transform: none;
-  animation: slowGlow 4s ease-in-out infinite;
   transition: transform 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover and focus effect on nav links */
-#navbar li a:hover,
-#navbar li a:focus {
-  animation:
-    pulseGlow 2.5s ease-in-out infinite,
-    glowColorShift 3s ease-in-out infinite,
-    flickerGlow 0.15s linear infinite,
-    rippleText 1.2s ease forwards;
-  transform-origin: left center;
+#navbar .main-nav li a:hover {
   transform: scale(1.05);
   background-color: rgba(238, 34, 34, 0.1);
-  filter: url(#ripple) !important;
-  outline: none;
 }
 
-/*
-#navbar li a:focus {
-  outline: 2px solid var(--red-primary);
-  outline-offset: 2px;
-  outline-style: solid;
-} 
-*/
-
 /* Social icons container */
-.social-nav {
+#navbar .social-nav {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  gap: 1rem;
   margin-top: 2rem;
-  justify-content: flex-start;
-  padding-left: 0;
-  padding-top:none;
+  padding: 0;
   list-style: none;
 }
 
 /* Social icons */
 .social-icon {
   display: inline-flex;
-  cursor: pointer;
-  animation: slowGlow 4s ease-in-out infinite;
-  filter: drop-shadow(0 0 10px #e03b3b);
-  transition: transform 0.3s ease, filter 0.3s ease;
-  position: relative;
-  padding: 4px;
-  border-radius: 6px;
-  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 24px;
+  color: #341912;
   text-decoration: none !important;
+  border-radius: 6px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-icon:hover,
-.social-icon:focus {
-  animation:
-    pulseGlow 2.5s ease-in-out infinite,
-    glowColorShift 3s ease-in-out infinite,
-    flickerGlow 0.15s linear infinite,
-    rippleText 1.2s ease forwards;
-  filter: drop-shadow(0 0 14px var(--red-primary)) url(#ripple) !important;
+.social-icon:hover {
   transform: scale(1.2);
+  color: #f3acac;
 }
 
-.social-icon:focus {
-  outline: 2px solid var(--red-primary);
-  outline-offset: 2px;
-}
-
-.social-icon i {
-  font-size: 32px;
-  color: var(--text-light);
-  pointer-events: none;
-  transition: color 0.3s ease, filter 0.3s ease;
-}
-
-.social-icon:hover i,
-.social-icon:focus i {
-  color: var(--red-primary);
-  filter: drop-shadow(0 0 14px var(--red-primary)) drop-shadow(0 0 24px #ff4c4c);
-}
-
-/* Social nav icon sizing */
-.social-nav .social-icon i {
-  font-size: 28px;
+/* Unicode email icon sizing */
+.email-icon {
+  font-size: 1.1em; /* keeps it proportional to other icons */
+  line-height: 1;
 }
 
 /* Main content */
@@ -687,7 +628,7 @@ strong, b {
   display: flex;
   flex-direction: column; /* vertical by default */
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2.0rem;
 }
 
 
@@ -699,13 +640,13 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap; /* Allow wrapping if needed */
   padding: 0;
-  margin: 0;
+  margin: 0 0.35rem;
   list-style: none;
 }
 
 /* Optional: style the links */
 nav ul li {
-  margin: 0 0.5rem;
+  margin: 0 0.35rem;
 }
 
 /* Larger screens: switch to vertical nav */
@@ -867,6 +808,11 @@ nav ul li {
 }
 
 
+.main-nav li a {
+  display: inline-flex; /* ensures icons inside links are visible */
+  align-items: center;
+  justify-content: center;
+}
 
 
 
@@ -982,6 +928,7 @@ article a {
   #bg-image {
     background-image: url('rateverymotelphonebg.jpg');
     background-position: calc(50% - 20px) calc(50%);
+    background-size: cover;
   }
 }
 
