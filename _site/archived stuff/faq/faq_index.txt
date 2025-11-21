@@ -67,6 +67,7 @@
     <li><a href="https://glitchlette.com/shows" data-text="SHOWS">Shows</a></li>
     <li><a href="https://glitchlette.com/gallery" data-text="PHOTO">Photos</a></li>
     <li><a href="https://glitchlette.com/about" data-text="ABOUT">About</a></li>
+    <li><a href="https://glitchlette.com/blog" data-text="BLOG">Blog</a></li>
     <li><a href="https://glitchlette.com/contact" data-text="CONTACT">Contact</a></li>
   </ul>
 
