@@ -44,8 +44,9 @@ article img {
   <p style="font-variant: small-caps; font-weight: 600; color: rgba(230, 80, 80, 0.85); user-select:none;">
     {{ page.date | date: "%B %-d, %Y" }}
   </p>
-  {% if page.thumbnail %}
-  {% endif %}
+  <img src="{{ page.thumbnail | absolute_url }}" alt="{{ page.thumbnail_caption | escape }}">
+    {% if page.thumbnail_caption %}
+      <figcaption>{{ page.thumbnail_caption }}</figcaption>
 </header>
   <section>
     {{ content }}
