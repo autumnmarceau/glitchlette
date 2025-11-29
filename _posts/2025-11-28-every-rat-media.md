@@ -37,7 +37,7 @@ That's not even to mention the score by Johan Johannsson (RIP) or just the raw v
 
 *Mandy* is easily one of my favorite movies of all time. I can't actually speak to the quality of the story, but with a movie like this it doesn't really matter. You just have to *see* it. 
 
-## *Suspiria* (1977) dir. Dario Argento
+## *Suspiria*  (1977) dir. Dario Argento
 
 <center> <div><figure> <img class="blog-post-image" src="/suspiria-poster.png" alt="french suspiria poster"> <figcaption> A vintage French poster for Suspiria (1977) </figcaption> </figure><br></div></center>
 
@@ -48,7 +48,7 @@ If you're a cinephle nerd like me I suggest reading about the production techniq
 This movie and (almost more so) its branding, inspired the visual aspects of this era (with some added Lynchian spice). For example, the typeface used on the SIDEPIECE HYMNAL and FESTER single covers are both..I'll say...*heavily* inspired by the Suspiria font seen in the above poster (and most of the movie's original branding/covers). 
 
 
-## *House of Leaves* by Mark Z. Danielewski 
+## *House of Leaves*  by Mark Z. Danielewski 
 <center><figure><img class="blog-post-image" src="/hol.jpeg"><br>
 <figcaption><i>I love that this book has had a recent resurgence on TikTok. More people for me to obsess over it with, I'd say! </i> </figcaption></figure></center><br>
 
