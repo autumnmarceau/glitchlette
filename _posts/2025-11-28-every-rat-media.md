@@ -86,7 +86,7 @@ This book also inspired the lyrics of WRAITH SPACE. The beginning features a spo
 
 I think this book's resistance to traditional form subconciously inspired the structure of the songs on Every Rat. The book has  multiple break-neck vibe shifts in the way its written that I ended up channeling on this project. Or it was my ADHD. Perhaps a bit of both? 
 
-Anyways, if you haven't read it, I strongly reccomend to do it at least once in your life, there really isn't anything else like it. 
+Anyways, if you haven't read it, I strongly reccommend to do it at least once in your life, there really isn't anything else like it. 
 
 <center><figure><img class="blog-post-image" src="/cigs2 Medium.jpeg"><br><figcaption><i>This shot is a direct recreation of one of the last shots in *Mandy*. Photo credit: Jaz Varlot</i></figcaption></figure><br></center>
 
