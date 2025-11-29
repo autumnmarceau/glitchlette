@@ -76,7 +76,7 @@ As one within a Swoon — <br>
 Goes safely — where an open eye — <br>
 Would drop Him — Bone by Bone  <br>
 
-You might recognize the second and third lines...
+You might recognize the third and fourth lines...
 
 >Cover the abyss <br> With a trance of madness <br> So my careful heart <br> Can manage <br> A safe way around it
 
