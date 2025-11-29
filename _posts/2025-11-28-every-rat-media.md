@@ -13,8 +13,7 @@ It's been a smidge over a month since I released my most recent and exhaustingly
 In celebration I wanted to share a little more about the art that inspired it. This is an incomplete list, but I thought I'd cover the more overt homages that exist in the EVERY RAT world. <br> 
 
 ## *Mandy*  (2018) dir. Panos Cosmatos 
-
-#### And by proxy, Nicolas Cage
+### And by proxy, Nicolas Cage
 
 <center><figure class="side-by-side">
   <div class="image-pair">
