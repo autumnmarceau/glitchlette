@@ -54,7 +54,7 @@ This movie and (almost more so) its branding, inspired the visual aspects of thi
 
 For those not in the know, its difficult to say what this book's about. In short: its about a house that is bigger on the inside. Many describe it as a story within a story, which is accurate, but a crucial aspect I don't see talked about enough is how well it functions as a satire on academia. Parts of the book are written as if they're "non-fiction," complete with citations and footnotes. Some of the citations are famously completely fake, which as whacky as it sounds, is acknowledged by one of the characters in the story. You really just gotta read it. 
 
-The first time I read HoL was early 2017. My then-partner and I had just moved into a new place after a house fire, and this book was one of a few left behind by the previous tenants. I picked it up on a whime one day and it changed my life. 
+The first time I read HoL was early 2017. My then-partner and I had just moved into a new place after a house fire, and this book was one of a few left behind by the previous tenants. I picked it up on a whim one day and it changed my life. 
 
 Back then, I'd never heard of it, and if you know anything about this book, you'd know that finding it in your old, kind-of-creepy house is a perfect (albeit uncanny) way to read it for the first time. 
 
