@@ -7,7 +7,10 @@ thumbnail: https://glitchlette.com/media-post.png
 thumbnail_caption: "Collage from the movies Mandy (2018) and Suspiria (1977)"
 ---
 ### Non-Musical Media That Inspired the newest GLITCHLETTE EP
-It's been a smidge over a month since I released my second EP:  <a href="https://ffm.to/mjnjzop">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH </a>. In celebration I wanted to share a little more about the art that inspired it. This is an incomplete list, but I thought I'd cover the more overt homages that exist in the EVERY RAT world. <br> 
+Hello again my friends!  
+It's been a smidge over a month since I released my most recent and exhaustingly titled EP:  <a href="https://ffm.to/mjnjzop">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH </a>
+
+In celebration I wanted to share a little more about the art that inspired it. This is an incomplete list, but I thought I'd cover the more overt homages that exist in the EVERY RAT world. <br> 
 
 ## *Mandy*  (2018) dir. Panos Cosmatos 
 
