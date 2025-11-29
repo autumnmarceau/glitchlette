@@ -81,12 +81,12 @@
 </nav>
     <div class="centered-content">
 
-  <div id="countdown"></div>
 
   <div class="cta-buttons">
     <a href="https://ffm.to/mjnjzop" target="_blank">STREAM THE EP</a>
     <a href="https://shop.glitchlette.com" target="_blank">SCORE SOME MERCH</a>
     <a href="https://glitchlette.bandcamp.com" target="_blank">BUY THE EP</a>
+    <a href="https://discord.com/invite/A6xadjCm5W" target="_blank">JOIN THE DISCORD</a>
   </div>
 </div> 
 
@@ -164,33 +164,7 @@ body {
 }
 </style>
 
-<script>
-const targetDate = new Date("2025-10-17T00:00:00").getTime();
-const countdownElement = document.getElementById("countdown");
 
-const timer = setInterval(() => {
-  const now = new Date().getTime();
-  const distance = targetDate - now;
-
-  if (distance < 0) {
-    clearInterval(timer);
-    countdownElement.innerHTML = "EVERY RAT IS OUT NOW! 🐀";
-    return;
-  }
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  countdownElement.innerHTML = `
-    THE RATS ARE COMING <br> TO CLEAN YOUR TEETH
-    <br>
-    ${days}d ${hours}h ${minutes}m ${seconds}s
-  `;
-}, 1000);
-
-</script>
 
    <!-- End of page-wrapper -->
 
