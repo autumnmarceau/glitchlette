@@ -49,7 +49,7 @@ This movie and (almost more so) its branding, inspired the visual aspects of thi
 
 
 ## *House of Leaves* by Mark Z. Danielewski 
-<center><figure><img class="blog-post-image" src="/hol.jpeg">
+<center><figure><img class="blog-post-image" src="/hol.jpeg"><br>
 <figcaption><i>I love that this book has had a recent resurgence on TikTok. More people for me to obsess over it with, I'd say! </i> </figcaption></figure></center><br>
 
 For those not in the know, its difficult to say what this book's about. In short: its about a house that is bigger on the inside. Many describe it as a story within a story, which is accurate, but a crucial aspect I don't see talked about enough is how well it functions as a satire on academia. Parts of the book are written as if they're "non-fiction," complete with citations and footnotes. Some of the citations are famously completely fake, which as whacky as it sounds, is acknowledged by one of the characters in the story. You really just gotta read it. 
@@ -60,7 +60,7 @@ Back then, I'd never heard of it, and if you know anything about this book, you'
 
 Fast forward a couple years and I find myself reading it again, only this time, I'd just started new (and as I'd later discover: uneffective) bipolar medication. The new chemical cocktail, combined with the psychologically disorienting nature of the story, sent me into a manic episode. At the end of it, I wound up with SIDEPIECE HYMNAL! 
 
-<center><figure><img class="blog-post-image" src="/hol2.jpeg">
+<center><figure><img class="blog-post-image" src="/hol2.jpeg"><br>
 <figcaption><i>I know it looks pretentious, and it is, but I promise its got substance underneath that style.</i></figcaption></figure></center><br>
 
 ### SIDEPIECE HYMNAL: An Origin Story 
