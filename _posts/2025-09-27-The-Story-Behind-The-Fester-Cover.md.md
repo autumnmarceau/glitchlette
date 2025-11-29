@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Story of the Fester Cover: A Near Death Experience"
-date: 2025-09-27 14:30:00 -0700
+date: 2025-09-27 00:30:00 -0700
 excerpt: "A haunted axe. A brush with death. The birth of a vibe. The story behind the FESTER cover art and how Jaz and I almost died getting it."
 thumbnail: /bts.jpg 
 thumbnail_caption: "GLITCHLETTE tries to warm up in the freezing winter cold!"
