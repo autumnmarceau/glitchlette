@@ -1,11 +1,4 @@
----
-layout: post
-title: "The Story of the FesterCover: A Near Death Experience"
-date: 2025-09-27 14:30:00 -0700
-excerpt: "A haunted axe. A brush with death. The birth of a vibe. The story behind the FESTER cover art and how Jaz and I almost died getting it."
-thumbnail: https://glitchlette.com/bts.jpg
-thumbnail_caption: "GLITCHLETTE warms up between takes on the freezing beach in February."
----
+
 
 <center>This is how my creative director Jaz and I shot the cover for the latest GLITCHLETTE track <a href="glitchlette.bandcamp.com/track/fester">FESTER</a> and how we accidentally risked our lives to get it. <b>I swear to Björk this is a true story.</b> </center>
 
@@ -74,7 +67,7 @@ In hindsight, a bad call.
 <center><figure>
   <img src="/photos/feltcute.jpeg" alt="Glitchlette on the beach" class="blog-post-image">
   <br><figcaption>If you zoom in, you can see how the rain fell sideways in this photo.</figcaption>
-</figure></center>
+</figure></center><br>
 
 
 The shoot itself oscillated between fun and suffering, and most of the photos were unusable thanks to my frigid posture and shivering jaw. I mean, look at me, I was wearing pleather and a dress made of glorified tissue paper.  
