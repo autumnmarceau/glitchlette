@@ -3,7 +3,7 @@ layout: post
 title: "The Muses of Every Rat"
 date: 2025-11-28 14:30:00 -0700
 excerpt: "An incomplete list of art & media that inspired my latest EP."
-thumbnail: https://glitchlette.com/media-post.png
+thumbnail: /media-post.png
 thumbnail_caption: "Top: Mandy (2018) Bottom: Suspiria (1977)"
 ---
 ## Non-Musical Media That Inspired the newest GLITCHLETTE EP
