@@ -54,7 +54,7 @@ This movie and (almost more so) its branding, inspired the visual aspects of thi
 
 For those not in the know, its difficult to say what this book's about. In short: its about a house that is bigger on the inside. Many describe it as a story within a story, which is accurate, but a crucial aspect I don't see talked about enough is how well it functions as a satire on academia. Parts of the book are written as if they're "non-fiction," complete with citations and footnotes. Some of the citations are famously completely fake, which as whacky as it sounds, is acknowledged by one of the characters in the story. You really just gotta read it. 
 
-The first time I read HoL was early 2017. My then-partner and I had just moved into a new place after a house fire, and this book was one of a few left behind by the previous tenants. I picked it up on a whim one day and it changed my life. 
+The first time I read HoL was early 2017. My then-partner and I had just moved into a new place after a house fire, and this book was one of a few left behind by the previous tenants. I picked it up on a whim one day and it changed my life. It rewired my brain. It was a singular reading experience I will never have again and I will die mourning that experience. Anyways.
 
 Back then, I'd never heard of it, and if you know anything about this book, you'd know that finding it in your old, kind-of-creepy house is a perfect (albeit uncanny) way to read it for the first time. 
 
@@ -84,7 +84,7 @@ The first verse from SIDEPIECE HYMNAL is a loving reimagining of those lines. I 
 
 This book also inspired the lyrics of WRAITH SPACE. The beginning features a spoken word part that is inspired/pulled from an archaic translation of *the Aenid* that is quoted in HoL. I've never been able to find it online, so its possible its one of HoL's many "fake" quotes.
 
-I think this book's resistance to traditional form subconciously inspired the structure of the songs on Every Rat. The book has  multiple break-neck vibe shifts in the way its written that I ended up channeling on this project. Or it was my ADHD. Perhaps a bit of both?
+I think this book's resistance to traditional form subconciously inspired the structure of the songs on Every Rat. The book has  multiple break-neck vibe shifts in the way its written that I ended up channeling on this project. Or it was my ADHD. Perhaps a bit of both? 
 
 Anyways, if you haven't read it, I strongly reccomend to do it at least once in your life, there really isn't anything else like it. 
 
