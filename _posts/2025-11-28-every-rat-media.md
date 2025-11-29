@@ -31,7 +31,7 @@ What can I even say about this movie, other than I watched it like 15 times whil
 
 I'm a <a href="https://letterboxd.com/hailsagan666/list/cagequest/">massive</a> Nicolas Cage fan. I just can't get enough of the guy. I think it's the almost dada-eqsue nature of his performances.
 
-There's a common thread between his characteristic, overemotive bombast and the way I approach music. He takes  emotion to its extreme, adding a tangible physicality to what we reflexively internalize. That's *one* of the reasons I love Mandy. I'm pretty sure Cosmatos told Cage "just do whatever you want," because his performance in this film is some of his best and some of his *Cage-iest*. 
+There's a common thread between his characteristic overemotive bombast and the way I approach music. He takes  emotion to its extreme, adding a tangible physicality to what we reflexively internalize. That's *one* of the reasons I love Mandy. I'm pretty sure Cosmatos told Cage "just do whatever you want," because his performance in this film is some of his best and some of his *Cage-iest*. 
 
 That's not even to mention the score by Johan Johannsson (RIP) or just the raw visuals themselves. Every shot is hypersaturated, blown out, and lush. It's over two hours of beautifully technicolor shots with a deeply unsettling thread throughout. 
 
