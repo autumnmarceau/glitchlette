@@ -84,7 +84,7 @@ The first verse from SIDEPIECE HYMNAL is a loving reimagining of those lines. I 
 
 This book also inspired the lyrics of WRAITH SPACE. The beginning features a spoken word part that is inspired/pulled from an archaic translation of *the Aenid* that is quoted in HoL. I've never been able to find it online, so its possible its one of HoL's many "fake" quotes.
 
-Subconiously I think this book's resistance to traditional form heavily inspired the structure of the songs on Every Rat. The book demands a multiple break-neck vibe shifts in the way its written that I ended up channeling on this project. Or it was my ADHD. Perhaps a bit of both?
+Subconiously I think this book's resistance to traditional form heavily inspired the structure of the songs on Every Rat. The book has  multiple break-neck vibe shifts in the way its written that I ended up channeling on this project. Or it was my ADHD. Perhaps a bit of both?
 
 Anyways, if you haven't read it, I strongly reccomend to do it at least once in your life, there really isn't anything else like it. 
 
