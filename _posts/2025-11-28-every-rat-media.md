@@ -6,7 +6,7 @@ excerpt: "An incomplete list of art & media that inspired my latest EP."
 thumbnail: https://glitchlette.com/media-post.png
 thumbnail_caption: "Top: Mandy (2018) Bottom: Suspiria (1977)"
 ---
-### Non-Musical Media That Inspired the newest GLITCHLETTE EP
+## Non-Musical Media That Inspired the newest GLITCHLETTE EP
 Hello again my friends!  
 It's been a smidge over a month since I released my most recent and exhaustingly titled EP:  <a href="https://ffm.to/mjnjzop">EVERY RAT WANTS TO CRAWL IN YOUR MOUTH AND CLEAN YOUR TEETH </a>
 
