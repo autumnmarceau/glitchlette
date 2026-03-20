@@ -3,13 +3,12 @@ layout: post
 title: "Selected Glambient Works (17-24)"
 date: 2026-03-20 13:30:00 -0700
 excerpt: "A blurb about my lastest album/mixtape/demo-reel."
-thumbnail: /glambient.png
+thumbnail: /glambient.JPG
 thumbnail_caption: "Glambient Works Album Cover"
 ---
 
 ##The GLITCHLETTE Universe Expands...
-<center><figure><img class="blog-post-image" src="/glambient"><br>
-<figcaption><i>I love that this book has had a recent resurgence on TikTok. More people for me to obsess over it with, I'd say! </i> </figcaption></figure></center><br>
+<center><figure><img class="blog-post-image" src="/glambient.JPG"><br>
 Hello all! 
 
 It’s been a while. I’m ramping back up to launch a new GLITCHLETTE era by releasing a bunch of old songs. They’re demos from up to nine years ago that I’ll never finish or release in any “official” capacity. Some of them go as far back as when I started producing music. Many of the mixes are pretty terrible, but some of them are kind of bangers, and I’d hate for them to sit on my hard drive. I mean, I went seven years without releasing new music, EVERY RAT alone isn’t gonna cut it! 
